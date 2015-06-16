@@ -1,0 +1,200 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="12.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{F17E7C42-F9C1-4AC3-BE73-F9BC02C61F7A}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Nova.Monitoring.UI.MonitorSetting</RootNamespace>
+    <AssemblyName>Nova.Monitoring.UI.MonitorSetting</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <TargetFrameworkProfile />
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <OutputPath>bin\x86\Release\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x64' ">
+    <PlatformTarget>x64</PlatformTarget>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x64' ">
+    <PlatformTarget>x64</PlatformTarget>
+    <OutputPath>bin\x64\Release\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'RemoteDebug|AnyCPU' ">
+    <OutputPath>bin\RemoteDebug\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'RemoteDebug|x86' ">
+    <OutputPath>bin\x86\RemoteDebug\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'RemoteDebug|x64' ">
+    <OutputPath>bin\x64\RemoteDebug\</OutputPath>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Nova.Control.CrystalButton">
+      <HintPath>..\..\Lib\Nova.Control.CrystalButton.dll</HintPath>
+    </Reference>
+    <Reference Include="Nova.Control.CustomToolTip, Version=1.0.1201.801, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Lib\Nova.Control.CustomToolTip.dll</HintPath>
+    </Reference>
+    <Reference Include="Nova.Control.DoubleBufferControl, Version=1.0.1102.2201, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Lib\Nova.Control.DoubleBufferControl.dll</HintPath>
+    </Reference>
+    <Reference Include="Nova.Control.RectangularGridLayout, Version=1.0.1301.601, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Lib\Nova.Control.RectangularGridLayout.dll</HintPath>
+    </Reference>
+    <Reference Include="Nova.Drawing.FontAdjuster, Version=1.0.1210.2301, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Lib\Nova.Drawing.FontAdjuster.dll</HintPath>
+    </Reference>
+    <Reference Include="Nova.LCT.GigabitSystem.DataClass, Version=1.0.1201.801, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Lib\Nova.LCT.GigabitSystem.DataClass.dll</HintPath>
+    </Reference>
+    <Reference Include="Nova.LCT.GigabitSystem.ProtocolEnum, Version=1.0.1108.1101, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Lib\Nova.LCT.GigabitSystem.ProtocolEnum.dll</HintPath>
+    </Reference>
+    <Reference Include="Nova.LCT.GigabitSystem.SupperDisplayConstruct, Version=1.0.1201.801, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Lib\Nova.LCT.GigabitSystem.SupperDisplayConstruct.dll</HintPath>
+    </Reference>
+    <Reference Include="Nova.Resource.Language.MultiLanguageUtils, Version=1.0.1003.901, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Lib\Nova.Resource.Language.MultiLanguageUtils.dll</HintPath>
+    </Reference>
+    <Reference Include="Nova.Windows.Forms.CustomMessageBox, Version=1.0.1004.1501, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Lib\Nova.Windows.Forms.CustomMessageBox.dll</HintPath>
+    </Reference>
+    <Reference Include="Nova.Xml.Serialization.XmlSerializableObject, Version=1.0.1109.1901, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Lib\Nova.Xml.Serialization.XmlSerializableObject.dll</HintPath>
+    </Reference>
+    <Reference Include="ProgressControls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=f34d47135ea7baa5, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Lib\ProgressControls.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CommonInfo.cs" />
+    <Compile Include="Frm_FanPowerAdvanceSetting.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_FanPowerAdvanceSetting.Designer.cs">
+      <DependentUpon>Frm_FanPowerAdvanceSetting.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_SetInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_SetInfo.Designer.cs">
+      <DependentUpon>Frm_SetInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="UC_ComplexLayout.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC_ComplexLayout.Designer.cs">
+      <DependentUpon>UC_ComplexLayout.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UC_OneScreenLayout.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC_OneScreenLayout.Designer.cs">
+      <DependentUpon>UC_OneScreenLayout.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UC_StandarAndSimpleLayout.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC_StandarAndSimpleLayout.Designer.cs">
+      <DependentUpon>UC_StandarAndSimpleLayout.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Service Include="{94E38DFF-614B-4cbd-B67C-F211BB35CE8B}" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Frm_FanPowerAdvanceSetting.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Frm_FanPowerAdvanceSetting.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_SetInfo.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Frm_SetInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC_ComplexLayout.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>UC_ComplexLayout.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC_OneScreenLayout.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>UC_OneScreenLayout.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC_StandarAndSimpleLayout.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>UC_StandarAndSimpleLayout.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

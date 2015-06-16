@@ -1,0 +1,156 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Resource>
+  <Form>
+    <Name>UC_Brightness</Name>
+    <Controls>
+      <Control name="groupBox_BrightnessTable" text="Brightness adjustment" />
+      <Control name="seperatePanel_Computer" text="Computer control" />
+      <Control name="checkBox_ScreenDisplay" text="Black screen after disconnection" />
+      <Control name="checkBox_Hareware" text="Auto takeover of hardware after disconnection" />
+      <Control name="linkLabel_Software" text="Software brightness table" />
+      <Control name="linkLabel_Software_Light" text="Configuration of optical probe" />
+      <Control name="seperatePanel_Hareware" text="Hardware adjustment" />
+      <Control name="linkLabel_Hardware" text="Hardware brightness table" />
+      <Control name="linkLabel_Hardware_Light" text="Configuration of optical probe" />
+      <Control name="crystalButton_OK" text="OK" />
+      <Control name="openOpticalProbeConfigButton" text="OK" />
+      <Control name="seperatePanel_AutoBrightInfo" text="Auto Adjustment information" />
+      <Control name="label_AutoBrightPeriod" text="Detect Period:" />
+      <Control name="label_ReadLuxCnt" text="Read times of light sensors:" />
+      <Control name="label_Notice" text="Notice:Before doing every auto adjustment, we will read the light sensor value N times， and caculate the average value after removing maximum and minimum, then we adjust screen brightness according to this average value and the linear straight which you set!" />
+      <Control name="tabPage_BrightnessTable" text="Brightness Setting" />
+      <Control name="tabPage_AutoBrightConfig" text="Global Parameters" /> 
+      <Control name="checkBox_IsSmartEnable" text="Enable Smart Brightness" /> 
+      <Control name="checkBox_IsGradualEnable" text="Enable brightness gradient" /> 
+    </Controls>
+  </Form>
+  <Form>
+    <Name>UC_Brightness_String</Name>
+    <Controls>
+      <Control name="ConfigHardwareBrightness" text="Hardware brightness table is needed to be configured for auto takeover of hardware, please configure the hardware brightness table" />
+      <Control name="SaveFailed" text="Save failed" />
+      <Control name="SaveSuccess" text="Save successfully" />
+      <Control name="everyday" text="Everyday" />
+      <Control name="Workday" text="Monday to Friday" />
+      <Control name="userDefined" text="User defined" />
+      <Control name="Monday" text="Monday" />
+      <Control name="Tuesday" text="Tuesday" />
+      <Control name="Wednesday" text="Wednesday" />
+      <Control name="Thursday" text="Thursday" />
+      <Control name="Friday" text="Friday" />
+      <Control name="Saturday" text="Saturday" />
+      <Control name="Sunday" text="Sunday" />
+      <Control name="AutoBright" text="Auto brightness" />
+      <Control name="FixBright" text="Schedule" />
+      <Control name="SaveBrightConfig" text="Saving brightness configuration, please wait ..." />
+      <Control name="savesuccessNoConfig" text="Brightness information is not configured" />
+      <Control name="label_tip" text="Tip: When there are multiple screens: Environmental intensity settings, select '{0}' is configured!" />
+    </Controls>
+  </Form>
+  <Form>
+    <Name>UC_BrightnessConfig</Name>
+    <Controls>
+      <Control name="button_add" text="Add" />
+      <Control name="ToolStripMenuItem_add" text="Add" />
+      <Control name="button_edit" text="Edit" />
+      <Control name="ToolStripMenuItem_edit" text="Edit" />
+      <Control name="button_delete" text="Delete" />
+      <Control name="ToolStripMenuItem_delete" text="Delete" />
+      <Control name="button_deleteAll" text="Empty list" />
+      <Control name="ToolStripMenuItem_deleteAll" text="Empty list" />
+      <Control name="crystalButton_OK" text="OK" />
+      <Control name="openLightSensoreConfigButton" text="Light Sensor" />
+      <Control name="brightnessConfigGroupBox" text="Brightness Adjust Config" />
+      <Control name="currentBrightnessLabel" text="Current Brightness:" />
+       <Control name="everyday" text="Everyday" />
+      <Control name="Workday" text="Monday to Friday" />
+      <Control name="userDefined" text="User defined" />
+      <Control name="Monday" text="Monday" />
+      <Control name="Tuesday" text="Tuesday" />
+      <Control name="Wednesday" text="Wednesday" />
+      <Control name="Thursday" text="Thursday" />
+      <Control name="Friday" text="Friday" />
+      <Control name="Saturday" text="Saturday" />
+      <Control name="Sunday" text="Sunday" />
+      <Control name="AutoBright" text="Auto brightness" />
+      <Control name="FixBright" text="Schedule" />
+       <Control name="IsConfigEnable" text="Enable" />
+      <Control name="Time" text="Time" />
+      <Control name="TypeStr" text="Control type" />
+      <Control name="DayListStr" text="Execution cycle" />
+      <Control name="BrightnessDisplay" text="Brightness (%)" />
+      <Control name="Msg_DeleteBrightnessConfig" text="Are you sure to delect the selected item?" />
+      <Control name="Msg_ConfigLightprobe" text="Please configure optical probe for the screen (for auto brightness, the screen brightness shall be adjusted according to the adjustment list of optical probe)! " />
+      <Control name="Msg_ConfigLightprobe_LightList" text="Please configure the adjustment list of optical probe (for auto brightness, the screen brightness shall be adjusted according to the adjustment list of optical probe)! " />
+      <Control name="Msg_BrightnessConfig_Empty" text="Empty the brightness configuration list or not?" />
+      <Control name="nolightsensorconfig" text="No Light Sensor added, auto brightness settings won't be effective!" />
+      <Control name="nolightsensormappingconfig" text="The brightness of the light sensor is not configured mapping table, all auto adjust the configuration will fail!" />
+      <Control name="partlightsensorfail" text="Config with auto adjust, select the portion of the light sensor in the absence of software unavailable!" />
+      <Control name="editname" text="Edit" />
+      <Control name="deletename" text="Delete" />
+      <Control name="SaveFailed" text="Save failed" />
+      <Control name="SaveSuccess" text="Save successfully" />
+    </Controls>
+  </Form>
+  <Form>
+    <Name>UC_BrightnessConfig_String</Name>
+    <Controls>
+      <Control name="IsConfigEnable" text="Enable" />
+      <Control name="Time" text="Time" />
+      <Control name="TypeStr" text="Control type" />
+      <Control name="DayListStr" text="Execution cycle" />
+      <Control name="BrightnessDisplay" text="Brightness (%)" />
+      <Control name="Msg_DeleteBrightnessConfig" text="Are you sure to delect the selected item?" />
+      <Control name="Msg_ConfigLightprobe" text="Please configure optical probe for the screen (for auto brightness, the screen brightness shall be adjusted according to the adjustment list of optical probe)! " />
+      <Control name="Msg_ConfigLightprobe_LightList" text="Please configure the adjustment list of optical probe (for auto brightness, the screen brightness shall be adjusted according to the adjustment list of optical probe)! " />
+      <Control name="Msg_BrightnessConfig_Empty" text="Empty the brightness configuration list or not?" />
+      <Control name="nolightsensorconfig" text="Select the Light Sensor is not all auto adjust the configuration will fail!" />
+      <Control name="nolightsensormappingconfig" text="The brightness of the light sensor is not configured mapping table, all auto adjust the configuration will fail!" />
+      <Control name="partlightsensorfail" text="Config with auto adjust, select the portion of the light sensor in the absence of software unavailable!" />
+      <Control name="editname" text="Edit" />
+      <Control name="deletename" text="Delete" />
+      <Control name="SaveFailed" text="Save failed" />
+      <Control name="SaveSuccess" text="Save successfully" />
+    </Controls>
+  </Form>
+  <Form>
+    <Name>frm_BrightnessConfig</Name>
+    <Controls>
+      <Control name="frm_BrightnessConfig" text="Set brightness" />
+      <Control name="tabPage_Fasten" text="Schedule" />
+      <Control name="tabPage_Auto" text="Auto brightness" />
+      <Control name="button_OK" text="OK" />
+      <Control name="button_cancel" text="Cancel" />
+    </Controls>
+  </Form>
+  <Form>
+    <Name>frm_BrightnessConfig_String</Name>
+    <Controls>
+      <Control name="Text_Brightness" text="Brightness" />
+      <Control name="ExecuteCycle" text="Execution cycle" />
+      <Control name="Text_Time" text="Time" />
+      <Control name="Msg_TimesEmpty" text="Please select time frame for adjustment" />
+      <Control name="Msg_BrightnessConfig_Repeat" text="Time of brightness configuration list is repeated, please reedit it!" />
+    </Controls>
+  </Form>
+  <Form>
+    <Name>Frm_BrightnessAdjustmentSetting</Name>
+    <Controls>
+      <Control name="Frm_BrightnessAdjustmentSetting" text="Adjust Time Set" />
+      <Control name="fixedBrightnessRadioButton" text="Schedule" />
+      <Control name="autoBrightnessRadioButton" text="Auto brightness" />
+      <Control name="lable_AdjustCycle" text="Adjust Cycle" />
+      <Control name="mondayCheckBox" text="Monday" />
+      <Control name="tuesdayCheckBox" text="Tuesday" />
+      <Control name="wednesdayCheckBox" text="Wednesday" />
+      <Control name="thursdayCheckBox" text="Thursday" />
+      <Control name="fridayCheckBox" text="Friday" />
+      <Control name="saturdayCheckBox" text="Saturday" />
+      <Control name="sundayCheckBox" text="Sunday" />
+      <Control name="label_AdjustTime" text="Adjust Time" />
+      <Control name="label_brightnessValue" text="Adjust Brightness" />
+      <Control name="confirmButton" text="OK" />
+      <Control name="cancelButton" text="Cancel" />
+    </Controls>
+  </Form>
+</Resource>

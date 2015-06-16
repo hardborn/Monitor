@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Resource>
+  <Form>
+    <Name>Form_ErrorNotice</Name>
+    <Controls>
+      <Control name="Form_ErrorNotice" text="ненормальный захват окна " />
+      <Control name="label_AlertExplanation" text="извините, появляется одна текущая ошибка! Просим правильно эксплуатировать программное обеспечивание.  Путем перезапуска данного программного обеспечивания решать данный вопрос." />
+      <Control name="label_SendErrorReport" text="NovaMonitor-надеемся, что вы можете координационно решать данный вопрос, вы можете выбирать “послать ошибочный доклад ” и послать ошибочные данные разработнику в предприятии или предъявлять ошибочный доклад под путь программного обеспечения в разработанное предприятие . Спасибо!" />
+      <Control name="crystalButton_ReviewErrorReport" text="просмотреть ошибочные данные" />
+      <Control name="crystalButton_SendErrorReport" text="послать  ошибочные данные" />
+      <Control name="crystalButton_KeepRunning" text="продожен работать" />
+      <Control name="crystalButton_ExitApplication" text="выход" />
+      <Control name="MailSending" text="послать  ошибочные доклад ..." />
+      <Control name="MailSendOK" text="окончить послание ошибочного доклада!" />
+      <Control name="MailSendFailed" text="невозможно послать электронное письмо в разработанное предприятие, просмотрейте сетевое подключение!  Вы можете предъявлять ошибочный доклад Error.txt под путь программного обеспечения в разработанное предприятие !" />
+      <Control name="Form_ErrorDetails" text="ненормальное описание окна" />
+      <Control name="groupBox_Info" text="заполните (выборный)" />
+      <Control name="label_DiscoverPerson" text="человек обнаружения вопроса：" />
+      <Control name="label_Name" text="фамилия (компания)" />
+      <Control name="label_ConnectEmail" text="почтовый ящик по связи：" />
+      <Control name="label_Service" text="мы будем сразу послать Вам самую последнюю версию данного программного обеспечения после решения вопроса" />
+      <Control name="label_Description" text="описание вопроса：" />
+      <Control name="label_Recommend" text="рекомендация：" />
+      <Control name="label_FurtherDetails" text="фон при поялении вопроса, например операционная система, шаг эксплуатации данного прогораммного обеспечения и т д.,  это будет оказывать помощь на решение вопроса" />
+      <Control name="crystalButton_SendEmail" text="послать" />
+      <Control name="crystalButton_SaveErrorAsTxt" text="запись ошибочных данных в качестве файла" />
+      <Control name="crystalButton_Cancel" text="снятие" />
+    </Controls>
+  </Form>
+</Resource>

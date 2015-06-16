@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Resource>
+
+<Form>
+  <Name>Form_ErrorNotice</Name>
+<Controls>
+  <Control name="Form_ErrorNotice" text="Janela de captura anormal"/>
+  <Control name="label_AlertExplanation" text="Desculpe,  ocorre um erro actualmente! Por favor garantir a operação apropriado do software. Reiniciar o software para resolver o problema."/>
+  <Control name="label_SendErrorReport" text="NovaMonitor-Espero que você possa ajudar a solução do problema , você pode selecionar 'enviar o relatório de erro' para enviar os dados errados á empresa de desenvolvimento, ou apresentar o relatório de erro abaixo do caminho de software para a empresa de desenvolvimento, obrigado!" />
+  <Control name="crystalButton_ReviewErrorReport" text="Ver os dados errados"/>
+  <Control name="crystalButton_SendErrorReport" text="Enviar o relatório de erro"/>
+  <Control name="crystalButton_KeepRunning" text="Continue a executar"/>
+  <Control name="crystalButton_ExitApplication" text="Sair"/>
+
+  <Control name="MailSending" text="Está enviando o relatório de erro......"/>
+  <Control name="MailSendOK" text="o relatório de erro está enviado pronto!"/>
+  <Control name="MailSendFailed" text="Não pode enviar E-mail á empresa de desenvolvimento, verifique a conexão de rede! Você pode entregar o relatório do diretório atual Error.txt  para a empresa de desenvolvimento!"/>
+
+  <Control name="Form_ErrorDetails" text="Janela de descrição de exceção"/>
+  <Control name="groupBox_Info" text="por favor, preencha(opcional)"/>
+  <Control name="label_DiscoverPerson" text="Descobridor do problema:"/>
+  <Control name="label_Name" text="Nome (Empresa)"/>
+  <Control name="label_ConnectEmail" text="E-mail:"/>
+  <Control name="label_Service" text="Nós lhe enviaremos a versão mais recente do software na primeira hora depois de resolver o problema"/>
+  <Control name="label_Description" text="Descrição do proplema:"/>
+  <Control name="label_Recommend" text=" Recomendação :"/>
+  <Control name="label_FurtherDetails" text="Os fundos aparecem quando ocorrer os problemas, tal como o sistema operativo , os passos operados do software, que vai oferecer grande ajuda para resolver o problema."/>
+  <Control name="crystalButton_SendEmail" text="Enviar"/>
+  <Control name="crystalButton_SaveErrorAsTxt" text="Salvar os dados errados como um documento "/>
+  <Control name="crystalButton_Cancel" text="Cancelar"/>
+</Controls>
+</Form>
+
+</Resource>

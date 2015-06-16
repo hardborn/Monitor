@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Resource>
+  <Form>
+    <Name>frm_OpticalProbeConfig</Name>
+    <Controls>
+      <Control name="frm_OpticalProbeConfig" text="Configuración de sonda óptica" />
+      <Control name="mappingGroupBox" text="Tabla de cartografía de brillo (brillo de entorno|brillo de pantalla" />
+      <Control name="LedBrightnessColumn" text="Brillo de pantalla (%)" />
+      <Control name="EnvironmentBrightnessColumn" text="Brillo de entorno (Lux)" />
+      <Control name="DeleteButtonColumn_Text" text="Borrar" />
+      <Control name="DeleteButtonColumn" text="Operar" />
+      <Control name="opticalProbeGroupBox" text="Tabla de configuración de la sonda óptica" />
+      <Control name="EnableColumn" text="Si activar o no." />
+      <Control name="PositionColumn" text="Ubicación" />
+      <Control name="CurrentBrightnessColumn" text="Valor de brillo actual" />
+      <Control name="autoSectionButton" text="Segmentación rápido" />
+      <Control name="confirmButton" text="Confirmar" />
+      <Control name="cancelButton" text="Cancelar" />
+      <Control name="Getting_Opticalprobe_information" text="Está obteniendo la información de sonda, espere..." />
+      <Control name="AddMappingItemButton" text="Agregar configuración" />
+      <Control name="DisableGroupBox" text="" />
+      <Control name="enableCheckBox" text="El no leer la luminosidad del ambiente,Ajuste de brillo a:" />
+      <Control name="refreshOpticalProbeCrystalButton" text="Actualización" />
+      <Control name="label_CurrentLight" text="Brillo actual" />
+      <Control name="RemarkColumn" text="Observación" />
+      <Control name="NoSoftWareFail" text="Inválido sin programa" />
+      <Control name="inputbrightvalue" text="Por favor, introduzca el valor de brillo." />
+      <Control name="brightvalueDigital" text="El valor de brillo debe ser cifras" />
+      <Control name="exitssamelightconfig" text="Existen configuración del mismo brillo." />
+      <Control name="nolightsensorconfig" text="No hay información del sensor de luz no puede ser probada！" />
+      <Control name="crystalButton_BrightTestStart" text="Las sondas ópticas" />
+      <Control name="crystalButton_BrightTestStop" text="Prueba de parada" />
+    </Controls>
+  </Form>
+  <Form>
+    <Name>frm_AutoSection</Name>
+    <Controls>
+      <Control name="frm_AutoSection" text="Configuración de la segmentación rápida" />
+      <Control name="sectionNumberlabel" text="Número de segmentos" />
+      <Control name="sectionConditionGroupBox" text="Condición de segmentación" />
+      <Control name="maxLabel" text="Límite máximo:" />
+      <Control name="minLabel" text="Límite mínimo:" />
+      <Control name="environmentLabel" text="Brillo de ambiente" />
+      <Control name="ledLabel" text="Brillo de pantalla" />
+      <Control name="confirmButton" text="Confirmar" />
+      <Control name="cancelButton" text="Cancelar" />
+      <Control name="errorTitle" text="Error" />
+      <Control name="ledBrightness_error01" text="El valor máximo de brillo de pantalla no debe ser inferior al valor mínimo de brillo de pantalla" />
+      <Control name="environmentBrightness_error01" text="El valor máximo de brillo de pantalla no debe ser inferior al valor mínimo de brillo de entorno" />
+      <Control name="sectionRemarkLabel" text="Se aplica ajuste lineal por trozos de los valores máximo y mínimo para los valores dentro del rango.  " />
+    </Controls>
+
+  </Form>
+  <Form>
+    <Name>Frm_AddMappingItem</Name>
+    <Controls>
+      <Control name="Frm_AddMappingItem" text="Agregar concepto de cartografía" />
+      <Control name="environmentLabel" text="Brillo de entorno" />
+      <Control name="ledLabel" text="Brillo de Led" />
+      <Control name="confirmButton" text="Confirmar" />
+      <Control name="cancelButton" text="Cancelar" />
+      <Control name="errorTitle" text="Error" />
+      <Control name="error01" text="Existe repetición de configuración de brillo de entorno, por favor, ¡realizar una corrección!" />
+    </Controls>
+  </Form>
+</Resource>

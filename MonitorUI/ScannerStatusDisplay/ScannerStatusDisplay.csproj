@@ -1,0 +1,334 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="12.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{2E240070-ABA7-45C2-AA64-D22DDAF33DF6}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Nova.Monitoring.UI.ScannerStatusDisplay</RootNamespace>
+    <AssemblyName>Nova.Monitoring.UI.ScannerStatusDisplay</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <PublishUrl>发布\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Nova.Control.CustomToolTip, Version=1.0.1201.1001, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Lib\Nova.Control.CustomToolTip.dll</HintPath>
+    </Reference>
+    <Reference Include="Nova.Control.DoubleBufferControl, Version=1.0.1104.2501, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Lib\Nova.Control.DoubleBufferControl.dll</HintPath>
+    </Reference>
+    <Reference Include="Nova.Control.GradualColorPanel, Version=1.0.1108.501, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Lib\Nova.Control.GradualColorPanel.dll</HintPath>
+    </Reference>
+    <Reference Include="Nova.Control.RectangularGridLayout">
+      <HintPath>..\..\Lib\Nova.Control.RectangularGridLayout.dll</HintPath>
+    </Reference>
+    <Reference Include="Nova.Control.SeperatePanel, Version=1.0.1108.501, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Lib\Nova.Control.SeperatePanel.dll</HintPath>
+    </Reference>
+    <Reference Include="Nova.Convert.ColorGradePartition, Version=1.0.1106.1701, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Lib\Nova.Convert.ColorGradePartition.dll</HintPath>
+    </Reference>
+    <Reference Include="Nova.Drawing.FontAdjuster, Version=1.0.1210.2301, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Lib\Nova.Drawing.FontAdjuster.dll</HintPath>
+    </Reference>
+    <Reference Include="Nova.Equipment.Protocol.TGProtocol, Version=1.0.1111.802, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Lib\Nova.Equipment.Protocol.TGProtocol.dll</HintPath>
+    </Reference>
+    <Reference Include="Nova.IO.Port.ICommProcessorBase, Version=1.1.1110.2201, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Lib\Nova.IO.Port.ICommProcessorBase.dll</HintPath>
+    </Reference>
+    <Reference Include="Nova.LCT.GigabitSystem.CommonInfoAccessor, Version=1.0.1111.1001, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Lib\Nova.LCT.GigabitSystem.CommonInfoAccessor.dll</HintPath>
+    </Reference>
+    <Reference Include="Nova.LCT.GigabitSystem.DataClass, Version=1.0.1201.801, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Lib\Nova.LCT.GigabitSystem.DataClass.dll</HintPath>
+    </Reference>
+    <Reference Include="Nova.LCT.GigabitSystem.HWStatusMonitor, Version=1.0.1111.301, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Lib\Nova.LCT.GigabitSystem.HWStatusMonitor.dll</HintPath>
+    </Reference>
+    <Reference Include="Nova.LCT.GigabitSystem.ProtocolEnum, Version=1.0.1110.2501, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Lib\Nova.LCT.GigabitSystem.ProtocolEnum.dll</HintPath>
+    </Reference>
+    <Reference Include="Nova.LCT.GigabitSystem.SupperDisplayConstruct, Version=1.0.1201.901, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Lib\Nova.LCT.GigabitSystem.SupperDisplayConstruct.dll</HintPath>
+    </Reference>
+    <Reference Include="Nova.LCT.LCTServerBaseProxy, Version=1.0.1110.2801, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Lib\Nova.LCT.LCTServerBaseProxy.dll</HintPath>
+    </Reference>
+    <Reference Include="Nova.LCT.LCTServerMessageProxy, Version=1.0.1111.901, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Lib\Nova.LCT.LCTServerMessageProxy.dll</HintPath>
+    </Reference>
+    <Reference Include="Nova.Message.Common, Version=1.0.1110.1901, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Lib\Nova.Message.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Nova.Process.ShareMemory, Version=1.0.1101.2201, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Lib\Nova.Process.ShareMemory.dll</HintPath>
+    </Reference>
+    <Reference Include="Nova.Resource.Language.MultiLanguageUtils, Version=1.0.1003.901, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Lib\Nova.Resource.Language.MultiLanguageUtils.dll</HintPath>
+    </Reference>
+    <Reference Include="Nova.Xml.Serialization.XmlSerializableObject, Version=1.0.1109.1901, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Lib\Nova.Xml.Serialization.XmlSerializableObject.dll</HintPath>
+    </Reference>
+    <Reference Include="ProgressControls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=f34d47135ea7baa5, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Lib\ProgressControls.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CommonInfo.cs" />
+    <Compile Include="Frm_ComplexScreenDisplay.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_ComplexScreenDisplay.Designer.cs">
+      <DependentUpon>Frm_ComplexScreenDisplay.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="UC_ComplexScreenLayout.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC_ComplexScreenLayout.Designer.cs">
+      <DependentUpon>UC_ComplexScreenLayout.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UC_RowLineCabinetDoorInfo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC_RowLineCabinetDoorInfo.Designer.cs">
+      <DependentUpon>UC_RowLineCabinetDoorInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UC_RowLineCorNotice.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC_RowLineCorNotice.Designer.cs">
+      <DependentUpon>UC_RowLineCorNotice.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UC_StatusRectangleLayout.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC_StatusRectangleLayout.Designer.cs">
+      <DependentUpon>UC_StatusRectangleLayout.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MarsScreenMonitorDataViewer.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MarsScreenMonitorDataViewer.designer.cs">
+      <DependentUpon>MarsScreenMonitorDataViewer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UC_SmokeFanPowerCorNotice.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC_SmokeFanPowerCorNotice.Designer.cs">
+      <DependentUpon>UC_SmokeFanPowerCorNotice.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UC_SmokeFanPowerInfo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC_SmokeFanPowerInfo.Designer.cs">
+      <DependentUpon>UC_SmokeFanPowerInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UC_StatusCorNotice.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC_StatusCorNotice.designer.cs">
+      <DependentUpon>UC_StatusCorNotice.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UC_TempAndHumidityCorNotice.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC_TempAndHumidityCorNotice.designer.cs">
+      <DependentUpon>UC_TempAndHumidityCorNotice.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UC_TempAndHumiInfo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC_TempAndHumiInfo.designer.cs">
+      <DependentUpon>UC_TempAndHumiInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UC_StatusInfo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC_StatusInfo.Designer.cs">
+      <DependentUpon>UC_StatusInfo.cs</DependentUpon>
+    </Compile>
+    <Service Include="{94E38DFF-614B-4cbd-B67C-F211BB35CE8B}" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Frm_ComplexScreenDisplay.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Frm_ComplexScreenDisplay.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC_ComplexScreenLayout.resx">
+      <DependentUpon>UC_ComplexScreenLayout.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC_RowLineCabinetDoorInfo.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>UC_RowLineCabinetDoorInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC_RowLineCorNotice.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>UC_RowLineCorNotice.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC_StatusRectangleLayout.resx">
+      <DependentUpon>UC_StatusRectangleLayout.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MarsScreenMonitorDataViewer.resx">
+      <DependentUpon>MarsScreenMonitorDataViewer.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC_SmokeFanPowerCorNotice.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>UC_SmokeFanPowerCorNotice.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC_SmokeFanPowerInfo.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>UC_SmokeFanPowerInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC_StatusCorNotice.resx">
+      <DependentUpon>UC_StatusCorNotice.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC_TempAndHumidityCorNotice.resx">
+      <DependentUpon>UC_TempAndHumidityCorNotice.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC_TempAndHumiInfo.resx">
+      <DependentUpon>UC_TempAndHumiInfo.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC_StatusInfo.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>UC_StatusInfo.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ColorNotice.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Fan_OK.png" />
+    <None Include="Resources\Fan-alarm.png" />
+    <None Include="Resources\Fan-invalid.png" />
+    <None Include="Resources\graypoint.png" />
+    <None Include="Resources\greenpoint.png" />
+    <None Include="Resources\Yellowpoint.png" />
+    <Content Include="Version.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

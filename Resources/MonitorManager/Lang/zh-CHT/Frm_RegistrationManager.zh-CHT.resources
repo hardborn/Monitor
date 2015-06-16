@@ -1,0 +1,40 @@
+﻿<?xml version="1.0"?>
+<Resource>
+  <Form>
+    <Name>Frm_RegistrationManager</Name>
+    <Controls>
+      <Control name="Frm_RegistrationManager" text="註冊" />
+      <Control name="userLabel" text="用戶:" />
+      <Control name="refreshButton" text="刷新" />
+      <Control name="modifyRegistrationButton" text="修改註冊信息" />
+      <Control name="ScreenNameColumn" text="屏體名稱" />
+      <Control name="ScreenHeightColumn" text="高度" />
+      <Control name="ScreenWidthColumn" text="寬度" />
+      <Control name="ScreenRegistationStateColumn" text="註冊狀態" />
+      <Control name="linkLabel_About" text="關於NovaiCare" />
+      <Control name="CareReadData" text="正在獲取註冊信息，請等待..." />
+    </Controls>
+  </Form>
+   <Form>
+    <Name>Frm_RegisterScreen</Name>
+    <Controls>
+      <Control name="Frm_RegisterScreen" text="顯示屏註冊" />
+      <Control name="screenNameLabel" text="給您的屏起名字" />
+      <Control name="userNameLabel" text="輸入用戶名" /> 
+      <Control name="registerButton" text="註冊"/>
+      <Control name="Waiting_information" text="正在註冊，請等待..."/>
+      <Control name="ScreenAlreadyExists" text="屏體已註冊！" />
+      <Control name="AccountNotExist" text="賬戶不存在!" />
+      <Control name="ScreenRegisteredSuccessfully" text="註冊成功!" />
+      <Control name="ScreenReregister" text="免責聲明：註冊用戶變更，是否繼續?" />
+      <Control name="SnEmpty" text="不允許存在屏體別名為空！" />
+      <Control name="CareRegFailed" text="註冊失敗!" />
+    </Controls>
+  </Form>
+  <Form>
+    <Name>UC_ScreenSummary</Name>
+    <Controls>
+      <Control name="screenLabel" text="屏體" />
+    </Controls>
+  </Form> 
+</Resource>

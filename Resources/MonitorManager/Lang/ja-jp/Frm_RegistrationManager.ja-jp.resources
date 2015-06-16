@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Resource>
+  <Form>
+    <Name>Frm_RegistrationManager</Name>
+    <Controls>
+      <Control name="Frm_RegistrationManager" text="登録" />
+      <Control name="userLabel" text="使用者:" />
+      <Control name="refreshButton" text="リフレッシュ" />
+      <Control name="modifyRegistrationButton" text="登録データを改める" />
+      <Control name="ScreenNameColumn" text="スクリーンの名前" />
+      <Control name="ScreenHeightColumn" text="高さ" />
+      <Control name="ScreenWidthColumn" text="スクリーンの名前" />
+      <Control name="ScreenRegistationStateColumn" text="登録状態" />
+      <Control name="linkLabel_About" text="NovaiCareについて" />
+      <Control name="CareReadData" text="登録されたデータの取得、しばらくお待ちください..." />
+    </Controls>
+  </Form>
+  <Form>
+    <Name>Frm_RegisterScreen</Name>
+    <Controls>
+      <Control name="Frm_RegisterScreen" text="画面の登録" />
+      <Control name="screenNameLabel" text="あなたのスクリーンに名前をつけましょう" />
+      <Control name="userNameLabel" text="使用者の名前を入力" />
+      <Control name="registerButton" text="登録" />
+      <Control name="Waiting_information" text="お待ちください,登録..."/>
+      <Control name="ScreenAlreadyExists" text="スクリーンがすでに登録されてだった!" />
+      <Control name="AccountNotExist" text="アカウントが存在しない!" />
+      <Control name="ScreenRegisteredSuccessfully" text="登録成功!" />
+      <Control name="ScreenReregister" text="免責声明書:登録ユーザーが変更するが、続きますか？" />
+      <Control name="SnEmpty" text="スルリンニックネームが空いてはいけない!" />
+      <Control name="CareRegFailed" text="登録失敗！" />
+    </Controls>
+  </Form>
+  <Form>
+    <Name>UC_ScreenSummary</Name>
+    <Controls>
+      <Control name="screenLabel" text="スクリーン" />
+    </Controls>
+  </Form>
+</Resource>

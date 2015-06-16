@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Resource>
+  <Form>
+    <Name>Frm_RegistrationManager</Name>
+    <Controls>
+      <Control name="Frm_RegistrationManager" text="Enregistrement" />
+      <Control name="userLabel" text="Utilisateur:" />
+      <Control name="refreshButton" text="Rafraîchir" />
+      <Control name="modifyRegistrationButton" text="Modifier des informations d'enregistrement" />
+      <Control name="ScreenNameColumn" text="Nom de l'écran" />
+      <Control name="ScreenHeightColumn" text="Hauteur" />
+      <Control name="ScreenWidthColumn" text="Nom de l'écran" />
+      <Control name="ScreenRegistationStateColumn" text="Etat d'enregistrement" />
+      <Control name="linkLabel_About" text="À propos NovaiCare" />
+      <Control name="CareReadData" text="Se il vous plaît attendre, Se données enregistré ..." />
+    </Controls>
+  </Form>
+  <Form>
+    <Name>Frm_RegisterScreen</Name>
+    <Controls>
+      <Control name="Frm_RegisterScreen" text="Enregistrement de l'écran" />
+      <Control name="screenNameLabel" text="Nommez votre écran" />
+      <Control name="userNameLabel" text="Saisir le nom d'utilisateur" />
+      <Control name="registerButton" text="Enregistrement" />
+      <Control name="Waiting_information" text="Se il vous plaît attendre, Enregistrement ..."/>
+      <Control name="ScreenAlreadyExists" text="Ecran est enregistré!" />
+      <Control name="AccountNotExist" text="Le compte n'existe pas!" />
+      <Control name="ScreenRegisteredSuccessfully" text="Enregistrement réussi!" />
+      <Control name="ScreenReregister" text="Déclaration d'exemption: changement d'enregistrement de l'utilisateur, continuer?" />
+      <Control name="SnEmpty" text="Alias de l'écran ne peut pas être vide!" />
+      <Control name="CareRegFailed" text="Enregistrement a échoué" />
+    </Controls>
+  </Form>
+  <Form>
+    <Name>UC_ScreenSummary</Name>
+    <Controls>
+      <Control name="screenLabel" text="Ecran    " />
+    </Controls>
+  </Form>
+</Resource>

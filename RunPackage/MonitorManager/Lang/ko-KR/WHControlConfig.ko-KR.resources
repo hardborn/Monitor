@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Resource>
+  <Form>
+    <Name>UC_WHControlConfig</Name>
+    <Controls>
+      <Control name="label_tip" text="한짝의 디스플레이를 선택하여 배치를 진행하십시오!" />
+      <Control name="seperatePanel_ControlConfigInfoList" text="제어정보도표" />
+      <Control name="button_add" text="첨가" />
+      <Control name="ToolStripMenuItem_add" text="첨가" />
+      <Control name="button_edit" text="편집" />
+      <Control name="ToolStripMenuItem_edit" text="편집" />
+      <Control name="button_delete" text="삭제" />
+      <Control name="ToolStripMenuItem_delete" text="삭제" />
+      <Control name="button_deleteAll" text="도표를 지우기" />
+      <Control name="ToolStripMenuItem_deleteAll" text="도표를 지우기" />
+      <Control name="crystalButton_OK" text="확인" />
+    </Controls>
+  </Form>
+  <Form>
+    <Name>UC_WHControlConfig_String</Name>
+    <Controls>
+      <Control name="StrategyTypeStr" text="제어유형" />
+      <Control name="Condition" text="조건" />
+      <Control name="TemperatureStrategy" text="온도" />
+      <Control name="SmokeStrategy" text="연막" />
+      <Control name="AverageAlgorithm" text="평균온도" />
+      <Control name="MaxValueAlgorithm" text="최고온도" />
+      <Control name="MSG_Delete" text="선택한 배치를 삭제할가요?" />
+      <Control name="MSG_DeleteAll" text="선택한 배치를 지울할가요?" />
+      <Control name="MSG_DeleteSuccess" text="삭제성공" />
+      <Control name="MSG_DeleteFailed" text="삭제실패" />
+      <Control name="SaveFailed" text="보존실패" />
+      <Control name="SaveSuccess" text="보존성공" />
+    </Controls>
+  </Form>
+  <Form>
+    <Name>frm_WHControlConfig_Editor</Name>
+    <Controls>
+      <Control name="frm_WHControlConfig_Editor" text="제어배치" />
+      <Control name="label_ControlType" text="제어유형" />
+      <Control name="label_Tip" text="제시:다른 전략사이의 온도차이는 5℃보다 작아서는 않된다!" />
+      <Control name="button_OK" text="확인" />
+      <Control name="button_cancel" text="취소" />
+    </Controls>
+  </Form>
+  <Form>
+    <Name>frm_WHControlConfig_Editor_String</Name>
+    <Controls>
+      <Control name="MSG_Tem_MinValueBiggerThanMax" text="최저온도는 최고온도보다 커서는 않된다" />
+      <Control name="MSG_Tem_ValueTooSimilar" text="최고온도와 최저온도치는 5℃보다 작아서는 않된다!" />
+      <Control name="MSG_Action_Illegal" text="유효적인 집행동작을 설치하십시오" />
+      <Control name="MSG_Power_NotChoose" text="닫을 전원을 선택하십시오" />
+      <Control name="MSG_ControlConfig_Repeat" text="책략이 중복되여 첨가가 실패" />
+      <Control name="MSG_ControlConfig_Null" text="책략의 대상이 비여있다" />
+    </Controls>
+  </Form>
+  <Form>
+    <Name>UC_WHControlConfig_Tem</Name>
+    <Controls>
+      <Control name="label_And" text="그리고" />
+      <Control name="seperatePanel_tem_action" text="동작" />
+      <Control name="groupBox_Brightness" text="광도조절" />
+      <Control name="checkBox_Brightness" text="광도조절" />
+      <Control name="label_BrightTo" text="광도조절을…까지" />
+      <Control name="groupBox_PwoerManager" text="전원관리" />
+    </Controls>
+  </Form>
+  <Form>
+    <Name>UC_WHControlConfig_Smoke</Name>
+    <Controls>
+      <Control name="label_smokeCount" text="연막고경상자개수" />
+      <Control name="seperatePanel_smoke_action" text="동작" />
+    </Controls>
+  </Form>
+  <Form>
+    <Name>UC_PowerManager</Name>
+    <Controls>
+      <Control name="label_Open" text="열다" />
+      <Control name="label_Close" text="닫다" />
+      <Control name="label_Still" text="유지" />
+    </Controls>
+  </Form>
+  <Form>
+    <Name>UC_SmokeControlConfig</Name>
+    <Controls>
+      <Control name="groupBox_Power" text="전원관리" />
+      <Control name="label_Close" text="닫다" />
+      <Control name="label_Still" text="유지" />
+    </Controls>
+  </Form>
+</Resource>

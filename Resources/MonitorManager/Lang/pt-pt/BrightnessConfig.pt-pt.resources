@@ -1,0 +1,159 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Resource>
+  <Form>
+    <Name>UC_Brightness</Name>
+    <Controls>
+      <Control name="groupBox_BrightnessTable" text="Ajustar o brilho" />
+      <Control name="seperatePanel_Computer" text="Controle do computador" />
+      <Control name="checkBox_ScreenDisplay" text="Tela preta depois da desconexão" />
+      <Control name="checkBox_Hareware" text="Harware assumir automaticamente o controle depois da desconexão" />
+      <Control name="linkLabel_Software" text="Metro de brilho de software" />
+      <Control name="linkLabel_Software_Light" text="Configuração de sonda óptica" />
+      <Control name="seperatePanel_Hareware" text="Ajustar o harware" />
+      <Control name="linkLabel_Hardware" text="Metro de brilho de software" />
+      <Control name="linkLabel_Hardware_Light" text="Configuração de sonda óptica" />
+      <Control name="crystalButton_OK" text="OK" />
+      <Control name="openOpticalProbeConfigButton" text="Guardar" />
+      <Control name="seperatePanel_AutoBrightInfo" text="Informações de ajuste de brilho automático" />
+      <Control name="label_AutoBrightPeriod" text="Ciclo de detecção de brilho de ambiente" />
+      <Control name="label_ReadLuxCnt" text="Vezes para ler o brilho de ambiente" />
+      <Control name="label_Notice" text="Deixa: abaixo do modo de ajuste automático de brilho,  cada vez antes de ajustar o brilho de monitor deve subtrair o valor máximo e o valor mínimo dos valores de sonda óptica, em seguida ajustar o brilho de monitor de acordo com a curva combinada pelo brilho da luz ambiente e o brilho de monitor!" />
+      <Control name="tabPage_BrightnessTable" text="As configurações de brilho" />
+      <Control name="tabPage_AutoBrightConfig" text="Parâmetros Globais" /> 
+      <Control name="checkBox_IsSmartEnable" text="Enable Smart Brightness" /> 
+      <Control name="checkBox_IsGradualEnable" text="Ativar gradiente brilho" /> 
+    </Controls>
+  </Form>
+  <Form>
+    <Name>UC_Brightness_String</Name>
+    <Controls>
+      <Control name="ConfigHardwareBrightness" text="Harware assumir automaticamente o brilho do harware que precisa configurar, por favor configura o brilho!" />
+      <Control name="SaveFailed" text="Conservação derrotada" />
+      <Control name="SaveSuccess" text="Conservação sucedida" />
+      <Control name="everyday" text="Cada dia" />
+      <Control name="Workday" text="De segunda-feira à sexta-feira" />
+      <Control name="userDefined" text="Personalizado" />
+      <Control name="Monday" text="Segunda-feira" />
+      <Control name="Tuesday" text="Terça-feira" />
+      <Control name="Wednesday" text="Quarta-feira" />
+      <Control name="Thursday" text="Quinta-feira" />
+      <Control name="Friday" text="Sexta-feira" />
+      <Control name="Saturday" text="Sábado" />
+      <Control name="Sunday" text="Domingo" />
+      <Control name="AutoBright" text="Brilho automático" />
+      <Control name="FixBright" text="brilho cronometragem" />
+      <Control name="SaveBrightConfig" text="Configuração de brilho Salvando, por favor aguarde ..." />
+      <Control name="savesuccessNoConfig" text="A informação sobre iluminação não está configurado" />
+      <Control name="label_tip" text="Dica: Quando há várias telas: ajustes de intensidade Ambiental, selecione '{0}' está configurado!" />
+    </Controls>
+  </Form>
+  <Form>
+    <Name>UC_BrightnessConfig</Name>
+    <Controls>
+      <Control name="button_add" text="Adicionar" />
+      <Control name="ToolStripMenuItem_add" text="Adicionar" />
+      <Control name="button_edit" text="Editar" />
+      <Control name="ToolStripMenuItem_edit" text="Editar" />
+      <Control name="button_delete" text="Deletar" />
+      <Control name="ToolStripMenuItem_delete" text="Deletar" />
+      <Control name="button_deleteAll" text="Lipar a lista" />
+      <Control name="ToolStripMenuItem_deleteAll" text="Lipar a lista" />
+      <Control name="crystalButton_OK" text="OK" />
+      <Control name="openLightSensoreConfigButton" text="Configuração da sonda óptica" />
+      <Control name="brightnessConfigGroupBox" text="Configuração de ajuste de escurecimento" />
+      <Control name="currentBrightnessLabel" text="Luminosidade atual:" />
+      <Control name="everyday" text="Todos os dias" />
+      <Control name="Workday" text="De segunda a sexta" />
+      <Control name="userDefined" text="Definido pelo usuário" />
+      <Control name="Monday" text="Segunda-feira" />
+      <Control name="Tuesday" text="Terça-feira" />
+      <Control name="Wednesday" text="Quarta-feira" />
+      <Control name="Thursday" text="Quinta-feira" />
+      <Control name="Friday" text="Sexta-feira" />
+      <Control name="Saturday" text="Sábado" />
+      <Control name="Sunday" text="Domingo" />
+      <Control name="AutoBright" text="Ajuste o tempo" />
+      <Control name="FixBright" text="Ajuste a luminosidade" />
+      <Control name="SaveBrightConfig" text="Configuração de luminosidade salvando, por favor aguarde ..." />
+      <Control name="savesuccessNoConfig" text="A informação sobre iluminação não está configurado" />
+      <Control name="label_tip" text="Dica: Quando existe várias telas:Por favor, selecione '{0}' para configurar a luminosidade do ambiente" />
+      <Control name="IsConfigEnable" text="Iniciar" />
+      <Control name="Time" text="Tempo" />
+      <Control name="TypeStr" text="Tipo de controle" />
+      <Control name="DayListStr" text="Ciclo de execução" />
+      <Control name="BrightnessDisplay" text="Brilho(%)" />
+      <Control name="Msg_DeleteBrightnessConfig" text="Confirma a selecionar o opção de excluir?" />
+      <Control name="Msg_ConfigLightprobe" text="Por favor configurar sonda óptica deste visor (O brilho automático foi ajustado pela sonda de óptica, ajusta o brilho de visor com base na lista )!" />
+      <Control name="Msg_ConfigLightprobe_LightList" text="Por favor configurar a lista de ajuste da sonda óptica  (O brilho automático foi ajustado pela sonda de óptica, ajusta o brilho de visor com base na lista )!" />
+      <Control name="Msg_BrightnessConfig_Empty" text="Quer apagar a lista de configuração de brilho?" />
+      <Control name="nolightsensorconfig" text="Não selecione a sonda óptica desejada, todas as configurações de ajuste automático vão falhar" />
+      <Control name="nolightsensormappingconfig" text="A tabela de brilho da sonda de luz não está configurado, todas as configurações de ajuste automático vão falhar" />
+      <Control name="partlightsensorfail" text="Configurado a luminosidade automática, a parte da sonda óptica selecionada não está disponível quando não há software" />
+      <Control name="editname" text="Editar" />
+      <Control name="deletename" text="Deletar" />
+      <Control name="SaveFailed" text="Falha ao salvar" />
+      <Control name="SaveSuccess" text="Salva com sucesso" />
+    </Controls>
+  </Form>
+  <Form>
+    <Name>UC_BrightnessConfig_String</Name>
+    <Controls>
+      <Control name="IsConfigEnable" text="Começar de usa" />
+      <Control name="Time" text="Horário" />
+      <Control name="TypeStr" text="Tipo de controle" />
+      <Control name="DayListStr" text="Ciclo de execução" />
+      <Control name="BrightnessDisplay" text="Brilho (%)" />
+      <Control name="Msg_DeleteBrightnessConfig" text="Tem certeza que vai deletar o item selecionado?" />
+      <Control name="Msg_ConfigLightprobe" text="Por favor, configure a sonda óptica para este monitor ( o brilho automático ajuste o brilho de monitor de acordo com a sonda óptica) !" />
+      <Control name="Msg_ConfigLightprobe_LightList" text="Por favor, configure a lista de sonda óptica ( o brilho automático ajuste o brilho de monitor de acordo com a sonda óptica )" />
+      <Control name="Msg_BrightnessConfig_Empty" text="Se quer limpar a lista de configuração do brilho?" />
+      <Control name="nolightsensorconfig" text="Não selecione a sonda de luz necessária, todas as configurações de ajuste automáticas vão falahr!" />
+      <Control name="nolightsensormappingconfig" text="A tabela de mapeamento de luminosidade da sonda de luz não está configurado, todas as configurações de ajuste automáticas vão falahr!" />
+      <Control name="partlightsensorfail" text="Equipado com automático de luminosidade,parte da sonda óptica selecionado não está disponível quando não tem software" />
+      <Control name="editname" text="Editar" />
+      <Control name="deletename" text="Deletar" />
+      <Control name="SaveFailed" text="Falha ao salvar" />
+      <Control name="SaveSuccess" text="Salvo com sucesso" />
+    </Controls>
+  </Form>
+  <Form>
+    <Name>frm_BrightnessConfig</Name>
+    <Controls>
+      <Control name="frm_BrightnessConfig" text="Configuração do brilho" />
+      <Control name="tabPage_Fasten" text="brilho cronometragem" />
+      <Control name="tabPage_Auto" text="Brilho automático" />
+      <Control name="button_OK" text="OK" />
+      <Control name="button_cancel" text="Cancelar" />
+    </Controls>
+  </Form>
+  <Form>
+    <Name>frm_BrightnessConfig_String</Name>
+    <Controls>
+      <Control name="Text_Brightness" text="Brilho" />
+      <Control name="ExecuteCycle" text="Ciclo de execução" />
+      <Control name="Text_Time" text="Horário" />
+      <Control name="Msg_TimesEmpty" text="Por favor, selecionar o período de ajustamento" />
+      <Control name="Msg_BrightnessConfig_Repeat" text="A lista de configuração de brilho é duplicada, re-editar por favor!" />
+    </Controls>
+  </Form>
+  <Form>
+    <Name>Frm_BrightnessAdjustmentSetting</Name>
+    <Controls>
+      <Control name="Frm_BrightnessAdjustmentSetting" text="Ajuste as configurações de de tempo" />
+      <Control name="fixedBrightnessRadioButton" text="Luminosidade de temporização" />
+      <Control name="autoBrightnessRadioButton" text="Luminosidade automática" />
+      <Control name="lable_AdjustCycle" text="Período de ajustamento" />
+      <Control name="mondayCheckBox" text="Segunda-feira" />
+      <Control name="tuesdayCheckBox" text="Terça-feira" />
+      <Control name="wednesdayCheckBox" text="Quarta-feira" />
+      <Control name="thursdayCheckBox" text="Quinta-feira" />
+      <Control name="fridayCheckBox" text="Sexta-feira" />
+      <Control name="saturdayCheckBox" text="Sábado" />
+      <Control name="sundayCheckBox" text="Domingo" />
+      <Control name="label_AdjustTime" text="Ajuste o tempo" />
+      <Control name="label_brightnessValue" text="Ajuste a luminosidade" />
+      <Control name="confirmButton" text="Confirmar" />
+      <Control name="cancelButton" text="Cancelar" />
+    </Controls>
+  </Form>
+</Resource>

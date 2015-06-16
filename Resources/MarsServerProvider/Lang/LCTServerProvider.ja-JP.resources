@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Resource>
+  <Form>
+    <Name>Form_ErrorNotice</Name>
+    <Controls>
+      <Control name="Form_ErrorNotice" text="異常を発見する画面" />
+      <Control name="label_AlertExplanation" text="すみませんが、現在に一つのエラーが発生している！正確的なソフトウェアの操作を確保してください。ソフトをリスタートするのを通じてその問題を解決できる。" />
+      <Control name="label_SendErrorReport" text="NovaMonitor-はその問題の解決を配合するのを望んでいる、“エラー報告を発送する”を選択してエラー・データを開発業者に発送し、或いはソフト・ルートにあるエラー報告を開発業者に提供して、ありがとう！" />
+      <Control name="crystalButton_ReviewErrorReport" text="エラー・データを見る" />
+      <Control name="crystalButton_SendErrorReport" text="エラー報告を発送する" />
+      <Control name="crystalButton_KeepRunning" text="継続的に運行する" />
+      <Control name="crystalButton_ExitApplication" text="退出" />
+      <Control name="MailSending" text="エラー報告を発送中……" />
+      <Control name="MailSendOK" text="エラー報告を発送して完成した！" />
+      <Control name="MailSendFailed" text="メールを開発業者に発送できない、ネットワークの接続を検査してください！現在のソフトの目録にあるエラー報告Error.txtを開発業者に提供することを選択できる！" />
+      <Control name="Form_ErrorDetails" text="異常を記述する画面" />
+      <Control name="groupBox_Info" text="書いてください（選択できる）" />
+      <Control name="label_DiscoverPerson" text="問題を発見する人：" />
+      <Control name="label_Name" text="名前（企業）" />
+      <Control name="label_ConnectEmail" text="連絡アドレス：" />
+      <Control name="label_Service" text="問題を解決後にわれわれは迅速的にそのソフトの最新版を発送する" />
+      <Control name="label_Description" text="問題を記述：" />
+      <Control name="label_Recommend" text="推薦：" />
+      <Control name="label_FurtherDetails" text="問題が発生する時の背景、例え、使用する操作システム、そのソフトを操作するステプ等、問題の解決に大きく助ける" />
+      <Control name="crystalButton_SendEmail" text="発送" />
+      <Control name="crystalButton_SaveErrorAsTxt" text="エラー・データをドキュメントとして保存する" />
+      <Control name="crystalButton_Cancel" text="取り消す" />
+    </Controls>
+  </Form>
+</Resource>

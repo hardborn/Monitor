@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Nova.Control.DataGridViewBaseEx</name>
+    </assembly>
+    <members>
+        <member name="T:Nova.Control.DataGridViewBaseEx">
+            <summary>
+            该类用于突出体现列表中的单元格
+            </summary>
+        </member>
+    </members>
+</doc>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Resource>
+  <Form>
+    <Name>UC_WHControlConfig</Name>
+    <Controls>
+      <Control name="label_tip" text="Sélectionnez un seul écran pour configurer ,s'il vous plaît ! " />
+      <Control name="seperatePanel_ControlConfigInfoList" text="Table de l'information de contrôle " />
+      <Control name="button_add" text="Ajouter " />
+      <Control name="ToolStripMenuItem_add" text="Ajouter " />
+      <Control name="button_edit" text=" rédiger " />
+      <Control name="ToolStripMenuItem_edit" text=" rédiger " />
+      <Control name="button_delete" text="Supprimer" />
+      <Control name="ToolStripMenuItem_delete" text="Supprimer" />
+      <Control name="button_deleteAll" text="Supprimer la liste " />
+      <Control name="ToolStripMenuItem_deleteAll" text="Supprimer la liste " />
+      <Control name="crystalButton_OK" text="Confirmer" />
+    </Controls>
+  </Form>
+  <Form>
+    <Name>UC_WHControlConfig_String</Name>
+    <Controls>
+      <Control name="StrategyTypeStr" text="Type de contrôle " />
+      <Control name="Condition" text="L'état " />
+      <Control name="TemperatureStrategy" text="Température " />
+      <Control name="SmokeStrategy" text="Fumée " />
+      <Control name="AverageAlgorithm" text="La température moyenne " />
+      <Control name="MaxValueAlgorithm" text="La température maximale " />
+      <Control name="MSG_Delete" text="Êtes-vous sûr de vouloir supprimer la configuration choisie? " />
+      <Control name="MSG_DeleteAll" text="Etes-vous sûr de nettoyer toute la configuration? " />
+      <Control name="MSG_DeleteSuccess" text="Succès de Supprimer  " />
+      <Control name="MSG_DeleteFailed" text="Echec de Supprimer  " />
+      <Control name="SaveFailed" text="La sauvegarde a échoué " />
+      <Control name="SaveSuccess" text="Succès d'enregistrer" />
+    </Controls>
+  </Form>
+  <Form>
+    <Name>frm_WHControlConfig_Editor</Name>
+    <Controls>
+      <Control name="frm_WHControlConfig_Editor" text="Configuration de contrôle " />
+      <Control name="label_ControlType" text="Type de contrôle " />
+      <Control name="label_Tip" text="Remarque: la différence de température entre les stratégies ne peut pas être inférieure à 5 ℃!" />
+      <Control name="button_OK" text="Confirmer" />
+      <Control name="button_cancel" text="Supprimer" />
+    </Controls>
+  </Form>
+  <Form>
+    <Name>frm_WHControlConfig_Editor_String</Name>
+    <Controls>
+      <Control name="MSG_Tem_MinValueBiggerThanMax" text="La température la plus basse ne peut pas dépasser la température maximale " />
+      <Control name="MSG_Tem_ValueTooSimilar" text="La différence entre la température maximale et la valeur minimale de la température est d'au moins 5 ℃ " />
+      <Control name="MSG_Action_Illegal" text="Définition des mesures d'exécution efficaces " />
+      <Control name="MSG_Power_NotChoose" text="Sélectionnez la puissance souhaitée de " />
+      <Control name="MSG_ControlConfig_Repeat" text="Répétition de la politique, ne peut pas ajouter " />
+      <Control name="MSG_ControlConfig_Null" text="Objet de la stratégie est vide " />
+    </Controls>
+  </Form>
+  <Form>
+    <Name>UC_WHControlConfig_Tem</Name>
+    <Controls>
+      <Control name="label_And" text="Et " />
+      <Control name="seperatePanel_tem_action" text="Action " />
+      <Control name="groupBox_Brightness" text="Atténuation " />
+      <Control name="checkBox_Brightness" text="Atténuation " />
+      <Control name="label_BrightTo" text="Réglage de la luminosité " />
+      <Control name="groupBox_PwoerManager" text="Gestion de l'alimentation " />
+    </Controls>
+  </Form>
+  <Form>
+    <Name>UC_WHControlConfig_Smoke</Name>
+    <Controls>
+      <Control name="label_smokeCount" text="Le nombre de détecteurs de fumée armoire " />
+      <Control name="seperatePanel_smoke_action" text="Action " />
+    </Controls>
+  </Form>
+  <Form>
+    <Name>UC_PowerManager</Name>
+    <Controls>
+      <Control name="label_Open" text="Ouvert " />
+      <Control name="label_Close" text="Eteindre " />
+      <Control name="label_Still" text="Maintenir" />
+    </Controls>
+  </Form>
+  <Form>
+    <Name>UC_SmokeControlConfig</Name>
+    <Controls>
+      <Control name="groupBox_Power" text="Gestion de l'alimentation " />
+      <Control name="label_Close" text="Eteindre " />
+      <Control name="label_Still" text="Maintenir" />
+    </Controls>
+  </Form>
+</Resource>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Resource>
+  <Form>
+    <Name>Frm_RegistrationManager</Name>
+    <Controls>
+      <Control name="Frm_RegistrationManager" text="Inscrição" />
+      <Control name="userLabel" text="Usuário:" />
+      <Control name="refreshButton" text="Atualizar" />
+      <Control name="modifyRegistrationButton" text="Modificar as informações de registro" />
+      <Control name="ScreenNameColumn" text="Nome de Tela" />
+      <Control name="ScreenHeightColumn" text="Altura" />
+      <Control name="ScreenWidthColumn" text="Nome de Tela" />
+      <Control name="ScreenRegistationStateColumn" text="Estado de registo" />
+      <Control name="linkLabel_About" text="Sobre NovaiCare" />
+      <Control name="CareReadData" text="Por favor aguarde, a obtenção de dados registrado..." />
+    </Controls>
+  </Form>
+  <Form>
+    <Name>Frm_RegisterScreen</Name>
+    <Controls>
+      <Control name="Frm_RegisterScreen" text="Registro tela" />
+      <Control name="screenNameLabel" text="Dar o nome para seu tela" />
+      <Control name="userNameLabel" text="Digite seu nome de usuário" />
+      <Control name="registerButton" text="Registar" />
+      <Control name="Waiting_information" text="Por favor, aguarde, registrando ..."/>
+      <Control name="ScreenAlreadyExists" text="Tela registrado!" />
+      <Control name="AccountNotExist" text="Conta não existe!" />
+      <Control name="ScreenRegisteredSuccessfully" text="Registo com sucesso!" />
+      <Control name="ScreenReregister" text="Declaração:Mudando o usuário registrado,se quer continuar?" />
+      <Control name="SnEmpty" text="O apelido de tela não pode ser vazio!" />
+      <Control name="CareRegFailed" text="Falha de registo" />
+    </Controls>
+  </Form>
+  <Form>
+    <Name>UC_ScreenSummary</Name>
+    <Controls>
+      <Control name="screenLabel" text="Tela" />
+    </Controls>
+  </Form>
+</Resource>

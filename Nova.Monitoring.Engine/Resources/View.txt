@@ -1,0 +1,82 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>查看当前数据</title>
+    <style type="text/css">
+        body
+        {
+            font-family:Verdana;
+            font-size:small;
+        }
+		th{
+			background:#66a9bc;
+			font-size:16px;
+			padding-top:10px;
+			padding-bottom:10px;
+		}
+        td
+        {
+            padding:0px;
+        }
+        td.identity
+        {
+            background-color:#91c5d3;
+            width:500px;
+			font-weight:bold;
+			font-size:12px;
+			padding:3px 10px;
+        }
+        td.value
+        {
+			font-size:12px;
+            width:400px;
+			background:#d6e9f0;
+			padding:3px 10px;
+        }
+
+        table
+        {
+            border-collapse:collapse;
+            font-size:14;
+        }        
+    </style>    
+    <script language="javascript" type="text/javascript">
+
+        var xmlhttp;
+        function onload() {
+            setInterval("dowork()", 5000);
+        }
+
+        function onready() {
+            if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+                document.getElementById("list").innerHTML = xmlhttp.responseText;
+            }
+        }
+
+        function dowork() {
+
+            this.document.getElementById("time").innerHTML = Date().toLocaleString();
+
+            xmlhttp = new XMLHttpRequest();
+            xmlhttp.onreadystatechange = onready;
+
+			var url = "View?mode=table&time=" + new Date().getTime();
+            xmlhttp.open("GET", url, true);
+
+            xmlhttp.send(null);
+
+        }
+    </script>
+</head>
+<body onload="onload()">
+    <div>
+        <h1>
+            MonitorMangager© current data:
+        </h1>
+    </div>
+    <div id="list" class="data">
+    </div>
+    <div id="time" style="margin-top:20px">
+    </div>
+</body>
+</html>

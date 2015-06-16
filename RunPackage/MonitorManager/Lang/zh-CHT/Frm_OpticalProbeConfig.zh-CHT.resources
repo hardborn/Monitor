@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Resource>
+  <Form>
+    <Name>frm_OpticalProbeConfig</Name>
+    <Controls>
+      <Control name="frm_OpticalProbeConfig" text="光探頭配置" />
+      <Control name="mappingGroupBox" text="亮度映射表(環境亮度|屏體亮度)" />
+      <Control name="LedBrightnessColumn" text="屏體亮度(%)" />
+      <Control name="EnvironmentBrightnessColumn" text="環境亮度(Lux)" />
+      <Control name="DeleteButtonColumn_Text" text="刪除" />
+      <Control name="DeleteButtonColumn" text="操作" />
+      <Control name="opticalProbeGroupBox" text="光探頭配置表" />
+      <Control name="EnableColumn" text="是否啟用" />
+      <Control name="PositionColumn" text="位置" />
+      <Control name="CurrentBrightnessColumn" text="當前亮度值" />
+      <Control name="autoSectionButton" text="快速分段" />
+      <Control name="confirmButton" text="確定" />
+      <Control name="cancelButton" text="取消" />
+      <Control name="Getting_Opticalprobe_information" text="正在獲取光探頭資訊,請稍候..." />
+      <Control name="AddMappingItemButton" text="添加配置" />
+      <Control name="DisableGroupBox" text="" />
+      <Control name="enableCheckBox" text="讀取環境亮度失敗時,亮度調節到:" />
+      <Control name="refreshOpticalProbeCrystalButton" text="刷新" />
+      <Control name="label_CurrentLight" text="當前亮度" />
+      <Control name="RemarkColumn" text="備註" />
+      <Control name="NoSoftWareFail" text="無軟體失效" />
+      <Control name="inputbrightvalue" text="請輸入亮度值" />
+      <Control name="brightvalueDigital" text="亮度值必須為數位" />
+      <Control name="exitssamelightconfig" text="存在相同亮度配置" />
+      <Control name="nolightsensorconfig" text="沒有光探頭信息，無法測試！" />
+      <Control name="crystalButton_BrightTestStart" text="光探頭測試" />
+      <Control name="crystalButton_BrightTestStop" text="停止測試" />
+  </Controls>
+  </Form>  
+  <Form>
+    <Name>frm_AutoSection</Name>
+    <Controls>
+      <Control name="frm_AutoSection" text="快速分段配置" />
+      <Control name="sectionNumberlabel" text="分段數" />
+      <Control name="sectionConditionGroupBox" text="分段條件" />
+      <Control name="maxLabel" text="上限:" />
+      <Control name="minLabel" text="下限:" />
+      <Control name="environmentLabel" text="環境亮度" />
+      <Control name="ledLabel" text="屏體亮度" />
+      <Control name="confirmButton" text="確定" />
+      <Control name="cancelButton" text="取消" />
+      <Control name="errorTitle" text="錯誤" />
+      <Control name="ledBrightness_error01" text="屏體亮度最大值不能小於屏體亮度的最小值" />
+      <Control name="environmentBrightness_error01" text="環境亮度最大值不能小於環境亮度的最小值" />
+      <Control name="sectionRemarkLabel" text="之間的值按最大值和最小值分段線性調節" />
+    </Controls>
+  </Form>
+  <Form>
+    <Name>Frm_AddMappingItem</Name>
+    <Controls>
+      <Control name="Frm_AddMappingItem" text="添加映射項" />
+      <Control name="environmentLabel" text="環境亮度" />
+      <Control name="ledLabel" text="Led亮度" />
+      <Control name="confirmButton" text="確定" />
+      <Control name="cancelButton" text="取消" />
+      <Control name="errorTitle" text="錯誤" />
+      <Control name="error01" text="存在相同的環境亮度配置，請重新修改" />
+    </Controls>
+  </Form>
+</Resource>

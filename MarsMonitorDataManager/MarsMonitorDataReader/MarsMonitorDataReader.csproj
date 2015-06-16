@@ -1,0 +1,186 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{D81AA7E1-52C6-4492-AAC4-9B6D9DD365C2}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Nova.Monitoring.MarsMonitorDataReader</RootNamespace>
+    <AssemblyName>Nova.Monitoring.MarsMonitorDataReader</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>TRACE;DEBUG</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>TRACE;DEBUG</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="GalaSoft.MvvmLight.Extras.WPF4, Version=3.0.0.19993, Culture=neutral, PublicKeyToken=1673db7d5906b0ad, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Lib\Third-Party Lib\GalaSoft.MvvmLight.Extras.WPF4.dll</HintPath>
+    </Reference>
+    <Reference Include="GalaSoft.MvvmLight.WPF4, Version=3.0.0.19994, Culture=neutral, PublicKeyToken=63eb5c012e0b3c1c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Lib\Third-Party Lib\GalaSoft.MvvmLight.WPF4.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=4.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Lib\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="Nova.Algorithms.CheckCodes.MD5, Version=1.0.1309.301, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Lib\Nova.Algorithms.CheckCodes.MD5.dll</HintPath>
+    </Reference>
+    <Reference Include="Nova.Equipment.Protocol.TGProtocol">
+      <HintPath>..\..\Lib\Nova.Equipment.Protocol.TGProtocol.dll</HintPath>
+    </Reference>
+    <Reference Include="Nova.IO.Port.ICommProcessorBase">
+      <HintPath>..\..\Lib\Nova.IO.Port.ICommProcessorBase.dll</HintPath>
+    </Reference>
+    <Reference Include="Nova.LCT.GigabitSystem.CommonInfoAccessor, Version=1.0.1405.701, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Lib\Nova.LCT.GigabitSystem.CommonInfoAccessor.dll</HintPath>
+    </Reference>
+    <Reference Include="Nova.LCT.GigabitSystem.DataClass">
+      <HintPath>..\..\Lib\Nova.LCT.GigabitSystem.DataClass.dll</HintPath>
+    </Reference>
+    <Reference Include="Nova.LCT.GigabitSystem.HardwareCaculator">
+      <HintPath>..\..\Lib\Nova.LCT.GigabitSystem.HardwareCaculator.dll</HintPath>
+    </Reference>
+    <Reference Include="Nova.LCT.GigabitSystem.HardwareFiles">
+      <HintPath>..\..\Lib\Nova.LCT.GigabitSystem.HardwareFiles.dll</HintPath>
+    </Reference>
+    <Reference Include="Nova.LCT.GigabitSystem.HWMonitorDisplay">
+      <HintPath>..\..\Lib\Nova.LCT.GigabitSystem.HWMonitorDisplay.dll</HintPath>
+    </Reference>
+    <Reference Include="Nova.LCT.GigabitSystem.HWPointDetect, Version=1.0.1412.201, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Lib\Nova.LCT.GigabitSystem.HWPointDetect.dll</HintPath>
+    </Reference>
+    <Reference Include="Nova.LCT.GigabitSystem.HWStatusMonitor">
+      <HintPath>..\..\Lib\Nova.LCT.GigabitSystem.HWStatusMonitor.dll</HintPath>
+    </Reference>
+    <Reference Include="Nova.LCT.GigabitSystem.LEDConfigAccessor">
+      <HintPath>..\..\Lib\Nova.LCT.GigabitSystem.LEDConfigAccessor.dll</HintPath>
+    </Reference>
+    <Reference Include="Nova.LCT.GigabitSystem.Monitor.FunctionCardOutDeviceMonitor">
+      <HintPath>..\..\Lib\Nova.LCT.GigabitSystem.Monitor.FunctionCardOutDeviceMonitor.dll</HintPath>
+    </Reference>
+    <Reference Include="Nova.LCT.GigabitSystem.ProtocolEnum">
+      <HintPath>..\..\Lib\Nova.LCT.GigabitSystem.ProtocolEnum.dll</HintPath>
+    </Reference>
+    <Reference Include="Nova.LCT.GigabitSystem.ReadSenderDVI">
+      <HintPath>..\..\Lib\Nova.LCT.GigabitSystem.ReadSenderDVI.dll</HintPath>
+    </Reference>
+    <Reference Include="Nova.LCT.GigabitSystem.SupperDisplayConstruct, Version=1.0.1201.1501, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Lib\Nova.LCT.GigabitSystem.SupperDisplayConstruct.dll</HintPath>
+    </Reference>
+    <Reference Include="Nova.LCT.LCTServerBaseProxy">
+      <HintPath>..\..\Lib\Nova.LCT.LCTServerBaseProxy.dll</HintPath>
+    </Reference>
+    <Reference Include="Nova.LCT.LCTServerMessageProxy">
+      <HintPath>..\..\Lib\Nova.LCT.LCTServerMessageProxy.dll</HintPath>
+    </Reference>
+    <Reference Include="Nova.Message.Common, Version=2.0.1404.2801, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Lib\Nova.Message.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Nova.Runtime.Serialization.DataAccessor">
+      <HintPath>..\..\Lib\Nova.Runtime.Serialization.DataAccessor.dll</HintPath>
+    </Reference>
+    <Reference Include="Nova.Xml.Serialization.XmlSerializableObject">
+      <HintPath>..\..\Lib\Nova.Xml.Serialization.XmlSerializableObject.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CommonData.cs" />
+    <Compile Include="HWMonitorDataReader.cs" />
+    <Compile Include="MarsHWMonitorDataReader_Auto.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Log4NetLibrary\Log4NetLibrary.csproj">
+      <Project>{4ff0e08a-3d8d-4474-985a-735ecd13dd92}</Project>
+      <Name>Log4NetLibrary</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Nova.Monitoring.Common\Nova.Monitoring.Common.csproj">
+      <Project>{69888dc3-a01b-408c-966f-9d996a75392c}</Project>
+      <Name>Nova.Monitoring.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CommandParser\CommandParser.csproj">
+      <Project>{e178287e-c9b7-4dfe-964e-a1963f943a6e}</Project>
+      <Name>CommandParser</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\HardwareMonitorInterface\HardwareMonitorInterface.csproj">
+      <Project>{951d3cc3-76c1-454b-80cd-b89d390065ec}</Project>
+      <Name>HardwareMonitorInterface</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Version.txt" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

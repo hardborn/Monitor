@@ -1,0 +1,804 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Resource>
+  <Form>
+    <Name>Frm_MonitorDisplayMain</Name>
+    <Controls>
+      <Control name="Frm_MonitorDisplayMain" text="MonitorSite" />
+      <Control name="crystalButton_MonitorRefresh" text="モニターリフレッシュ" />
+      <Control name="crystalButton_Regist" text="登録" />
+      <Control name="crystalButton_Config" text="配置" />
+      <Control name="groupbox_scalingrate" text="大きさの調整" />
+      <Control name="seperatePanel_StatisticsInfo" text="統計情報" />
+      <Control name="seperatePanel_FaultAlarmInfo" text="故障(警告)情報" />
+      <Control name="label_PeriodS" text="秒" />
+      <Control name="label_TimeS" text="秒" />
+      <Control name="label_LastUpdateTime" text="現在モニタリングデータ獲得時間:" />
+      <Control name="FrmText" text="監視システム制御" />
+      <Control name="NotConnectSystem" text="現在制御システムが接続されていないです!" />
+      <Control name="tabStripButton_FaultInfo" text="故障(警告)情報" />
+      <Control name="tabStripButton_OperateInfo" text="対話型情報" />
+      <Control name="toolStripStatusLabel_Status" text="Care状態:獲得中" />
+    </Controls>
+  </Form>
+  <Form>
+    <Name>Frm_MonitorMain</Name>
+    <Controls>
+      <Control name="toolStripMenuItem_OpenMain" text="ユーザのインタフェースを開く（&amp;O）" />
+      <Control name="ToolStripMenuItem_Exit" text="ログアウト(&amp;Q)" />
+      <Control name="toolStripMenuItem_ClosedTitle" text="監視を閉鎖すれば、知能光度の調節に影響されるため、監視を閉めるんですか?" />
+      <Control name="toolStripMenuItem_OpenBrightAllConfig" text="輝度高級配置" />
+      <Control name="notifyIcon" text="監視ターミナルプラットフォーム" />
+      <Control name="Screen" text="スクリン" />
+      <Control name="toolStripMenuItem_ReReadScreen" text="再読み込み画面" />
+    </Controls>
+  </Form>
+  <Form>
+    <Name>Frm_MonitorConfigManager</Name>
+    <Controls>
+      <Control name="Frm_MonitorConfigManager" text="監視ターミナル--配置" />
+      <Control name="label_ScreenSelected" text="画面を選択:" />
+      <Control name="crystalButton_RefreshConfig" text="周期リフレッシュ" />
+      <Control name="crystalButton_HWConfig" text="ハードウェア配置" />
+      <Control name="crystalButton_MonitorCardPowerConfig" text="周辺電源配置" />
+      <Control name="crystalButton_DataAltarmConfig" text="データ警告配置" />
+      <Control name="crystalButton_ControlConfig" text="制御配置" />
+      <Control name="crystalButton_CareRegisterConfig" text="Careサービス管理" />
+      <Control name="crystalButton_BrightnessConfig" text="光度の調節" />
+      <Control name="crystalButton_ControlLog" text="制御日記" />
+      <Control name="crystalButton_NotifySetting" text="メール配置" />
+      <Control name="crystalButton_EMailLog" text="メール日誌" />
+    </Controls>
+  </Form>
+  <Form>
+    <Name>Frm_MonitorStatusDisplayInfo_Status</Name>
+    <Controls>
+      <Control name="StartReadMonitorData" text="監視データを読みはじめ…" />
+      <Control name="StartReadDVIData" text="DVIデータを読みはじめ…" />
+      <Control name="StartRetryReadSenderData" text="発送カードのデータを再び読みはじめ…" />
+      <Control name="GetDVIDataFinish" text="DVI、データ読み取り完成、解釈し始め…" />
+      <Control name="ParsingDVIDataFinish" text="DVIデータ処理完成" />
+      <Control name="StartReadScannerData" text="受信カードのデータを読みはじめ・・・" />
+      <Control name="GetScannerDataFinish" text="受信カードのデータ読み込み完成、解釈はじめ・・・" />
+      <Control name="ParsingScannerData" text="受信カードのデータを解析…" />
+      <Control name="ParsingMonitorData" text="監視カードのデータを解析…" />
+      <Control name="ParsingScannerDataFinish" text="受付カードの常軌データ読み込み完成…" />
+      <Control name="ReadMonitoringSuccess" text="監視データ獲得完成" />
+      <Control name="ReadMonitoringFailed" text="監視データ獲得完成" />
+      <Control name="OnInitialize" text="データソース初期設定はじめ…" />
+      <Control name="HWOnInitialize" text="ハードウェアの初期設定はじめ…" />
+      <Control name="OnInitializeSuccess" text="データソース初期設定成功…" />
+      <Control name="HWOnInitializeFailed" text="ハードウェアの初期設定失敗…" />
+      <Control name="BusyWorking" text="読み失敗:ハードウェアが忙しい…" />
+      <Control name="NoScreenInfo" text="読み失敗:画面データがない…" />
+      <Control name="CareLineStatusOK" text="Care状態:オンライン" />
+      <Control name="CareLineStatusNG" text="Care状態:オフライン" />
+      <Control name="BeginReadSBData" text="監視受信カードデータを読みはじめ:" />
+      <Control name="CompleteReadSBData" text="監視受信カードのジャンボを読む終了:" />
+      <Control name="NoMonitorConfig" text="読み失敗:いいえハードウェア構成ません" />
+    </Controls>
+  </Form>
+  <Form>
+    <Name>Frm_MonitorStatusDisplayInfo</Name>
+    <Controls>
+      <Control name="AllScreen" text="すべての画面" />
+      <Control name="Frm_MonitorDisplayMain" text="監視ターミナル-データ展示" />
+      <Control name="groupbox_scalingrate" text="大きさの調整" />
+      <Control name="seperatePanel_StatisticsInfo" text="統計情報" />
+      <Control name="seperatePanel_FaultAlarmInfo" text="故障(警告)情報" />
+      <Control name="label_PeriodS" text="秒" />
+      <Control name="label_TimeS" text="秒" />
+      <Control name="label_LastUpdateTime" text="現在監視データ獲得時間" />
+      <Control name="FrmText" text="制御システムの監視" />
+      <Control name="NotConnectSystem" text="現在未連結制御システム" />
+      <Control name="tabStripButton_FaultInfo" text="故障(警告)情報" />
+      <Control name="tabStripButton_OperateInfo" text="対話型情報" />
+      <Control name="ReadResIs" text="監視情報読み終了" />
+      <Control name="RefreshThreadIsPause" text="受信カード状態のリフレッシュがしばらく止まる!" />
+      <Control name="Successed" text="成功！" />
+      <Control name="Failed" text="失敗！" />
+      <Control name="IsBeginReadMonitorInfo" text="監視情報を読むはじめ…" />
+      <Control name="Screen" text="スクリーン" />
+      <Control name="SBStatus" text="受信カード状態" />
+      <Control name="MCStatus" text="監視カード状態" />
+      <Control name="Temperature" text="温度" />
+      <Control name="Humidity" text="湿度" />
+      <Control name="Smoke" text="煙幕" />
+      <Control name="Fan" text="扇風機" />
+      <Control name="Power" text="電源" />
+      <Control name="RowLine" text="箱" />
+      <Control name="GeneralStatus" text="箱の門の状態" />
+      <Control name="AllInfo" text="全部" />
+      <Control name="SenderStatus" text="発送カード状態" />
+      <Control name="None" text="無" />
+      <Control name="SenderName" text="発送カード" />
+      <Control name="PortName" text="ネットワーク・ポート" />
+      <Control name="ScanBoard" text="受信カード" />
+      <Control name="beginReadInfoStr" text="監視情報の読みはじめ……" />
+      <Control name="beginReadDVIStr" text=":DVI情報読みはじめ……" />
+      <Control name="ReadDVIInfoResIs" text="DVI情報読み込み終了" />
+      <Control name="IsBeginReadDVIInfo" text="DVI情報読みはじめ……" />
+      <Control name="DisplayPowerOffNotification" text="ディスプレー電源オフ通知" />
+      <Control name="FuncCardName" text="多機能カード" />
+      <Control name="PowerSwitch1" text="第" />
+      <Control name="PowerSwitch2" text="道" />
+      <Control name="YesStr" text="はい" />
+      <Control name="NoStr" text="いいえ" />
+      <Control name="SmokeCtrlStr" text="煙箱" />
+      <Control name="BrightDecreaseStr" text="光度を下げる" />
+      <Control name="RestoreBrightStr" text="光度を回復" />
+      <Control name="ShutOffForScreen" text="ディスプレー電源オフ" />
+      <Control name="OpenCoolingDevice" text="冷却装備を開く" />
+      <Control name="CloseCoolingDevice" text="冷却装備を切る" />
+      <Control name="ViewPowerDetaiInfoStr" text="点検" />
+      <Control name="SendNotifyEmail" text="停電後メールを発送して通知" />
+      <Control name="TemperatureControl" text="温度制御" />
+      <Control name="SmokeControl" text="煙幕制御" />
+      <Control name="AllScreenInfo" text="全部" />
+      <Control name="CabinetCntUnit" text="個" />
+      <Control name="EmailNotifyInfoException" text="メール配置情報異常" />
+      <Control name="AddButtonText1" text="添加" />
+      <Control name="AddButtonText2" text="確認" />
+      <Control name="ExitButtonText1" text="ログアウト" />
+      <Control name="ExitButtonText2" text="キャンセル" />
+      <Control name="AddConfigInfoFrmText1" text="一つの制御情報を添加" />
+      <Control name="AddConfigInfoFrmText2" text="制御情報を編集" />
+      <Control name="PleaseSelectPowerToCtrl" text="制御しなければならない電源を添加してください!" />
+      <Control name="TempIntervalLessThanMin" text="制御する際の温度閾値は制御を回復する温度閾値よりは大きいはずだ" />
+      <Control name="ControlContent" text="内容" />
+      <Control name="EmailNotify" text="通知" />
+      <Control name="DisplayNumber" text="ディスプレー順位" />
+      <Control name="ModifyInformation" text="修正" />
+      <Control name="RemoveInformation" text="削除" />
+      <Control name="PowerListDetailInfo" text="詳しい情報" />
+      <Control name="CanNotAddSameScreenSameTempCtrlInfo" text="添加の失敗、このディスプレーは一つの温度制御情報が存在する!" />
+      <Control name="CanNotAddSameScreenSameSmokeAlarmCtrlInfo" text="添加失敗、このディスプレーは一つの煙幕制御情報が存在する!" />
+      <Control name="AddCtrlInfoSucceed" text="制御情報を添加するのに成功!" />
+      <Control name="AfterEditSameScreenHasSameTempCtrlInfo" text="添加の失敗、このディスプレーは一つの温度制御情報が存在する!" />
+      <Control name="AfterEditSameScreenHasSameSmokeAlarmCtrlInfo" text="添加失敗、このディスプレーは一つの煙幕制御情報が存在する!" />
+      <Control name="AreYouSureToRemoveSelectedItem" text="選択項目を削除しますか？" />
+      <Control name="MonitorCtrlListIsEmpty" text="制御情報図表が空いている、添加してください!" />
+      <Control name="AreYouSureDealWithAllError" text="すべての故障を処理しましたか？" />
+      <Control name="LoadLogFailed" text="日誌をロードするのに失敗！" />
+      <Control name="CurHasNoFuncCard" text="現在、多機能カードを配置しなかった、電源がない!" />
+      <Control name="IsConfigEmailInfo" text="現在どのようなメール通知情報も配置しなかった、配置しますか？" />
+      <Control name="Time" text="時間" />
+      <Control name="DisplayName" text="ディスプレーの名称" />
+      <Control name="ControlInfo" text="制御情報" />
+      <Control name="CtrlResult" text="結果" />
+      <Control name="Frm_ComplexScreenDisplayText" text="複雑なディスプレー監視データを見ること" />
+      <Control name="ColsHeaderTextInfo" text="情報" />
+      <Control name="ColsHeaderTextSenderIndex" text="発送カード" />
+      <Control name="ColsHeaderTextPortIndex" text="ネットワーク・ポート" />
+      <Control name="ColsHeaderTextSBIndex" text="受信カード" />
+      <Control name="ColsHeaderTextStartX" text="開始X" />
+      <Control name="ColsHeaderTextStartY" text="開始Y" />
+      <Control name="ColsHeaderTextWidth" text="幅" />
+      <Control name="ColsHeaderTextHeight" text="高さ" />
+      <Control name="DisplayTypePowerValue" text="電圧値" />
+      <Control name="Normal" text="正常" />
+      <Control name="Error" text="故障" />
+      <Control name="Alarm" text="警告" />
+      <Control name="Unknown" text="未知" />
+      <Control name="Invalid" text="無効" />
+      <Control name="VoltageAlarm" text="電圧異常" />
+      <Control name="RowColNameStr" text="行、列" />
+      <Control name="SBCount" text="受信カード数" />
+      <Control name="FaultSBCount" text="故障した受信カード数" />
+      <Control name="AlarmSBCount" text="電圧が異常な受信カード数" />
+      <Control name="FanCount" text="扇風機数" />
+      <Control name="AlarmFanCount" text="警告する扇風機数" />
+      <Control name="PowerCount" text="電源数" />
+      <Control name="AlarmPowerCount" text="警告する電源数" />
+      <Control name="LowestTemp" text="最低温度" />
+      <Control name="HighestTemp" text="最高温度" />
+      <Control name="AverageTemp" text="平均温度" />
+      <Control name="OverAverageTempCnt" text="平均温度を超えた受信カード数量" />
+      <Control name="TempAlarmCount" text="煙幕警告する受信カード数量" />
+      <Control name="SmokeAlarmSBCount" text="温度警告する受信カード数量" />
+      <Control name="LowestHumi" text="最小湿度" />
+      <Control name="HighestHumi" text="最高湿度" />
+      <Control name="AverageHumi" text="平均湿度" />
+      <Control name="OverAverageHumiCnt" text="湿度警告する受信カード数量" />
+      <Control name="HumidityAlarmCount" text="平均湿度を超える受信カード数量" />
+      <Control name="CabinetCount" text="箱数" />
+      <Control name="CabinetFaultCount" text="故障した箱数" />
+      <Control name="MCCount" text="監視カード数" />
+      <Control name="FaultMCCount" text="故障した監視カード数" />
+      <Control name="AlarmMCCount" text="電圧が異常な受信カード数" />
+      <Control name="CabinetCntOfOpenDoor" text="箱の門が開ける箱数" />
+      <Control name="SwitchSignSBVoltage" text="受信カードオンボード電圧" />
+      <Control name="SwitchSignMCSelefVoltage" text="監視カードオンボード電圧" />
+      <Control name="SwitchSignMCVoltage" text="監視カード電圧" />
+      <Control name="SupplyVoltage" text="供給電圧" />
+      <Control name="DoorOpen" text="開ける" />
+      <Control name="DoorClose" text="閉じる" />
+      <Control name="SwitchName" text="道数" />
+      <Control name="CommPortScreen" text="スクリーン" />
+      <Control name="DoubleClickToViewInfo" text="詳細情報:ダブルクリックして点検してください!" />
+      <Control name="ScreenNotExist" text="存在しない!" />
+      <Control name="FaultInformation" text="故障情報" />
+      <Control name="NotConnectMC" text="監視カードに連結していなかった" />
+      <Control name="SoketName" text="コンセント" />
+      <Control name="GroupName" text="データグループの数" />
+      <Control name="ScanSignalName" text="スキャニング" />
+      <Control name="SignalName" text="信号" />
+      <Control name="RGBSignalStrR" text="赤信号" />
+      <Control name="RGBSignalStrG" text="緑信号" />
+      <Control name="RGBSignalStrB" text="紺色信号" />
+      <Control name="RGBSignalStrVR" text="模擬赤信号" />
+      <Control name="CelsiusUnit" text="℃" />
+      <Control name="FahrenheitUnit" text="℉" />
+      <Control name="SenderDVI" text="発送カード" />
+      <Control name="ScreenName" text="スクリーンの名称" />
+      <Control name="Count" text="数量" />
+      <Control name="FaultInfo" text="故障情報" />
+      <Control name="AlarmInfo" text="警告情報" />
+      <Control name="CommPortName" text="通信ポート" />
+      <Control name="ClickViewSBStatusFaultAlarmInfo" text="クリックして受信カードの故障(警告)状態情報を検定する!" />
+      <Control name="ClickViewTempFaultAlarmInfo" text="クリックして温度の故障(警告)状態情報を検定する!" />
+      <Control name="ClickViewHumiFaultAlarmInfo" text="クリックして湿度の故障(警告)状態情報を検定する!" />
+      <Control name="ClickViewSmokeFaultAlarmInfo" text="クリックして煙幕の故障(警告)状態情報を検定する!" />
+      <Control name="ClickViewFanFaultAlarmInfo" text="クリックして扇風機の故障(警告)状態情報を検定する!" />
+      <Control name="ClickViewPowerFaultAlarmInfo" text="クリックして電源の故障(警告)状態情報を検定する!" />
+      <Control name="ClickViewMCStatusFaultAlarmInfo" text="クリックして監視カードの故障(警告)状態情報を検定する!" />
+      <Control name="ClickViewRowLineFaultAlarmInfo" text="クリックして箱の故障(警告)状態情報を検定する!" />
+      <Control name="ClickViewGeneralStatusFaultAlarmInfo" text="クリックして箱の扉の故障(警告)状態情報を検定する!" />
+      <Control name="ClickViewSenderDVIFaultAlarmInfo" text="クリックして発送カードの故障(警告)状態情報を検定する!" />
+      <Control name="label_OK" text="正常" />
+      <Control name="label_SecderError" text="発送カード故障" />
+      <Control name="label_DVIException" text="DVI信号異常" />
+      <Control name="label_Unknown" text="未知" />
+      <Control name="DVISignalOK" text="DVI信号:正常" />
+      <Control name="DVISignalException" text="DVI信号:異常" />
+      <Control name="DVISignalUnkonwn" text="DVI信号:未知" />
+      <Control name="RefreshRate" text="リフレッシュ率" />
+      <Control name="AllDisplayMonitorConfigSameStr" text="すべてのディスプレーが統一的にリフレッシュ設置を進める" />
+      <Control name="AllDisplayMonitorConfigDifferentStr" text="各ディスプレーが分別的にリフレッシュ設置を進める" />
+      <Control name="EmailAddrError" text="メールボックスアドレスの格式が違う!" />
+      <Control name="EmailAddrNotNull" text="メールボックスの暗証番号は空いては行けない!" />
+      <Control name="SMTPServerNotNull" text="SMTPサーバは空いては行けない!" />
+      <Control name="EmailPortError" text="ポートの格式が違う!" />
+      <Control name="ReceiverNameNotNull" text="受信者声明が空いては行けない!" />
+      <Control name="AddReceivers" text="添加" />
+      <Control name="ModifyReceivers" text="修正" />
+      <Control name="SelectEditReceiver" text="編集する受信者を選択してください!" />
+      <Control name="SelectDeleteReceiver" text="削除する受信者を選択してください!" />
+      <Control name="SureDeleteReceiver" text="選択した受信者を削除しますか？" />
+      <Control name="ReceiverName" text="姓名" />
+      <Control name="EmailAddr" text="メールボックス" />
+      <Control name="dateLogNotExist" text="日付を選択した日誌が存在しない!" />
+      <Control name="SureToDeleteLog" text="日付を選択した日誌を削除しますか？" />
+      <Control name="DeleteLogSuccessful" text="日誌削除成功!" />
+      <Control name="DeleteLogFailed" text="日誌削除の失敗、再びチャレンジーしてください!" />
+      <Control name="NotifyDate" text="通知の日付" />
+      <Control name="ErrorScreen" text="故障ディスプレイ" />
+      <Control name="EmailReceiver" text="受信者" />
+      <Control name="MsgTitle" text="タイトル" />
+      <Control name="MsgContent" text="通知内容" />
+      <Control name="MsgStatus" text="メール状態" />
+      <Control name="EmailSended" text="既に発送" />
+      <Control name="EmailFailed" text="失敗" />
+      <Control name="EmailSucceed" text="成功！" />
+      <Control name="MonitorErrorNotification" text="監視故障通知" />
+      <Control name="NotificationModel" text="メール発送モードを選択してください!" />
+      <Control name="MonitorSytstemRecoverNotification" text="監視システムの復旧通知" />
+      <Control name="SystemRefreshRecord" text="システム施行データ" />
+      <Control name="MonitorMessageNotification" text="システムはすでに正常に復旧!" />
+      <Control name="ApplyEmailCfgFailed" text="応用設置の失敗、再びチャレンジーしてください!" />
+      <Control name="EmailErrorInfo" text="故障情報:" />
+      <Control name="EmailSenderDviError" text="発送カードDVI異常:" />
+      <Control name="SenderCardUnkonwn" text="発送カード:発送カード故障" />
+      <Control name="EmailScannerError" text="受信カード故障:" />
+      <Control name="EmailTemperatureError" text="温度故障:" />
+      <Control name="EmailHumidityError" text="湿度故障:" />
+      <Control name="EmailSmokeError" text="煙幕故障:" />
+      <Control name="EmailFanError" text="扇風機故障:" />
+      <Control name="EmailPowerError" text="電源故障:" />
+      <Control name="EmailMCCardError" text="監視カード故障:" />
+      <Control name="EmailFlatCableError" text="箱の状態の故障:" />
+      <Control name="EmailCableDoorError" text="箱の扉故障" />
+      <Control name="EmailAlarmInfo" text="警告の情報:" />
+      <Control name="EmailScannerAlarm" text="受信カード警告:" />
+      <Control name="EmailTemperatureAlarm" text="温度警告:" />
+      <Control name="EmailHumidityAlarm" text="湿度警告:" />
+      <Control name="EmailSmokeAlarm" text="煙幕警告:" />
+      <Control name="EmailFanAlarm" text="扇風機警告:" />
+      <Control name="EmailPowerAlarm" text="電源警告:" />
+      <Control name="EmailMCCardAlarm" text="監視カード警告:" />
+      <Control name="EmailFlatCableAlarm" text="箱状態警告:" />
+      <Control name="EmailCableDoorAlarm" text="開けている箱の扉" />
+      <Control name="EmailGreetings" text="こんにちは:" />
+      <Control name="EmailAlarmDealWith" text="直ちに現場に行って故障と警告を処理してください!" />
+      <Control name="CurNotifyTimes" text="現在故障通知次数:" />
+      <Control name="MaxNotifyTimes" text="最大通知次数" />
+      <Control name="DataName" text="名称" />
+      <Control name="DataTime" text="次数" />
+      <Control name="SystemRefeshIndex" text="システムリフレッシュ" />
+      <Control name="SenderErrCount" text="発送カード故障:" />
+      <Control name="HighTempType" text="最高温度" />
+      <Control name="AverageTempType" text="平均温度" />
+      <Control name="PortNormal" text="ネットワークポート:正常" />
+      <Control name="PortRedundant" text="ネットワークポート:重複" />
+      <Control name="PortUnknown" text="ネットワークポート:未知" />
+      <Control name="RedundantStateCount" text="重複の数:" />
+      <Control name="SenderCard" text="発送カード" />
+      <Control name="Port" text="ネットワークポート" />
+      <Control name="RedundantState" text="：重複" />
+      <Control name="RedundantStateMsg" text="重複データ" />
+      <Control name="MasterSenderPort" text="メインネットワークポート:発送カード" />
+      <Control name="DectCtrlInfoOverLappingOne" text="添加の失敗、現在の温度範囲と第" />
+      <Control name="DectCtrlInfoOverLappingTwo" text="行の温度範囲は重複してはない!" />
+      <Control name="DectCtrlInfoOverOne" text="添加の失敗、現在定義した温度値と第" />
+      <Control name="DectCtrlInfoOverTwo" text="行の温度値の間隔は5より小さくてはない!" />
+      <Control name="DectModificationCtrlInfoOverLappingOne" text="修正の失敗、現在定義した温度値と第" />
+      <Control name="DectModificationCtrlInfoOverOne" text="修正の失敗、現在の温度範囲と第" />
+      <Control name="CtrlThresholdInputError" text="&lt;温度範囲&gt;所の最初の温度値は、2番目の温度値より小さいはずだ!" />
+      <Control name="ColScreenTip" text="スクリーンの名称" />
+      <Control name="ColSenderTip" text="発送カード" />
+      <Control name="ColSBStatusTip" text="受信カード状態" />
+      <Control name="ColTemperatureTip" text="温度" />
+      <Control name="ColMControlTip" text="監視カード状態" />
+      <Control name="ColHumidityTip" text="湿度" />
+      <Control name="ColSmokeWarnTip" text="煙幕" />
+      <Control name="ColFanSpeedTip" text="扇風機" />
+      <Control name="ColValtageTip" text="電源" />
+      <Control name="ColRowLineStatusTip" text="ケーブルの状態" />
+      <Control name="ColGeneralStatusTip" text="箱の扉の状態" />
+      <Control name="ColCareStatusTip" text="Care状態" />
+      <Control name="Frm_MonitorDisplayMainText" text="監視ターミナル-データを展示" />
+      <Control name="Frm_MonitorDisplayMainTextNoData" text="(画面データを獲得している...)" />
+      <Control name="RefreshDataFailed" text="データを新たに直すのに失敗、再びチャレンジーしてください!" />
+      <Control name="ManualRefreshTitle" text="監視データを再び獲得している、しばらくお待ちください…" />
+      <Control name="ColConTextTip" text="詳細はこちら" />
+    </Controls>
+  </Form>
+  <Form>
+    <Name>Frm_SmartBrightness</Name>
+    <Controls>
+      <Control name="Frm_SmartBrightness" text="知能光度調節" />
+      <Control name="crystalButton_Cancel" text="キャンセル" />
+      <Control name="label_ScreenSelected" text="画面を選択:" />
+    </Controls>
+  </Form>
+  <Form>
+    <Name>Frm_SmartBrightness_String</Name>
+    <Controls>
+      <Control name="GetSNValue" text="画面のSNデータを獲得している... " />
+      <Control name="GetSNFailed" text="画面のSNデータを獲得するのに失敗:監視中にこのスクリーンの情報が存在しない" />
+    </Controls>
+  </Form>
+  <Form>
+    <Name>UC_CycleConfig</Name>
+    <Controls>
+      <Control name="seperatePanel_AutoRefresh" text="周期リフレッシュ" />
+      <Control name="seperatePanel_CountSetting" text="再び読む次数設置" />
+      <Control name="checkBox_AutoRefresh" text="自動リフレッシュ" />
+      <Control name="label_RefreshPeriod" text="周期リフレッシュ:" />
+      <Control name="label_RetryTimes" text="状態読む時失敗時再び読む次数:" />
+      <Control name="label_Count" text="次数" />
+      <Control name="crystalButton_RecommendTime" text="推薦周期" />
+      <Control name="crystalButton_OK" text="保存" />
+    </Controls>
+  </Form>
+  <Form>
+    <Name>UC_CycleConfig_String</Name>
+    <Controls>
+      <Control name="SaveCycleConfig" text="周期配置を保存している、しばらくお待ちください…" />
+      <Control name="CycleConfigSuccess" text="周期保存成功!" />
+      <Control name="CycleConfigFailed" text="周期保存失敗!" />
+      <Control name="CycleRefreshTime" text="周期推薦の配置を獲得している、しばらくお待ちください…" />
+      <Control name="CycleRefreshTimeTitle" text="時間のジュンフヮクソンを獲得するため、自動執行を停止して保存した後、再びチャレンジーしてください…" />
+    </Controls>
+  </Form>
+  <Form>
+    <Name>UC_CareServerConfig</Name>
+    <Controls>
+      <Control name="label_CareUser" text="ユーザ:" />
+      <Control name="crystalButton_RefreshUser" text="リフレッシュ" />
+      <Control name="crystalButton_OK" text="登録" />
+      <Control name="label_Disclaimer" text="新しいユーザとすでに登録した使用者が衝突ができるとき新しいユーザが、直ちに発効して通知しない。" />
+    </Controls>
+  </Form>
+  <Form>
+    <Name>UC_CareServerConfig_String</Name>
+    <Controls>
+      <Control name="ScreenAlreadyExists" text="画面がすでに登録されている!" />
+      <Control name="AccountNotExist" text="アカウントが存在しない!" />
+      <Control name="ScreenRegisteredSuccessfully" text="登録成功!" />
+      <Control name="ScreenReregister" text="免責声明:登録ユーザーが変更になった、継続しますか？" />
+      <Control name="SnEmpty" text="画面のニックネームが空いてはいけない!" />
+      <Control name="CareRegFailed" text="登録失敗" />
+      <Control name="CareReadData" text="登録データが獲得している、しばらく後に、しばらくお待ちください…" />
+      <Control name="SaveCareServerConfig" text="登録しているところです、しばらくお待ちください…" />
+      <Control name="ScreenSN" text="画面ID" />
+      <Control name="SnAlia" text="画面のニックネーム" />
+      <Control name="Longitude" text="緯度" />
+      <Control name="Latitude" text="緯度" />
+      <Control name="MapName" text="地図" />
+      <Control name="Width" text="幅" />
+      <Control name="Height" text="高さ" />
+      <Control name="CareStatus" text="登録状態" />
+      <Control name="ScreenMsg" text="スクリーン情報" />
+      <Control name="PowerControlTipDuplicate" text="名前が重複してはいけない" />
+      <Control name="PowerControlTipEmpty" text="名前が空いていてはいけない" />
+      <Control name="SendCard" text="発送カード" />
+      <Control name="ReceiverCard" text="受信カード" />
+      <Control name="MonitoringCard" text="監視カード" />
+      <Control name="PowerControlTipLength" text="20以上のバイト長の名前を許可しない" />
+      <Control name="PowerControlTipNoVertical" text="名前は縦棒が含まれないようにしてください" />
+    </Controls>
+  </Form>
+  <Form>
+    <Name>UC_DataAlarmConfig</Name>
+    <Controls>
+      <Control name="label_WhenTemp" text="温度が" />
+      <Control name="label_TempWarn" text="の時、警告情報が現れる。" />
+      <Control name="label_WhenHumidity" text="湿度が" />
+      <Control name="label_HumidityWarn" text="%の時、警告情報が現れる。" />
+      <Control name="label_WhenFan" text="回転速度が" />
+      <Control name="label_FanWarn" text="回転/分の時、警告情報が現れる。" />
+      <Control name="label_WhenPower" text="電圧が" />
+      <Control name="label_PowerWarn" text="Vの時、警告情報が現れる。" />
+      <Control name="label_WhenPowerError" text="電圧が" />
+      <Control name="label_PowerWarnError" text="Vの時、警告情報が現れる。" />
+      <Control name="crystalbutton_ok" text="保存" />
+      <Control name="label_AlarmDescription" text="説明:全体画面配置のデフォルト値は最初の配置に出所することで後期に一つの画面を直すのは全体画面の情報を影響しない。" />
+    </Controls>
+  </Form>
+  <Form>
+    <Name>UC_DataAlarmConfig_String</Name>
+    <Controls>
+      <Control name="CelsiusTemp" text="摂氏温度" />
+      <Control name="FahrenheitTemp" text="華氏温度" />
+      <Control name="AlarmSaveSuccess" text="警告配置" />
+      <Control name="AlarmSaveFailed" text="警告配置保存失敗！" />
+      <Control name="SaveDataAlarmConfig" text="苦境の配置を保存している、しばらくお待ちください…" />
+    </Controls>
+  </Form>
+  <Form>
+    <Name>UC_PowerControlConfig</Name>
+    <Controls>
+      <Control name="label_PowerDescription" text="説明:電源のニックネームは策略選択の際に使われているので、空いていはいけないし、重複してもいけない。" />
+      <Control name="crystalButton_RefreshPower" text="多機能カードをアップデート" />
+      <Control name="crystalbutton_ok" text="保存" />
+    </Controls>
+  </Form>
+  <Form>
+    <Name>UC_PowerControlConfig_String</Name>
+    <Controls>
+      <Control name="FuncAliaName" text="設備のニックネーム" />
+      <Control name="FuncLocation" text="設備の位置" />
+      <Control name="RefreshFuncCardPower" text="多機能カード情報を獲得している、しばらくお待ちください…" />
+      <Control name="PowerControlSaveSuccess" text="周辺電源配置保存成功、策略の選択に使われる!" />
+      <Control name="PowerControlSaveFailed" text="周辺全員配置保存失敗！" />
+      <Control name="PowerControlConfigSave" text="周辺全員の配置を保存している、しばらくお待ちください…" />
+      <Control name="PowerControlTipDuplicate" text="名前が重複してはいけない" />
+      <Control name="PowerControlTipEmpty" text="名前が空いてはいけない" />
+    </Controls>
+  </Form>
+  <Form>
+    <Name>UC_HWConfig</Name>
+    <Controls>
+      <Control name="checkBox_IsConnectMC" text="監視カード接続" />
+      <Control name="checkBox_Humidity" text="湿度リフレッシュ" />
+      <Control name="checkBox_Smoke" text="煙幕リフレッシュ" />
+      <Control name="checkBox_RowLine" text="箱の状態リフレッシュ" />
+      <Control name="checkBox_IsUpdateGeneralStatus" text="箱の扉の状態リフレッシュ" />
+      <Control name="checkBox_Fan" text="扇風機リフレッシュ" />
+      <Control name="label_FanPulse" text="扇風機パルス:" />
+      <Control name="label_FanPulseUnit" text="個/転" />
+      <Control name="radioButton_SameFanCount" text="各箱扇風機個数の設置が同じだ" />
+      <Control name="radioButton_DifferentFanCount" text="各箱単独設置、扇風機数" />
+      <Control name="crystalButton_FanCountSetting" text="設置" />
+      <Control name="checkBox_MCPower" text="監視カード電源リフレッシュ" />
+      <Control name="radioButton_SamePowerCount" text="各監視カードの電源数の設置が同じだ" />
+      <Control name="radioButton_DifferentPowerCount" text="各監視カードの単独設置全員改修" />
+      <Control name="crystalButton_PowerCountSetting" text="設置" />
+      <Control name="label_HWDescription" text="説明:全体画面配置のデフォルト値は最初の配置に出所することで後期に一つの画面を直すのは全体画面の情報を影響しない。" />
+      <Control name="crystalbutton_ok" text="保存" />
+    </Controls>
+  </Form>
+  <Form>
+    <Name>UC_HWConfig_String</Name>
+    <Controls>
+      <Control name="HwConfigSuccess" text="ハードウェア保存成功!" />
+      <Control name="HwConfigFailed" text="ハードウェア保存失敗!" />
+      <Control name="SaveHWConfig" text="ハードウェアの配置を保存している、少々お待ちください…" />
+      <Control name="HwFanName" text="扇風機" />
+      <Control name="HwPowerName" text="電源" />
+    </Controls>
+  </Form>
+  <Form>
+    <Name>Frm_MonitorSetting</Name>
+    <Controls>
+      <Control name="frm_monitorsetting" text="監視設置" />
+      <Control name="seperatePanel_AutoRefresh" text="自動リフレッシュ" />
+      <Control name="checkBox_AutoRefresh" text="自動リフレッシュ" />
+      <Control name="label_RefreshPeriod" text="リフレッシュ周期:" />
+      <Control name="seperatePanel_CountSetting" text="再び読んだ次数の設置" />
+      <Control name="label_RetryTimes" text="状態を読む時に失敗する際の再び読んだ次数:" />
+      <Control name="label_Count" text="次数" />
+      <Control name="groupBox_TypeSetting" text="リフレッシュ設置" />
+      <Control name="seperatePanel_RefreshInfo" text="リフレッシュと警告設置" />
+      <Control name="checkBox_Status" text="状態をリフレッシュする" />
+      <Control name="checkBox_Temperature" text="温度リフレッシュ" />
+      <Control name="checkBox_IsConnectMC" text="監視カード接続" />
+      <Control name="checkBox_Humidity" text="湿度リフレッシュ" />
+      <Control name="checkBox_Smoke" text="煙幕リフレッシュ" />
+      <Control name="checkBox_RowLine" text="箱の状態をリフレッシュする" />
+      <Control name="checkBox_IsUpdateGeneralStatus" text="箱の扉の状態をリフレッシュする" />
+      <Control name="checkBox_Fan" text="扇風機リフレッシュ" />
+      <Control name="checkBox_SBCardPower" text="受信カードの電源をリフレッシュする" />
+      <Control name="checkBox_MCPower" text="監視カードの電源をリフレッシュする" />
+      <Control name="radioButton_SameFanCount" text="各箱の扇風機個数が同じだ" />
+      <Control name="radioButton_DifferentFanCount" text="各箱の扇風機個数が違う" />
+      <Control name="crystalButton_FanCountSetting" text="設置" />
+      <Control name="radioButton_SamePowerCount" text="各箱の電源数が同じだ" />
+      <Control name="radioButton_DifferentPowerCount" text="各箱の電源数が違う" />
+      <Control name="crystalButton_PowerCountSetting" text="設置" />
+      <Control name="groupBox_AlarmSetting" text="警告設置" />
+      <Control name="label_WhenTemp" text="温度が" />
+      <Control name="label_TempWarn" text="の時、警告情報が現れる。" />
+      <Control name="label_WhenHumidity" text="湿度が" />
+      <Control name="label_HumidityWarn" text="％の時、警告情報が現れる。" />
+      <Control name="label_WhenFan" text="回転速度が" />
+      <Control name="label_FanWarn" text="転/分の時、警告情報が現れる。" />
+      <Control name="label_WhenPower" text="電圧が" />
+      <Control name="label_PowerWarn" text="Vの時、警告情報が現れる。" />
+      <Control name="crystalButton_Cancel" text="キャンセル" />
+      <Control name="crystalbutton_ok" text="確認" />
+      <Control name="linkLabel_CelsiusTemp" text="摂氏温度" />
+      <Control name="linkLabel_FahrenheitTemp" text="華氏温度" />
+    </Controls>
+  </Form>
+  <Form>
+    <Name>Frm_FanPowerAdvanceSetting</Name>
+    <Controls>
+      <Control name="Frm_FanPowerAdvanceSetting" text="監視高級設置" />
+      <Control name="tabPage_Screen1" text="スクリーン1" />
+      <Control name="crystalButton_OK" text="確認" />
+      <Control name="crystalButton_Cancel" text="キャンセル" />
+      <Control name="groupBox_ScalingRate" text="大きさの調整" />
+      <Control name="crystalButton_SetSelect" text="設置" />
+      <Control name="crystalButton_Resume" text="デフォルト値を回復" />
+      <Control name="ToolStripMenuItem_Set" text="設置" />
+      <Control name="label_Notice" text="ディスプレーがない!" />
+    </Controls>
+  </Form>
+  <Form>
+    <Name>Frm_AdvanceSettingInfo</Name>
+    <Controls>
+      <Control name="ScreenName" text="スクリーン" />
+      <Control name="PleaseSelectScanBoard" text="設置する受信カードを選択してください!" />
+      <Control name="WhetherSetDefaultValue" text="デフォルト値を回復しますか？" />
+      <Control name="ConnectStr" text="連結" />
+      <Control name="CommPortName" text="ディスプレイ" />
+      <Control name="SenderName" text="発送カード" />
+      <Control name="PortName" text="ネットワークポート" />
+      <Control name="ScanBoardName" text="受信カード" />
+      <Control name="Count" text="数量" />
+    </Controls>
+  </Form>
+  <Form>
+    <Name>Frm_SetInfo</Name>
+    <Controls>
+      <Control name="Frm_SetInfo" text="設置" />
+      <Control name="checkBox_IsConnect" text="連結" />
+      <Control name="label_Count" text="数:" />
+      <Control name="crystalButton_OK" text="確認" />
+      <Control name="crystalButton_Cancel" text="キャンセル" />
+    </Controls>
+  </Form>
+  <Form>
+    <Name>Form_ErrorNotice</Name>
+    <Controls>
+      <Control name="Form_ErrorNotice" text="故障提示" />
+      <Control name="label_AlertExplanation" text="申し訳ありません。現在、エラーが誘発されている! 正しいソフトウェアの操作を確保してください。ソフトウェアを再起動することで当該問題を解決することができる。" />
+      <Control name="label_SendErrorReport" text="あなたがこの問題の解決に配合してくれることを願って、&lt;不具合報告発送&gt;を選択してエラーをデベロッパーに発送したり、ソフトルート下の不具合報告をデベロッパーに提出することができる、ありがとうございます!" />
+      <Control name="crystalButton_ReviewErrorReport" text="エラーデータを点検" />
+      <Control name="crystalButton_SendErrorReport" text="エラー報告書を送る" />
+      <Control name="crystalButton_KeepRunning" text="継続実行" />
+      <Control name="crystalButton_ExitApplication" text="ログアウト" />
+    </Controls>
+  </Form>
+  <Form>
+    <Name>CustomMessageBox</Name>
+    <Controls>
+      <Control name="button_Yes" text="はい" />
+      <Control name="button_No" text="いいえ" />
+      <Control name="button_Abort" text="中止" />
+      <Control name="button_Retry" text="再びチャレンジする" />
+      <Control name="button_Ignore" text="無視" />
+      <Control name="button_Cancel" text="キャンセル" />
+      <Control name="button_OK" text="確認" />
+    </Controls>
+  </Form>
+  <Form>
+    <Name>Form_ProcessingEx</Name>
+    <Controls>
+      <Control name="crystalButton_Cancel" text="キャンセル" />
+    </Controls>
+  </Form>
+  <Form>
+    <Name>Frm_PeriodicReport</Name>
+    <Controls>
+      <Control name="Frm_PeriodicReport" text="メールの発送時間を設置" />
+      <Control name="checkBox_EveryDay" text="毎日" />
+      <Control name="checkBox_Weekly" text="毎週" />
+      <Control name="checkBox_Monthly" text="毎月" />
+      <Control name="checkBox_Monday" text="月曜日" />
+      <Control name="checkBox_Tuesday" text="火曜日" />
+      <Control name="checkBox_Wednesday" text="水曜日" />
+      <Control name="checkBox_Thursday" text="木曜日" />
+      <Control name="checkBox_Friday" text="金曜日" />
+      <Control name="checkBox_Saturday" text="土曜日" />
+      <Control name="checkBox_Sunday" text="日曜日" />
+      <Control name="label_Date" text="発送日:" />
+      <Control name="label_hour" text="発送時間:" />
+      <Control name="crystalButton_Ok" text="確認" />
+      <Control name="crystalButton_Cancel" text="キャンセル" />
+    </Controls>
+  </Form>
+  <Form>
+    <Name>Frm_ReceiverChanged</Name>
+    <Controls>
+      <Control name="Frm_ReceiverChanged" text="受ける人" />
+      <Control name="crystalButton_close" text="閉じる" />
+      <Control name="crystalButton_apply" text="改める" />
+      <Control name="label_receverName" text="姓名：" />
+      <Control name="label_userAddr" text="メールアドレス:" />
+    </Controls>
+  </Form>
+  <Form>
+    <Name>Frm_SenderChanged</Name>
+    <Controls>
+      <Control name="Frm_SenderChanged" text="発表者を改める" />
+      <Control name="crystalButton_close" text="閉じる" />
+      <Control name="crystalButton_apply" text="改める" />
+      <Control name="label_smtpPort" text="ポート:" />
+      <Control name="label_smtpServer" text="SMTPサーバ:" />
+      <Control name="label_emailPw" text="郵便受けの暗証番号:" />
+      <Control name="label_userAddr" text="郵便受け住所:" />
+      <Control name="label_SSl" text="SSL暗号化:" />
+      <Control name="checkBox_SSLOpen" text="使用" />
+    </Controls>
+  </Form>
+  <Form>
+    <Name>UC_EMailNotify</Name>
+    <Controls>
+      <Control name="Frm_EMailNotify" text="故障メール通知の設置監視" />
+      <Control name="groupBox_notifyLog" text="日誌設置" />
+      <Control name="label_day" text="日" />
+      <Control name="label_logSaveDays" text="日誌保存時間:" />
+      <Control name="checkBox_enableJournal" text="日誌通知を使用" />
+      <Control name="groupBox_notifySetting" text="通知設置" />
+      <Control name="groupBox_senderSetting" text="メール発表者" />
+      <Control name="crystalButton_useDefault" text="黙示を使用" />
+      <Control name="label_senderPort" text="" />
+      <Control name="label_portInfo" text="ポート:" />
+      <Control name="label_smtpServer" text="" />
+      <Control name="label_senderPW" text="" />
+      <Control name="label_senderAddr" text="" />
+      <Control name="label_smtpServerInfo" text="SMTPサーバ:" />
+      <Control name="label_emailPWInfo" text="郵便受けの暗証番号:" />
+      <Control name="label_userAddr" text="郵便受け住所:" />
+      <Control name="linkLabel_modifySender" text="発表者を改める" />
+      <Control name="groupBox_receiver" text="受ける人" />
+      <Control name="checkBox_enableNotify" text="メール通知を使用" />
+      <Control name="groupBox_emailInfo" text="メールデータ" />
+      <Control name="checkBox_SystemRecover" text="システム回復通知を使用" />
+      <Control name="checkBox_SystemRefresh" text="システム報告メールを使用" />
+      <Control name="linkLabel_PeriodicReport" text="定期的にシステムの運行報告を送信するメールを設置" />
+      <Control name="label_example" text="(例:A地区、B広場)" />
+      <Control name="label_errorNotifyAddr" text="メール発送地:" />
+      <Control name="label_SSl" text="SSL암호화:" />
+      <Control name="checkBox_SSLOpen" text="使用" />
+      <Control name="crystalButton_OK" text="保存" />
+      <Control name="label_NotifyTip" text="提示:万一に備えて スクリーンはすでに登録されたNovaiCare.重複されたメールが入ってくるできるからこの地域のメール通知の使用を禁止してください。" />
+    </Controls>
+  </Form>
+  <Form>
+    <Name>UC_EMailNotify_String</Name>
+    <Controls>
+      <Control name="EmailAddrError" text="郵便受けの住所格式が違う!" />
+      <Control name="EmailAddrNotNull" text="郵便受けの暗証番号が空いてはいけない!" />
+      <Control name="SMTPServerNotNull" text="SMTPサーバが空いてはいけない!" />
+      <Control name="EmailPortError" text="ポートの格式が違う!" />
+      <Control name="ReceiverNameNotNull" text="受信者声明が空いてはいけない!" />
+      <Control name="AddReceivers" text="添加" />
+      <Control name="ModifyReceivers" text="改める" />
+      <Control name="SelectEditReceiver" text="編集する受信者を選択してください!" />
+      <Control name="SelectDeleteReceiver" text="削除する受信者を選択してください!" />
+      <Control name="SureDeleteReceiver" text="選択した受信者を削除しますか？" />
+      <Control name="ReceiverName" text="姓名" />
+      <Control name="EmailAddr" text="郵便受けの住所" />
+      <Control name="dateLogNotExist" text="選択した日の日誌が存在しません!" />
+      <Control name="SureToDeleteLog" text="選択した日誌を削除しますか？" />
+      <Control name="DeleteLogSuccessful" text="日誌を削除するのに成功!" />
+      <Control name="DeleteLogFailed" text="日誌を削除するのに失敗、再びチャレンジーしてください!" />
+      <Control name="NotifyDate" text="通知の日" />
+      <Control name="ErrorScreen" text="故障スクリーン" />
+      <Control name="SaveEMailConfig" text="メールの配置を保存しています。少々お待ちください…" />
+      <Control name="SaveEMailConfigSuccess" text="メールの配置を保存するのに成功!" />
+      <Control name="SaveEMailConfigFailed" text="メールの配置を保存するのに失敗！" />
+    </Controls>
+  </Form>
+  <Form>
+    <Name>EMailNotify_String</Name>
+    <Controls>
+      <Control name="ScreenName" text="スクリーン名称:" />
+      <Control name="ErrName" text="故障名称:" />
+      <Control name="AlarmName" text="警告の名称:" />
+      <Control name="EmailGreetings" text="こんにちは：" />
+      <Control name="EmailAlarmDealWith" text="すぐに現場に行って故障と警告を処理してください!" />
+      <Control name="CurNotifyTimes" text="現在故障通知次数:" />
+      <Control name="MaxNotifyTimes" text="最大通知次数:" />
+      <Control name="TotalErr" text="総数:" />
+      <Control name="DVIFault" text="DVIの故障" />
+      <Control name="CabinetDoorAlarm" text="箱ドアを開く" />
+      <Control name="FanAlarm" text="扇風機警告" />
+      <Control name="HumidityAlarm" text="湿度警告" />
+      <Control name="MonitorCardFault" text="監視カード故障" />
+      <Control name="PowerFault" text="電源故障" />
+      <Control name="PowerAlarm" text="電源警告" />
+      <Control name="RedundancyAlarm" text="重複警告" />
+      <Control name="SBStatusFault" text="受信カード故障" />
+      <Control name="SmokeAlarm" text="煙霧故障" />
+      <Control name="SenderCardFault" text="発送カード故障" />
+      <Control name="SoketFault" text="ケーブル故障" />
+      <Control name="TemperatureAlarm" text="温度警告" />
+      <Control name="SenderIndex" text="発送カード" />
+      <Control name="portIndex" text="イーサネットポート" />
+      <Control name="connectIndex" text="受信カード" />
+      <Control name="rowIndex" text="行号" />
+      <Control name="colIndex" text="列号" />
+      <Control name="MonitorErrorNotification" text="監視故障通知" />
+      <Control name="MonitorSytstemRecoverNotification" text="監視システム回復通知" />
+      <Control name="MonitorMessageNotification" text="システムはすでに正常に回復!" />
+      <Control name="DataName" text="名称" />
+      <Control name="DataTime" text="次数" />
+      <Control name="SystemRefeshIndex" text="システムリフレッシュ" />
+      <Control name="SenderErrCount" text="発送カード故障" />
+      <Control name="SystemRefreshRecord" text="システム運行データ" />
+      <Control name="RedundantState" text="重複" />
+      <Control name="MasterSenderPort" text="メインイーサネットポート:発送カード" />
+      <Control name="EmailScannerError" text="受信カード故障" />
+      <Control name="EmailMCCardError" text="監視カード故障" />
+      <Control name="EmailTemperatureError" text="温度警告" />
+      <Control name="EmailSmokeError" text="煙霧警告" />
+      <Control name="EmailHumidityError" text="湿度警告" />
+      <Control name="EmailFlatCableError" text="箱警告" />
+      <Control name="EmailPowerError" text="電源警告" />
+      <Control name="EmailCableDoorError" text="箱ドア警告" />
+      <Control name="EmailFanError" text="扇風機警告" />
+    </Controls>
+  </Form>
+  <Form>
+    <Name>UC_EMailNotifyLog</Name>
+    <Controls>
+      <Control name="tabPage_emailLog" text="郵便通知歴史" />
+      <Control name="crystalButton_refresh" text="リフレッシュ" />
+      <Control name="crystalButton_reduceDate" text="" />
+      <Control name="crystalButton_deleLog" text="日誌削除" />
+      <Control name="crystalButton_addDate" text="" />
+      <Control name="label_logTime" text="日誌時間:" />
+      <Control name="label_NotifyTip" text="本地域のメール通知を使用した後、日誌を見ることができる。" />
+    </Controls>
+  </Form>
+  <Form>
+    <Name>UC_EMailNotifyLog_String</Name>
+    <Controls>
+      <Control name="StatusFailed" text="失敗" />
+      <Control name="StatusSended" text="既に発送" />
+      <Control name="StatusSucceed" text="成功" />
+      <Control name="ColumnReceiveName" text="受信者" />
+      <Control name="ColumnNotifyTime" text="通知時間" />
+      <Control name="ColumnTitle" text="タイトル" />
+      <Control name="ColumnMsgContent" text="通知内容" />
+      <Control name="ColumnNotifyState" text="発送状態" />
+      <Control name="DeleteEMailLogSuccess" text="日誌削除成功!" />
+      <Control name="DeleteEMailLogFailed" text="日誌削除失敗！" />
+      <Control name="DeleteEMailLog" text="メールかを削除しています。少々お待ちください…" />
+    </Controls>
+  </Form>
+</Resource>

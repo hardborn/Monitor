@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Resource>
+  <Form>
+    <Name>frm_OpticalProbeConfig</Name>
+    <Controls>
+      <Control name="frm_OpticalProbeConfig" text="광학프로브배치" />
+      <Control name="mappingGroupBox" text="광도반사표(환경광도|스크린광도)" />
+      <Control name="LedBrightnessColumn" text="화면광도(%)" />
+      <Control name="EnvironmentBrightnessColumn" text="환경광도(Lux)" />
+      <Control name="DeleteButtonColumn_Text" text="삭제" />
+      <Control name="DeleteButtonColumn" text="조작" />
+      <Control name="opticalProbeGroupBox" text="광학프로브배치표" />
+      <Control name="EnableColumn" text="사용할가요" />
+      <Control name="PositionColumn" text="위치" />
+      <Control name="CurrentBrightnessColumn" text="현재광도치" />
+      <Control name="autoSectionButton" text="쾌속분단" />
+      <Control name="confirmButton" text="확인" />
+      <Control name="cancelButton" text="취소" />
+      <Control name="Getting_Opticalprobe_information" text="광학프로브정보를 획득하고 있다,잠시만 기다리세요…" />
+      <Control name="AddMappingItemButton" text="배치를 첨가" />
+      <Control name="DisableGroupBox" text="" />
+      <Control name="enableCheckBox" text="주변의 밝기를 읽지 못함,밝기 조정에 :" />
+      <Control name="refreshOpticalProbeCrystalButton" text="리프레시" />
+      <Control name="label_CurrentLight" text="현재밝기" />
+      <Control name="RemarkColumn" text="주석" />
+      <Control name="NoSoftWareFail" text="소프트웨어가 없어 실효한다" />
+      <Control name="inputbrightvalue" text="밝기를 입력하세요" />
+      <Control name="brightvalueDigital" text="밝기는 꼭 수자여야 합니다" />
+      <Control name="exitssamelightconfig" text="같은 밝기배치가 존재하여야 한다" />
+      <Control name="nolightsensorconfig" text="아니 빛 센서 정보 시험을 실시하지 수 없습니다！" />
+      <Control name="crystalButton_BrightTestStart" text="광학 프로브" />
+      <Control name="crystalButton_BrightTestStop" text="중지 테스트" />
+  </Controls>
+  </Form>  
+  <Form>
+    <Name>frm_AutoSection</Name>
+    <Controls>
+      <Control name="frm_AutoSection" text="쾌속분단배치" />
+      <Control name="sectionNumberlabel" text="분단수" />
+      <Control name="sectionConditionGroupBox" text="분단조건" />
+      <Control name="maxLabel" text="상한:" />
+      <Control name="minLabel" text="하한:" />
+      <Control name="environmentLabel" text="환경광도" />
+      <Control name="ledLabel" text="화면광도" />
+      <Control name="confirmButton" text="확인" />
+      <Control name="cancelButton" text="취소" />
+      <Control name="errorTitle" text="착오" />
+      <Control name="ledBrightness_error01" text="화면광도의 최대치는  화면광도의 최소치보다 작으면 않된다" />
+      <Control name="environmentBrightness_error01" text="환경광도의 최대치는  환경광도의 최소치보다 작으면 않된다" />
+      <Control name="sectionRemarkLabel" text="지간의 수치는 최대치와 최소치로 분단성조절을 한다 " />
+    </Controls>
+  </Form>
+  <Form>
+    <Name>Frm_AddMappingItem</Name>
+    <Controls>
+      <Control name="Frm_AddMappingItem" text="매핑 항목을 추가" />
+      <Control name="environmentLabel" text="환경광도" />
+      <Control name="ledLabel" text="Led광도" />
+      <Control name="confirmButton" text="확인" />
+      <Control name="cancelButton" text="취소" />
+      <Control name="errorTitle" text="착오" />
+      <Control name="error01" text="같은 환경광도배치가 존재한다,다시 고치세오" />
+    </Controls>
+  </Form>
+</Resource>

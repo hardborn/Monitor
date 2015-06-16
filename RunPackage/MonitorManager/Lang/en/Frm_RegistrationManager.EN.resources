@@ -1,0 +1,40 @@
+﻿<?xml version="1.0"?>
+<Resource>
+  <Form>
+    <Name>Frm_RegistrationManager</Name>
+    <Controls>
+      <Control name="Frm_RegistrationManager" text="Registration" />
+      <Control name="userLabel" text="User:" />
+      <Control name="refreshButton" text="Refresh" />
+      <Control name="modifyRegistrationButton" text="Modify RegisterationInformation" />
+      <Control name="ScreenNameColumn" text="Screen Name" />
+      <Control name="ScreenHeightColumn" text="Height" />
+      <Control name="ScreenWidthColumn" text="Width" />
+      <Control name="ScreenRegistationStateColumn" text="Registration State" />
+      <Control name="linkLabel_About" text="About NovaiCare" />
+      <Control name="CareReadData" text="Please wait,Getting registered data..." />
+    </Controls>
+  </Form>
+   <Form>
+    <Name>Frm_RegisterScreen</Name>
+    <Controls>
+      <Control name="Frm_RegisterScreen" text="Screen Registration" />
+      <Control name="screenNameLabel" text="Fill Screen Name" />
+      <Control name="userNameLabel" text="Enter user name" /> 
+      <Control name="registerButton" text="Register"/>
+      <Control name="Waiting_information" text="Please wait,Registering..."/>
+      <Control name="ScreenAlreadyExists" text="Screen already exists!" />
+      <Control name="AccountNotExist" text="Account does not exists!" />
+      <Control name="ScreenRegisteredSuccessfully" text="Register successfully!" />
+      <Control name="ScreenReregister" text="Free the statement: Registered user to change,Continue?" />
+      <Control name="SnEmpty" text="Screen aliases cannot be empty!" />
+      <Control name="CareRegFailed" text="Register failed!" />
+    </Controls>
+  </Form>
+  <Form>
+    <Name>UC_ScreenSummary</Name>
+    <Controls>
+      <Control name="screenLabel" text="Screen" />
+    </Controls>
+  </Form> 
+</Resource>

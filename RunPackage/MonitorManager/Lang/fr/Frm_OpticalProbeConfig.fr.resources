@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Resource>
+  <Form>
+    <Name>frm_OpticalProbeConfig</Name>
+    <Controls>
+      <Control name="frm_OpticalProbeConfig" text="Configuration sonde optique" />
+      <Control name="mappingGroupBox" text="Carte luminosité (luminosité ambiante | luminosité de l'écran) " />
+      <Control name="LedBrightnessColumn" text="Luminosité de l'écran (en%) " />
+      <Control name="EnvironmentBrightnessColumn" text="Luminosité ambiante (Lux) " />
+      <Control name="DeleteButtonColumn_Text" text="Supprimer" />
+      <Control name="DeleteButtonColumn" text="Operation" />
+      <Control name="opticalProbeGroupBox" text="La liste de configuration sonde optique" />
+      <Control name="EnableColumn" text="Mettre en service ou non?" />
+      <Control name="PositionColumn" text="Position" />
+      <Control name="CurrentBrightnessColumn" text="La valeur de luminosité actuelle " />
+      <Control name="autoSectionButton" text="segmentation rapide" />
+      <Control name="confirmButton" text="Confirmer" />
+      <Control name="cancelButton" text="Supprimer " />
+      <Control name="Getting_Opticalprobe_information" text="En train d'obtenir les données de sonde optique,patienter s'il vous plaît   ... " />
+      <Control name="AddMappingItemButton" text="Ajouter une configuration " />
+      <Control name="DisableGroupBox" text="" />
+      <Control name="enableCheckBox" text="Ne pas lire la luminosité ambiante,Réglage de la luminosité à:" />
+      <Control name="refreshOpticalProbeCrystalButton" text="Rafraîchir" />
+      <Control name="label_CurrentLight" text="Luminosité actuelle" />
+      <Control name="RemarkColumn" text="Commentaires" />
+      <Control name="NoSoftWareFail" text="Invalide sans logiciel" />
+      <Control name="inputbrightvalue" text="Veuillez saisir la valeur de luminosité" />
+      <Control name="brightvalueDigital" text="Valeur de luminosité doit être numérique" />
+      <Control name="exitssamelightconfig" text="Il existe la même configuration de luminosité" />
+      <Control name="nolightsensorconfig" text="Aucune information de capteur de lumière ne peut pas être testé！" />
+      <Control name="crystalButton_BrightTestStart" text="Capteurs optiques" />
+      <Control name="crystalButton_BrightTestStop" text="Test arrêt" />
+  </Controls>
+  </Form>  
+  <Form>
+    <Name>frm_AutoSection</Name>
+    <Controls>
+      <Control name="frm_AutoSection" text="Configuration de segmentation rapide " />
+      <Control name="sectionNumberlabel" text="Nombre de segments " />
+      <Control name="sectionConditionGroupBox" text="Conditions sectoriels " />
+      <Control name="maxLabel" text="Limite: " />
+      <Control name="minLabel" text="Basse: " />
+      <Control name="environmentLabel" text="La luminosité ambiante " />
+      <Control name="ledLabel" text="La luminosité de l'écran " />
+      <Control name="confirmButton" text="Confirmer" />
+      <Control name="cancelButton" text="Supprimer" />
+      <Control name="errorTitle" text="Erreur " />
+      <Control name="ledBrightness_error01" text="La maximum de la luminosité de l'écran ne peut pas être inférieure au minimum de  la luminosité de l'écran " />
+      <Control name="environmentBrightness_error01" text="La maximum de la luminosité ambiante  ne peut pas être inférieure au minimum de  la luminosité ambiante" />
+      <Control name="sectionRemarkLabel" text="Réglage des valeurs en fonction de la valeur maximale et la valeur minimale linéaire segmenté" />
+    </Controls>
+
+  </Form>
+  <Form>
+    <Name>Frm_AddMappingItem</Name>
+    <Controls>
+      <Control name="Frm_AddMappingItem" text="Ajouter une entrée de la cartographie " />
+      <Control name="environmentLabel" text="Luminosité ambiante " />
+      <Control name="ledLabel" text="Luminosité LED " />
+      <Control name="confirmButton" text="Confirmer" />
+      <Control name="cancelButton" text="Supprimer" />
+      <Control name="errorTitle" text="Erreur " />
+      <Control name="error01" text="La configuration de la luminosité ambiante est la même, ré-éditez" />
+    </Controls>
+  </Form>
+</Resource>

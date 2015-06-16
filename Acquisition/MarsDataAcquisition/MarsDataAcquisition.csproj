@@ -1,0 +1,150 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{AE025E05-EF8F-4F4E-A226-1CA6FF2E57A6}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Nova.Monitoring.MarsDataAcquisition</RootNamespace>
+    <AssemblyName>Nova.Monitoring.MarsDataAcquisition</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>TRACE;DEBUG</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>TRACE;DEBUG</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Common.Logging, Version=2.3.1.0, Culture=neutral, PublicKeyToken=af08829b84f0328e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Lib\Third-Party Lib\Common.Logging.dll</HintPath>
+    </Reference>
+    <Reference Include="Nova.LCT.GigabitSystem.DataClass, Version=1.1.1407.201, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Lib\Nova.LCT.GigabitSystem.DataClass.dll</HintPath>
+    </Reference>
+    <Reference Include="Nova.LCT.GigabitSystem.HardwareCaculator">
+      <HintPath>..\..\Lib\Nova.LCT.GigabitSystem.HardwareCaculator.dll</HintPath>
+    </Reference>
+    <Reference Include="Nova.LCT.GigabitSystem.HardwareFiles">
+      <HintPath>..\..\Lib\Nova.LCT.GigabitSystem.HardwareFiles.dll</HintPath>
+    </Reference>
+    <Reference Include="Nova.LCT.GigabitSystem.HWPointDetect, Version=1.0.1412.201, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Lib\Nova.LCT.GigabitSystem.HWPointDetect.dll</HintPath>
+    </Reference>
+    <Reference Include="Nova.LCT.GigabitSystem.LEDConfigAccessor, Version=1.0.1409.401, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Lib\Nova.LCT.GigabitSystem.LEDConfigAccessor.dll</HintPath>
+    </Reference>
+    <Reference Include="Nova.LCT.GigabitSystem.ProtocolEnum, Version=1.0.1405.2801, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Lib\Nova.LCT.GigabitSystem.ProtocolEnum.dll</HintPath>
+    </Reference>
+    <Reference Include="Nova.LCT.LCTServerBaseProxy">
+      <HintPath>..\..\Lib\Nova.LCT.LCTServerBaseProxy.dll</HintPath>
+    </Reference>
+    <Reference Include="Nova.Xml.Serialization.XmlSerializableObject">
+      <HintPath>..\..\Lib\Nova.Xml.Serialization.XmlSerializableObject.dll</HintPath>
+    </Reference>
+    <Reference Include="Quartz">
+      <HintPath>..\..\Lib\Third-Party Lib\Quartz.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DataAcquisition.cs" />
+    <Compile Include="DataAcquisition.SpotInspection.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Log4NetLibrary\Log4NetLibrary.csproj">
+      <Project>{4ff0e08a-3d8d-4474-985a-735ecd13dd92}</Project>
+      <Name>Log4NetLibrary</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\MarsMonitorDataManager\CommandParser\CommandParser.csproj">
+      <Project>{e178287e-c9b7-4dfe-964e-a1963f943a6e}</Project>
+      <Name>CommandParser</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\MarsMonitorDataManager\HardwareMonitorInterface\HardwareMonitorInterface.csproj">
+      <Project>{951d3cc3-76c1-454b-80cd-b89d390065ec}</Project>
+      <Name>HardwareMonitorInterface</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\MarsMonitorDataManager\MarsMonitorDataReader\MarsMonitorDataReader.csproj">
+      <Project>{d81aa7e1-52c6-4492-aac4-9b6d9dd365c2}</Project>
+      <Name>MarsMonitorDataReader</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Nova.Monitoring.Common\Nova.Monitoring.Common.csproj">
+      <Project>{69888dc3-a01b-408c-966f-9d996a75392c}</Project>
+      <Name>Nova.Monitoring.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Nova.Monitoring.DataSource\Nova.Monitoring.DataSource.csproj">
+      <Project>{01a5aba1-1106-4897-a5cf-a706cbb578a7}</Project>
+      <Name>Nova.Monitoring.DataSource</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SystemMessage\SystemMessageManager\SystemMessageManager.csproj">
+      <Project>{aa7eaf06-da0b-466e-800d-6cc39a7a49e8}</Project>
+      <Name>SystemMessageManager</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>xCopy /e /y "$(TargetDir)*" "$(SolutionDir)MonitorManager\$(OutDir)"</PostBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Resource>
+  <Form>
+    <Name>UC_WHControlConfig</Name>
+    <Controls>
+      <Control name="label_tip" text="一つのディスプレーを選択して配置を進行してください!" />
+      <Control name="seperatePanel_ControlConfigInfoList" text="制御情報図表" />
+      <Control name="button_add" text="添加" />
+      <Control name="ToolStripMenuItem_add" text="添加" />
+      <Control name="button_edit" text="編集" />
+      <Control name="ToolStripMenuItem_edit" text="編集" />
+      <Control name="button_delete" text="削除" />
+      <Control name="ToolStripMenuItem_delete" text="削除" />
+      <Control name="button_deleteAll" text="図表を消す" />
+      <Control name="ToolStripMenuItem_deleteAll" text="図表を消す" />
+      <Control name="crystalButton_OK" text="確認" />
+    </Controls>
+  </Form>
+  <Form>
+    <Name>UC_WHControlConfig_String</Name>
+    <Controls>
+      <Control name="StrategyTypeStr" text="制御のタイプ" />
+      <Control name="Condition" text="条件" />
+      <Control name="TemperatureStrategy" text="温度" />
+      <Control name="SmokeStrategy" text="煙幕" />
+      <Control name="AverageAlgorithm" text="平均温度" />
+      <Control name="MaxValueAlgorithm" text="最高温度" />
+      <Control name="MSG_Delete" text="選択した配置を削除しますか。" />
+      <Control name="MSG_DeleteAll" text="選択した配置を消しますか。" />
+      <Control name="MSG_DeleteSuccess" text="削除成功" />
+      <Control name="MSG_DeleteFailed" text="削除失敗" />
+      <Control name="SaveFailed" text="保存失敗" />
+      <Control name="SaveSuccess" text="保存成功" />
+    </Controls>
+  </Form>
+  <Form>
+    <Name>frm_WHControlConfig_Editor</Name>
+    <Controls>
+      <Control name="frm_WHControlConfig_Editor" text="制御配置" />
+      <Control name="label_ControlType" text="制御のタイプ" />
+      <Control name="label_Tip" text="提示:他の戦略との間の温度差は5℃より小さくてはならない!" />
+      <Control name="button_OK" text="確認" />
+      <Control name="button_cancel" text="キャンセル" />
+    </Controls>
+  </Form>
+  <Form>
+    <Name>frm_WHControlConfig_Editor_String</Name>
+    <Controls>
+      <Control name="MSG_Tem_MinValueBiggerThanMax" text="最低温度は最高温度より大きくてはならない" />
+      <Control name="MSG_Tem_ValueTooSimilar" text="最高温度と最低温度値は5℃より小さくてはならない!" />
+      <Control name="MSG_Action_Illegal" text="有効的な執行の動作を設置してください" />
+      <Control name="MSG_Power_NotChoose" text="閉鎖される電源を選択してください" />
+      <Control name="MSG_ControlConfig_Repeat" text="策略が重複して添加が失敗" />
+      <Control name="MSG_ControlConfig_Null" text="策略の対象が空いている" />
+    </Controls>
+  </Form>
+  <Form>
+    <Name>UC_WHControlConfig_Tem</Name>
+    <Controls>
+      <Control name="label_And" text="そして" />
+      <Control name="seperatePanel_tem_action" text="動作" />
+      <Control name="groupBox_Brightness" text="光度の調節" />
+      <Control name="checkBox_Brightness" text="光度の調節" />
+      <Control name="label_BrightTo" text="光度調節を…まで" />
+      <Control name="groupBox_PwoerManager" text="電源管理" />
+    </Controls>
+  </Form>
+  <Form>
+    <Name>UC_WHControlConfig_Smoke</Name>
+    <Controls>
+      <Control name="label_smokeCount" text="煙幕警告箱の数" />
+      <Control name="seperatePanel_smoke_action" text="動作" />
+    </Controls>
+  </Form>
+  <Form>
+    <Name>UC_PowerManager</Name>
+    <Controls>
+      <Control name="label_Open" text="開ける" />
+      <Control name="label_Close" text="閉じる" />
+      <Control name="label_Still" text="維持" />
+    </Controls>
+  </Form>
+  <Form>
+    <Name>UC_SmokeControlConfig</Name>
+    <Controls>
+      <Control name="groupBox_Power" text="電源管理" />
+      <Control name="label_Close" text="閉じる" />
+      <Control name="label_Still" text="維持" />
+    </Controls>
+  </Form>
+</Resource>

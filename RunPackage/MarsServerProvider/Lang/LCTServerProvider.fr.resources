@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Resource>
+  <Form>
+    <Name>Form_ErrorNotice</Name>
+    <Controls>
+      <Control name="Form_ErrorNotice" text="Fenêtre de capture exceptionnelle" />
+      <Control name="label_AlertExplanation" text="Désolé, cela soulève une erreur! Veuillez assurer la bonne opération du logiciel. Redémarrer le logiciel pour résoudre le problème." />
+      <Control name="label_SendErrorReport" text="NovaMonitor-espère que vous pouvez collaborer à résoudre le problème, vous pouvez choisir &quot;envoyer un rapport d'erreur &quot; envoyer les données d'erreur au fabricant ou envoyer le rapport d'erreur à la voie de développeurs logiciels, merci!" />
+      <Control name="crystalButton_ReviewErrorReport" text="Voir les données erronées" />
+      <Control name="crystalButton_SendErrorReport" text="Envoyer un rapport d'erreur" />
+      <Control name="crystalButton_KeepRunning" text="Continuer à fonctionner" />
+      <Control name="crystalButton_ExitApplication" text="quitter" />
+      <Control name="MailSending" text="L'envoi d'un rapport d'erreur en cours..." />
+      <Control name="MailSendOK" text="Envoyer un rapport d'erreur est terminé!" />
+      <Control name="MailSendFailed" text="Impossible d'envoyer un mail aux fabricant d'exploitation, vérifiez la connexion au réseau! Vous pouvez choisir le logiciel dans le rapport d'erreur Error.txt sous le répertoire courant pour remettre aux fabricants de développement!" />
+      <Control name="Form_ErrorDetails" text="Fenêtre de description exceptionnelle" />
+      <Control name="groupBox_Info" text="Remplissez (en option)" />
+      <Control name="label_DiscoverPerson" text="Trouveur des difficultés :" />
+      <Control name="label_Name" text="Nom (Société)" />
+      <Control name="label_ConnectEmail" text="E-mail:" />
+      <Control name="label_Service" text="Nous pourrions vous envoyer la dernière version du logiciel au premier temps lors de la resolution du problème" />
+      <Control name="label_Description" text="Description du problème:" />
+      <Control name="label_Recommend" text="Recommander:" />
+      <Control name="label_FurtherDetails" text="Contexte lors de la présentation du problème, telles que l'utilisation du système d'opération, les marches du logiciel d'opérationc, ce qui permettra bien de résoudre le problème" />
+      <Control name="crystalButton_SendEmail" text="Envoyer" />
+      <Control name="crystalButton_SaveErrorAsTxt" text="Les données d'erreur sont enregistrées pour documents" />
+      <Control name="crystalButton_Cancel" text="Annulation" />
+    </Controls>
+  </Form>
+</Resource>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Resource>
+  <Form>
+    <Name>frm_OpticalProbeConfig</Name>
+    <Controls>
+      <Control name="frm_OpticalProbeConfig" text="光学プローブ配置" />
+      <Control name="mappingGroupBox" text="光度反射表(環境光度|スクリーン光度)" />
+      <Control name="LedBrightnessColumn" text="画面光度(%)" />
+      <Control name="EnvironmentBrightnessColumn" text="環境光度(Lux)" />
+      <Control name="DeleteButtonColumn_Text" text="削除" />
+      <Control name="DeleteButtonColumn" text="操作" />
+      <Control name="opticalProbeGroupBox" text="光学プローブの配置表" />
+      <Control name="EnableColumn" text="使用しますか" />
+      <Control name="PositionColumn" text="位置" />
+      <Control name="CurrentBrightnessColumn" text="現在光度値" />
+      <Control name="autoSectionButton" text="快速分断" />
+      <Control name="confirmButton" text="確認" />
+      <Control name="cancelButton" text="キャンセル" />
+      <Control name="Getting_Opticalprobe_information" text="光学プローブ情報を獲得している、しばらくお待ちください…" />
+      <Control name="AddMappingItemButton" text="配置を添加" />
+      <Control name="DisableGroupBox" text="" />
+      <Control name="enableCheckBox" text="周囲の明るさを読み取ることができ、に明るさ調整：" />
+      <Control name="refreshOpticalProbeCrystalButton" text="リフレッシュ" />
+      <Control name="label_CurrentLight" text="現在の明るさ" />
+      <Control name="RemarkColumn" text="注釈" />
+      <Control name="NoSoftWareFail" text="ソフトウェアがなくて、失効している" />
+      <Control name="inputbrightvalue" text="明るさを入力してください" />
+      <Control name="brightvalueDigital" text="明るさは必ず数字でなければなりません" />
+      <Control name="exitssamelightconfig" text="同じ明るさの配置が存在する" />
+      <Control name="nolightsensorconfig" text="いいえ光センサ情報はテストすることはできません！" />
+      <Control name="crystalButton_BrightTestStart" text="光プローブ" />
+      <Control name="crystalButton_BrightTestStop" text="ストップのテスト" />
+    </Controls>
+  </Form>
+  <Form>
+    <Name>frm_AutoSection</Name>
+    <Controls>
+      <Control name="frm_AutoSection" text="快速分断配置" />
+      <Control name="sectionNumberlabel" text="分断の数" />
+      <Control name="sectionConditionGroupBox" text="分断条件" />
+      <Control name="maxLabel" text="上限：" />
+      <Control name="minLabel" text="下限：" />
+      <Control name="environmentLabel" text="環境光度" />
+      <Control name="ledLabel" text="画面光度" />
+      <Control name="confirmButton" text="確認" />
+      <Control name="cancelButton" text="キャンセル" />
+      <Control name="errorTitle" text="錯誤" />
+      <Control name="ledBrightness_error01" text="画面光度の最大値は画面光度の最小値より小さくてはならない" />
+      <Control name="environmentBrightness_error01" text="環境光度の最大値は環境光度の最小値より小さくてはならない" />
+      <Control name="sectionRemarkLabel" text="の間柄の数値は最大値と最小値で分断性を調節する" />
+    </Controls>
+  </Form>
+  <Form>
+    <Name>Frm_AddMappingItem</Name>
+    <Controls>
+      <Control name="Frm_AddMappingItem" text="マッピング項目を追加" />
+      <Control name="environmentLabel" text="環境光度" />
+      <Control name="ledLabel" text="Led光度" />
+      <Control name="confirmButton" text="確認" />
+      <Control name="cancelButton" text="キャンセル" />
+      <Control name="errorTitle" text="錯誤" />
+      <Control name="error01" text="同じ環境光度配置が存在する、直してください" />
+    </Controls>
+  </Form>
+</Resource>

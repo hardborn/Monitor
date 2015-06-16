@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Resource>
+  <Form>
+    <Name>Frm_RegistrationManager</Name>
+    <Controls>
+      <Control name="Frm_RegistrationManager" text="Registro" />
+      <Control name="userLabel" text="Usuario:" />
+      <Control name="refreshButton" text="Actualización" />
+      <Control name="modifyRegistrationButton" text="Modificar la información de registro" />
+      <Control name="ScreenNameColumn" text="Nombre de pantalla" />
+      <Control name="ScreenHeightColumn" text="Altura" />
+      <Control name="ScreenWidthColumn" text="Nombre de pantalla" />
+      <Control name="ScreenRegistationStateColumn" text="Estado de registro" />
+      <Control name="linkLabel_About" text="Acerca NovaiCare" />
+      <Control name="CareReadData" text="Por favor espere, Obtener datos registrados ..." />
+    </Controls>
+  </Form>
+  <Form>
+    <Name>Frm_RegisterScreen</Name>
+    <Controls>
+      <Control name="Frm_RegisterScreen" text="Registro de la pantalla" />
+      <Control name="screenNameLabel" text="Denominar la pantalla de usted." />
+      <Control name="userNameLabel" text="Introducir la cuenta" />
+      <Control name="registerButton" text="Registro" />
+      <Control name="Waiting_information" text="Por favor espere, registro de ..."/>
+      <Control name="ScreenAlreadyExists" text="¡Se ha registrado la pantalla!" />
+      <Control name="AccountNotExist" text="¡No existe la cuenta!" />
+      <Control name="ScreenRegisteredSuccessfully" text="¡Éxito de registro!" />
+      <Control name="ScreenReregister" text="Declaración exención de responsabilidad: Se ha modificado el usuario, ¿Quiere seguir?" />
+      <Control name="SnEmpty" text="¡No se permite vacío el alias de la pantalla!" />
+      <Control name="CareRegFailed" text="¡Error de registrar!" />
+    </Controls>
+  </Form>
+  <Form>
+    <Name>UC_ScreenSummary</Name>
+    <Controls>
+      <Control name="screenLabel" text="Pantalla" />
+    </Controls>
+  </Form>
+</Resource>

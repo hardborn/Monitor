@@ -1,0 +1,48 @@
+﻿<Window x:Class="Nova.Monitoring.ClientDispatcher.Test.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="350" Width="525">
+    <Window.Resources>
+        <Style x:Key="PartItemsStyle" TargetType="{x:Type ItemsControl}">
+            <Setter Property="ItemTemplate">
+                <Setter.Value>
+                    <DataTemplate>
+                        <Grid Margin="2,1">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="2*"/>
+                                <ColumnDefinition Width="*"/>
+                            </Grid.ColumnDefinitions>
+                            <Rectangle Grid.ColumnSpan="2" Fill="#00B3CD" RadiusX="2" RadiusY="2"/>
+                            <TextBlock Grid.Column="0" HorizontalAlignment="Left" Text="{Binding Type,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}" Margin="2,0,2,0" Foreground="White"/>
+                            <Rectangle Grid.Column="1" Fill="#FFD900" RadiusX="2" RadiusY="2"/>
+                            <TextBlock Grid.Column="1" HorizontalAlignment="Right" Text="{Binding Amount,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}" Margin="2,0,2,0" Foreground="White"/>
+                        </Grid>
+                    </DataTemplate>
+                </Setter.Value>
+            </Setter>
+            <Setter Property="ItemsPanel">
+                <Setter.Value>
+                    <ItemsPanelTemplate>
+                        <StackPanel Orientation="Horizontal" />
+                    </ItemsPanelTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+    </Window.Resources>
+    <Grid>
+        <DataGrid ItemsSource="{Binding LedInfoList}" AutoGenerateColumns="False">
+            <DataGrid.Columns>
+                <DataGridTextColumn x:Name="Sn_Text" Header="SN" Binding="{Binding SerialNumber}"/>
+                <DataGridTextColumn x:Name="Width_Text" Header="Width" Binding="{Binding Width}"/>
+                <DataGridTextColumn x:Name="Height_Text" Header="Height" Binding="{Binding Height}"/>
+                <DataGridTemplateColumn Header="部件信息">
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <ItemsControl ItemsSource="{Binding PartsInfoList}" Style="{StaticResource PartItemsStyle}"/>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+            </DataGrid.Columns>
+        </DataGrid>
+    </Grid>
+</Window>

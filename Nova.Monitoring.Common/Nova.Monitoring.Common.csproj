@@ -1,0 +1,165 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{69888DC3-A01B-408C-966F-9D996A75392C}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Nova.Monitoring.Common</RootNamespace>
+    <AssemblyName>Nova.Monitoring.Common</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Newtonsoft.Json, Version=4.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>F:\Workspace\TFS\LedMonitingSystem\Third-partyLib\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="Nova.LCT.GigabitSystem.DataClass">
+      <HintPath>..\Lib\Nova.LCT.GigabitSystem.DataClass.dll</HintPath>
+    </Reference>
+    <Reference Include="Nova.LCT.GigabitSystem.HWPointDetect">
+      <HintPath>..\Lib\Nova.LCT.GigabitSystem.HWPointDetect.dll</HintPath>
+    </Reference>
+    <Reference Include="Nova.LCT.GigabitSystem.LEDConfigAccessor">
+      <HintPath>..\Lib\Nova.LCT.GigabitSystem.LEDConfigAccessor.dll</HintPath>
+    </Reference>
+    <Reference Include="Nova.LCT.GigabitSystem.ProtocolEnum">
+      <HintPath>..\Lib\Nova.LCT.GigabitSystem.ProtocolEnum.dll</HintPath>
+    </Reference>
+    <Reference Include="Nova.Xml.Serialization.XmlSerializableObject">
+      <HintPath>..\Lib\Nova.Xml.Serialization.XmlSerializableObject.dll</HintPath>
+    </Reference>
+    <Reference Include="RestSharp">
+      <HintPath>..\Lib\Third-Party Lib\RestSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.ServiceModel.Web" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AppDataConfig.cs" />
+    <Compile Include="BrightnessLog.cs" />
+    <Compile Include="BrightnessRuleConfig.cs" />
+    <Compile Include="CareService\HeartbeatRequest.cs" />
+    <Compile Include="CommonEvent.cs" />
+    <Compile Include="Communication\GlobalErrorBehaviorAttribute.cs" />
+    <Compile Include="Communication\GlobalErrorHandler.cs" />
+    <Compile Include="EmailConfigInfo.cs" />
+    <Compile Include="ExceptionOccurredEventArgs.cs" />
+    <Compile Include="LCTMainMonitorData.cs" />
+    <Compile Include="LedAlarmConfig.cs" />
+    <Compile Include="LedMonitoringConfig.cs" />
+    <Compile Include="OpticalProbeConfig.cs" />
+    <Compile Include="ParameterAlarmConfig.cs" />
+    <Compile Include="Command.cs" />
+    <Compile Include="Communication\CommunicationSettingsFactory.cs" />
+    <Compile Include="Communication\DataClientFactory.cs" />
+    <Compile Include="Communication\RestFulClient.cs" />
+    <Compile Include="ComponentBase.cs" />
+    <Compile Include="DataPoint.cs" />
+    <Compile Include="DeviceType.cs" />
+    <Compile Include="ExtentComponent.cs" />
+    <Compile Include="IAlarmConfig.cs" />
+    <Compile Include="IDevice.cs" />
+    <Compile Include="Interface\IDataClient.cs" />
+    <Compile Include="Interface\IDataDispatcher.cs" />
+    <Compile Include="Interface\IDataService.cs" />
+    <Compile Include="Interface\IWebDataService.cs" />
+    <Compile Include="IParameterMonitoringConfig.cs" />
+    <Compile Include="Led.cs" />
+    <Compile Include="LedBasicInfo.cs" />
+    <Compile Include="LedInfo.cs" />
+    <Compile Include="LedAcquisitionConfig.cs" />
+    <Compile Include="CareService\LedRegistationInfo.cs" />
+    <Compile Include="ParameterInspectionCycleConfig.cs" />
+    <Compile Include="ServerResponseCode.cs" />
+    <Compile Include="LogType.cs" />
+    <Compile Include="MonitoringComponent.cs" />
+    <Compile Include="MonitoringParameter.cs" />
+    <Compile Include="OperationsLog.cs" />
+    <Compile Include="PowerSupply.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ServiceObject\AppEnvionment.cs" />
+    <Compile Include="ServiceObject\DataClientBase.cs" />
+    <Compile Include="ServiceObject\DataClientState.cs" />
+    <Compile Include="ServiceObject\RTClient.cs" />
+    <Compile Include="ServiceObject\UIClient.cs" />
+    <Compile Include="SpotInspectionResult.cs" />
+    <Compile Include="StandardLEDDisplayInfo.cs" />
+    <Compile Include="StateObject.cs" />
+    <Compile Include="StateQuantityType.cs" />
+    <Compile Include="Strategy\Condition.cs" />
+    <Compile Include="Strategy\StrategyType.cs" />
+    <Compile Include="Strategy\Strategy.cs" />
+    <Compile Include="SystemComponent.cs" />
+    <Compile Include="UserConfig.cs" />
+    <Compile Include="VersionUpdateInfo.cs" />
+    <Compile Include="WebPacketData.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ClassDiagram1.cd" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

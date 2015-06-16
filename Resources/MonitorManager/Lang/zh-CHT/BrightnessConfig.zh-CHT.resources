@@ -1,0 +1,159 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Resource>
+  <Form>
+    <Name>UC_Brightness</Name>
+    <Controls>
+      <Control name="groupBox_BrightnessTable" text="亮度調節" />
+      <Control name="seperatePanel_Computer" text="電腦控制" />
+      <Control name="checkBox_ScreenDisplay" text="斷開後黑屏" />
+      <Control name="checkBox_Hareware" text="斷開後硬體自動接管" />
+      <Control name="linkLabel_Software" text="軟體亮度表" />
+      <Control name="linkLabel_Software_Light" text="光探頭配置" />
+      <Control name="seperatePanel_Hareware" text="硬體調節" />
+      <Control name="linkLabel_Hardware" text="硬體亮度表" />
+      <Control name="linkLabel_Hardware_Light" text="光探頭配置" />
+      <Control name="crystalButton_OK" text="確定" />
+      <Control name="openOpticalProbeConfigButton" text="保存" />
+      <Control name="seperatePanel_AutoBrightInfo" text="自動亮度調節資訊" />
+      <Control name="label_AutoBrightPeriod" text="環境亮度檢測週期" />
+      <Control name="label_ReadLuxCnt" text="讀環境亮度的次數" />
+      <Control name="label_Notice" text="提示:自動亮度調節模式下，每次調節屏體亮度前均需要對讀到的N次的光探頭值去掉最大值和最小求平均值，然後根據環境亮度和屏體亮度組成的曲線調節屏體亮度!" />
+      <Control name="tabPage_BrightnessTable" text="亮度設置" />
+      <Control name="tabPage_AutoBrightConfig" text="全局參數" /> 
+      <Control name="checkBox_IsSmartEnable" text="啟用智能亮度" /> 
+      <Control name="checkBox_IsGradualEnable" text="啟用亮度漸變" /> 
+    </Controls>
+  </Form>
+  <Form>
+    <Name>UC_Brightness_String</Name>
+    <Controls>
+      <Control name="ConfigHardwareBrightness" text="硬體自動接管需要配置硬體亮度表，請配置硬體亮度表" />
+      <Control name="SaveFailed" text="保存失敗" />
+      <Control name="SaveSuccess" text="保存成功" />
+      <Control name="everyday" text="每天" />
+      <Control name="Workday" text="週一到週五" />
+      <Control name="userDefined" text="自訂" />
+      <Control name="Monday" text="週一" />
+      <Control name="Tuesday" text="週二" />
+      <Control name="Wednesday" text="週三" />
+      <Control name="Thursday" text="週四" />
+      <Control name="Friday" text="週五" />
+      <Control name="Saturday" text="週六" />
+      <Control name="Sunday" text="周日" />
+      <Control name="AutoBright" text="自動亮度" />
+      <Control name="FixBright" text="定時亮度" />
+      <Control name="SaveBrightConfig" text="正在保存亮度配置,請稍候..." />
+      <Control name="savesuccessNoConfig" text="未配置亮度信息" />
+      <Control name="label_tip" text="提示:存在多屏時：環境亮度配置請選擇'{0}'進行配置!" />
+    </Controls>
+  </Form>
+  <Form>
+    <Name>UC_BrightnessConfig</Name>
+    <Controls>
+      <Control name="button_add" text="添加" />
+      <Control name="ToolStripMenuItem_add" text="添加" />
+      <Control name="button_edit" text="編輯" />
+      <Control name="ToolStripMenuItem_edit" text="編輯" />
+      <Control name="button_delete" text="刪除" />
+      <Control name="ToolStripMenuItem_delete" text="刪除" />
+      <Control name="button_deleteAll" text="清空列表" />
+      <Control name="ToolStripMenuItem_deleteAll" text="清空列表" />
+      <Control name="crystalButton_OK" text="確定" />
+      <Control name="openLightSensoreConfigButton" text="光探頭配置" />
+      <Control name="brightnessConfigGroupBox" text="亮度調節配置" />
+      <Control name="currentBrightnessLabel" text="當前亮度:" />
+      <Control name="everyday" text="每天" />
+      <Control name="Workday" text="週一到週五" />
+      <Control name="userDefined" text="自訂" />
+      <Control name="Monday" text="週一" />
+      <Control name="Tuesday" text="週二" />
+      <Control name="Wednesday" text="週三" />
+      <Control name="Thursday" text="週四" />
+      <Control name="Friday" text="週五" />
+      <Control name="Saturday" text="週六" />
+      <Control name="Sunday" text="周日" />
+      <Control name="AutoBright" text="自動亮度" />
+      <Control name="FixBright" text="定時亮度" />
+      <Control name="SaveBrightConfig" text="正在保存亮度配置,請稍候...Está guardando la configuración de brillo, espere......" />
+      <Control name="savesuccessNoConfig" text="未配置亮度資訊" />
+      <Control name="label_tip" text="提示:存在多屏時：環境亮度配置請選擇'{0}'進行配置! Atención: cuando existen varias pantalla: !se elige '{0}'para configurar el brillo ambiental!" />
+      <Control name="IsConfigEnable" text="啟用" />
+      <Control name="Time" text="時間" />
+      <Control name="TypeStr" text="控制類型" />
+      <Control name="DayListStr" text="執行週期" />
+      <Control name="BrightnessDisplay" text="亮度（%）" />
+      <Control name="Msg_DeleteBrightnessConfig" text="確定刪除選擇項嗎？" />
+      <Control name="Msg_ConfigLightprobe" text="請為該顯示幕配置光探頭（自動亮度根據光探頭調節清單調節顯示幕亮度）！" />
+      <Control name="Msg_ConfigLightprobe_LightList" text="請配置光探頭調節清單（自動亮度根據光探頭調節清單調節顯示幕亮度）" />
+      <Control name="Msg_BrightnessConfig_Empty" text="是否要清空亮度配置清單？" />
+      <Control name="nolightsensorconfig" text="沒有選擇所需的光探頭，所有自動調節配置將失效！" />
+      <Control name="nolightsensormappingconfig" text="沒有配置光探頭的亮度映射表,所有自動調節配置將失效!" />
+      <Control name="partlightsensorfail" text="配置了自動亮度，選擇的部分光探頭在無軟體時不可用" />
+      <Control name="editname" text="編輯" />
+      <Control name="deletename" text="刪除" />
+      <Control name="SaveFailed" text="保存失敗" />
+      <Control name="SaveSuccess" text="保存成功" />
+    </Controls>
+  </Form>
+  <Form>
+    <Name>UC_BrightnessConfig_String</Name>
+    <Controls>
+      <Control name="IsConfigEnable" text="啟用" />
+      <Control name="Time" text="時間" />
+      <Control name="TypeStr" text="控制類型" />
+      <Control name="DayListStr" text="執行週期" />
+      <Control name="BrightnessDisplay" text="亮度（%）" />
+      <Control name="Msg_DeleteBrightnessConfig" text="確定刪除選擇項嗎？" />
+      <Control name="Msg_ConfigLightprobe" text="請為該顯示幕配置光探頭（自動亮度根據光探頭調節清單調節顯示幕亮度）！" />
+      <Control name="Msg_ConfigLightprobe_LightList" text="請配置光探頭調節清單（自動亮度根據光探頭調節清單調節顯示幕亮度）！" />
+      <Control name="Msg_BrightnessConfig_Empty" text="是否要清空亮度配置清單？" />
+      <Control name="nolightsensorconfig" text="沒有選擇所需的光探頭，所有自動調節配置將失效！" />
+      <Control name="nolightsensormappingconfig" text="沒有配置光探頭的亮度映射表,所有自動調節配置將失效!" />
+      <Control name="partlightsensorfail" text="配置了自動亮度，選擇的部分光探頭在無軟體時不可用!" />
+      <Control name="editname" text="編輯" />
+      <Control name="deletename" text="刪除" />
+      <Control name="SaveFailed" text="保存失敗" />
+      <Control name="SaveSuccess" text="保存成功" />
+    </Controls>
+  </Form>
+  <Form>
+    <Name>frm_BrightnessConfig</Name>
+    <Controls>
+      <Control name="frm_BrightnessConfig" text="設置亮度" />
+      <Control name="tabPage_Fasten" text="定時亮度" />
+      <Control name="tabPage_Auto" text="自動亮度" />
+      <Control name="button_OK" text="確定" />
+      <Control name="button_cancel" text="取消" />
+    </Controls>
+  </Form>
+  <Form>
+    <Name>frm_BrightnessConfig_String</Name>
+    <Controls>
+      <Control name="Text_Brightness" text="亮度" />
+      <Control name="ExecuteCycle" text="執行週期" />
+      <Control name="Text_Time" text="時間" />
+      <Control name="Msg_TimesEmpty" text="請選擇調節時段" />
+      <Control name="Msg_BrightnessConfig_Repeat" text="亮度配置清單時間重複，請重新編輯！" />
+    </Controls>
+  </Form>
+  <Form>
+    <Name>Frm_BrightnessAdjustmentSetting</Name>
+    <Controls>
+      <Control name="Frm_BrightnessAdjustmentSetting" text="調節時間設置" />
+      <Control name="fixedBrightnessRadioButton" text="定時亮度" />
+      <Control name="autoBrightnessRadioButton" text="自動亮度" />
+      <Control name="lable_AdjustCycle" text="調節週期" />
+      <Control name="mondayCheckBox" text="週一" />
+      <Control name="tuesdayCheckBox" text="週二" />
+      <Control name="wednesdayCheckBox" text="週三" />
+      <Control name="thursdayCheckBox" text="週四" />
+      <Control name="fridayCheckBox" text="週五" />
+      <Control name="saturdayCheckBox" text="週六" />
+      <Control name="sundayCheckBox" text="周日" />
+      <Control name="label_AdjustTime" text="調節時間" />
+      <Control name="label_brightnessValue" text="調節亮度" />
+      <Control name="confirmButton" text="確定" />
+      <Control name="cancelButton" text="取消" />
+    </Controls>
+  </Form>
+</Resource>

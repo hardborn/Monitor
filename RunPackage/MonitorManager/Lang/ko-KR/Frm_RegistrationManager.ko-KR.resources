@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Resource>
+  <Form>
+    <Name>Frm_RegistrationManager</Name>
+    <Controls>
+      <Control name="Frm_RegistrationManager" text="등록" />
+      <Control name="userLabel" text="사용자 :" />
+      <Control name="refreshButton" text="리프레시" />
+      <Control name="modifyRegistrationButton" text="등록데이터를 고치다" />
+      <Control name="ScreenNameColumn" text="스크린이름" />
+      <Control name="ScreenHeightColumn" text="높이" />
+      <Control name="ScreenWidthColumn" text="스크린이름" />
+      <Control name="ScreenRegistationStateColumn" text="등록상태" />
+      <Control name="linkLabel_About" text="NovaiCare 소개" />
+      <Control name="CareReadData" text="등록 된 데이터 가져 오기, 잠시 기다려주십시오 ..." />
+    </Controls>
+  </Form>
+  <Form>
+    <Name>Frm_RegisterScreen</Name>
+    <Controls>
+      <Control name="Frm_RegisterScreen" text="화면 등록" />
+      <Control name="screenNameLabel" text="당신의 스크린에 이름을 지읍시다" />
+      <Control name="userNameLabel" text="사용자이름을 입력" />
+      <Control name="registerButton" text="등록" />
+      <Control name="Waiting_information" text="기다려주십시오，등록 ..."/>
+      <Control name="ScreenAlreadyExists" text="스크린이 이미 등록되였다!" />
+      <Control name="AccountNotExist" text="계정이 존재하지 않는다!" />
+      <Control name="ScreenRegisteredSuccessfully" text="등록성공!" />
+      <Control name="ScreenReregister" text="면책성명서:등록사용자가 고쳐지는데 계속할가요?" />
+      <Control name="SnEmpty" text="슼린별명이 비여서는 않된다!" />
+      <Control name="CareRegFailed" text="등록실패!" />
+    </Controls>
+  </Form>
+  <Form>
+    <Name>UC_ScreenSummary</Name>
+    <Controls>
+      <Control name="screenLabel" text="스크린" />
+    </Controls>
+  </Form>
+</Resource>

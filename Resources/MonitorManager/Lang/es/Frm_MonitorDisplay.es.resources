@@ -1,0 +1,804 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Resource>
+  <Form>
+    <Name>Frm_MonitorDisplayMain</Name>
+    <Controls>
+      <Control name="Frm_MonitorDisplayMain" text="MonitorSite" />
+      <Control name="crystalButton_MonitorRefresh" text="Actualización de monitoreo" />
+      <Control name="crystalButton_Regist" text="Registrar" />
+      <Control name="crystalButton_Config" text="Configuración" />
+      <Control name="groupbox_scalingrate" text="Reducir y ampliar" />
+      <Control name="seperatePanel_StatisticsInfo" text="Información estadística" />
+      <Control name="seperatePanel_FaultAlarmInfo" text="Información de fallo (alarma)" />
+      <Control name="label_PeriodS" text="Segundo" />
+      <Control name="label_TimeS" text="Segundo" />
+      <Control name="label_LastUpdateTime" text="Tiempo de obtención de los datos de monitoreo actual:" />
+      <Control name="FrmText" text="Monitoreo del sistema de control" />
+      <Control name="NotConnectSystem" text="¡No se ha conectado con el sistema de control!" />
+      <Control name="tabStripButton_FaultInfo" text="Información de fallo (alarma)" />
+      <Control name="tabStripButton_OperateInfo" text="Información interactiva" />
+      <Control name="toolStripStatusLabel_Status" text="Estado de Care: está obteniendo" />
+    </Controls>
+  </Form>
+  <Form>
+    <Name>Frm_MonitorMain</Name>
+    <Controls>
+      <Control name="toolStripMenuItem_OpenMain" text="Abrir la página de usuario (&amp;O)" />
+      <Control name="ToolStripMenuItem_Exit" text="Salir (&amp;O)" />
+      <Control name="toolStripMenuItem_ClosedTitle" text="Cerrar el monitoreo afectará el ajuste de brillo inteligente, ¿Quiere cerrar el monitoreo?" />
+      <Control name="toolStripMenuItem_OpenBrightAllConfig" text="Configuración avanzada de brillo" />
+      <Control name="notifyIcon" text="Plataforma del terminal de monitoreo" />
+      <Control name="Screen" text="Pantalla" />
+      <Control name="toolStripMenuItem_ReReadScreen" text="Pantalla Releyendo" />
+    </Controls>
+  </Form>
+  <Form>
+    <Name>Frm_MonitorConfigManager</Name>
+    <Controls>
+      <Control name="Frm_MonitorConfigManager" text="Terminal de monitoreo -configuración" />
+      <Control name="label_ScreenSelected" text="Elegir configuración de pantalla:" />
+      <Control name="crystalButton_RefreshConfig" text="Ciclo de actualización" />
+      <Control name="crystalButton_HWConfig" text="Configuración de hardware" />
+      <Control name="crystalButton_MonitorCardPowerConfig" text="Configuración de alimentación eléctrica externa" />
+      <Control name="crystalButton_DataAltarmConfig" text="Configuración de alarma de los datos" />
+      <Control name="crystalButton_ControlConfig" text="Configuración de control" />
+      <Control name="crystalButton_CareRegisterConfig" text="Gestión de servicio Care" />
+      <Control name="crystalButton_BrightnessConfig" text="Ajuste de brillo" />
+      <Control name="crystalButton_ControlLog" text="Registro de control" />
+      <Control name="crystalButton_NotifySetting" text="Configuración de correo" />
+      <Control name="crystalButton_EMailLog" text="Registro de correo" />
+    </Controls>
+  </Form>
+  <Form>
+    <Name>Frm_MonitorStatusDisplayInfo_Status</Name>
+    <Controls>
+      <Control name="StartReadMonitorData" text="Empezar a leer los datos de monitoreo..." />
+      <Control name="StartReadDVIData" text="Empezar a leer los datos de DVI..." />
+      <Control name="StartRetryReadSenderData" text="Volver a intentar a leer los datos de la tarjeta de envío..." />
+      <Control name="GetDVIDataFinish" text="Finalización de lectura de los datos de DVI, empezar a analizar..." />
+      <Control name="ParsingDVIDataFinish" text="Finalización de procesamiento de los datos de DVI..." />
+      <Control name="StartReadScannerData" text="Empezar a leer los datos de la tarjeta de recepción..." />
+      <Control name="GetScannerDataFinish" text="Finalización de lectura de los datos de la tarjeta de recepción, empezar a analizar..." />
+      <Control name="ParsingScannerData" text="Analizar los datos de la tarjeta de recepción..." />
+      <Control name="ParsingMonitorData" text="Nalizar los datos de la tarjeta de monitoreo..." />
+      <Control name="ParsingScannerDataFinish" text="Finalización de lectura de los datos generales de la tarjeta de recepción " />
+      <Control name="ReadMonitoringSuccess" text="Finalización de obtención de los datos de monitoreo" />
+      <Control name="ReadMonitoringFailed" text="Finalización de obtención de los datos de monitoreo" />
+      <Control name="OnInitialize" text="Empezar la inicialización de la fuente de los datos..." />
+      <Control name="HWOnInitialize" text="Empezar la inicialización del hardware" />
+      <Control name="OnInitializeSuccess" text="Éxito de inicialización de la fuente de los datos..." />
+      <Control name="HWOnInitializeFailed" text="Fallo de inicialización de hardware" />
+      <Control name="BusyWorking" text="Fallo de lectura: está ocupando el hardware" />
+      <Control name="NoScreenInfo" text="Fallo de lectura: no existen informaciones en la pantalla " />
+      <Control name="CareLineStatusOK" text="Estado de Care: En línea" />
+      <Control name="CareLineStatusNG" text="Estado de Care: Desconectado" />
+      <Control name="BeginReadSBData" text="Empezar a leer las informaciones de la tarjeta de recepción:" />
+      <Control name="CompleteReadSBData" text="Finalización de las información de la tarjeta de recepción" />
+      <Control name="NoMonitorConfig" text="Fallo de lectura:Sin configuración de hardware" />
+    </Controls>
+  </Form>
+  <Form>
+    <Name>Frm_MonitorStatusDisplayInfo</Name>
+    <Controls>
+      <Control name="AllScreen" text="Todas las pantallas" />
+      <Control name="Frm_MonitorDisplayMain" text="Terminal de monitoreo" />
+      <Control name="groupbox_scalingrate" text="Reducir y ampliar" />
+      <Control name="seperatePanel_StatisticsInfo" text="Información estadística" />
+      <Control name="seperatePanel_FaultAlarmInfo" text="Información de fallo (alarma)" />
+      <Control name="label_PeriodS" text="Segundo" />
+      <Control name="label_TimeS" text="Segundo" />
+      <Control name="label_LastUpdateTime" text="Tiempo de obtención de los datos de monitoreo actual:" />
+      <Control name="FrmText" text="Monitoreo del sistema de control" />
+      <Control name="NotConnectSystem" text="¡No se ha conectado con el sistema de control!" />
+      <Control name="tabStripButton_FaultInfo" text="Información de fallo (alarma)" />
+      <Control name="tabStripButton_OperateInfo" text="Información interactiva" />
+      <Control name="ReadResIs" text="Finalización de información de monitoreo" />
+      <Control name="RefreshThreadIsPause" text="¡Está suspendida la actualización de la tarjeta de renovación!" />
+      <Control name="Successed" text="¡Éxito¡" />
+      <Control name="Failed" text="¡Fallo ¡" />
+      <Control name="IsBeginReadMonitorInfo" text="Empezar a leer las informaciones de monitoreo" />
+      <Control name="Screen" text="Pantalla" />
+      <Control name="SBStatus" text="Estado de la tarjeta de recepción" />
+      <Control name="MCStatus" text="Estado de la tarjeta de monitoreo" />
+      <Control name="Temperature" text="Temperatura" />
+      <Control name="Humidity" text="Humedad" />
+      <Control name="Smoke" text="Humo" />
+      <Control name="Fan" text="Ventilador" />
+      <Control name="Power" text="Fuente de alimentación eléctrica" />
+      <Control name="RowLine" text="Cuerpo de caja" />
+      <Control name="GeneralStatus" text="Estado de la puerta de caja" />
+      <Control name="AllInfo" text="Total" />
+      <Control name="SenderStatus" text="Estado de la tarjeta de envío" />
+      <Control name="None" text="No hay" />
+      <Control name="SenderName" text="Tarjeta de envío" />
+      <Control name="PortName" text="puerto de red" />
+      <Control name="ScanBoard" text="Tarjeta de recepción" />
+      <Control name="beginReadInfoStr" text=": empezar a leer las informaciones de monitoreo......" />
+      <Control name="beginReadDVIStr" text=": empezar a leer las informaciones de DVI......" />
+      <Control name="ReadDVIInfoResIs" text="Finalización de lectura de las informaciones de DVI......" />
+      <Control name="IsBeginReadDVIInfo" text="Empezar a leer las informaciones de DVI......" />
+      <Control name="DisplayPowerOffNotification" text="Anuncio de desconexión de luz de la pantalla" />
+      <Control name="FuncCardName" text="Tarjeta de multifunciones" />
+      <Control name="PowerSwitch1" text="No." />
+      <Control name="PowerSwitch2" text="Línea" />
+      <Control name="YesStr" text="Sí" />
+      <Control name="NoStr" text="No" />
+      <Control name="SmokeCtrlStr" text="Existe caja de humo" />
+      <Control name="BrightDecreaseStr" text="Reducción de brillo " />
+      <Control name="RestoreBrightStr" text="Recuperación de brillo" />
+      <Control name="ShutOffForScreen" text="desconexión de pantalla " />
+      <Control name="OpenCoolingDevice" text="Encender los equipos de enfriamiento" />
+      <Control name="CloseCoolingDevice" text="Apagar los equipos de enfriamiento" />
+      <Control name="ViewPowerDetaiInfoStr" text="Revisar" />
+      <Control name="SendNotifyEmail" text="Enviar anuncio por correo después de desconectar de la corriente" />
+      <Control name="TemperatureControl" text="Control de temperatura" />
+      <Control name="SmokeControl" text="Control de humo" />
+      <Control name="AllScreenInfo" text="Total" />
+      <Control name="CabinetCntUnit" text="Unidad" />
+      <Control name="EmailNotifyInfoException" text="Anomalía de configuración de información de correo eléctrica" />
+      <Control name="AddButtonText1" text="Agregar" />
+      <Control name="AddButtonText2" text="Confirmar" />
+      <Control name="ExitButtonText1" text="Salir" />
+      <Control name="ExitButtonText2" text="Cancelar" />
+      <Control name="AddConfigInfoFrmText1" text="Agregar una información de  control" />
+      <Control name="AddConfigInfoFrmText2" text="Editar información de control" />
+      <Control name="PleaseSelectPowerToCtrl" text="¡Por favor, Agregar la fuente de alimentación eléctrica por controlar¡" />
+      <Control name="TempIntervalLessThanMin" text="El umbral de temperatura debe ser mayor que el de recuperación de contro." />
+      <Control name="ControlContent" text="Contenido" />
+      <Control name="EmailNotify" text="Anuncio" />
+      <Control name="DisplayNumber" text="No.de orden de Pantalla" />
+      <Control name="ModifyInformation" text="Modificar" />
+      <Control name="RemoveInformation" text="Borrar" />
+      <Control name="PowerListDetailInfo" text="Información detallada" />
+      <Control name="CanNotAddSameScreenSameTempCtrlInfo" text="¡Fallo de agregación, ya existe una información de control de temperatura igual en la pantalla!" />
+      <Control name="CanNotAddSameScreenSameSmokeAlarmCtrlInfo" text="¡Fallo de agregación, ya existe una información de control de humo igual en la pantalla!" />
+      <Control name="AddCtrlInfoSucceed" text="¡Éxito de agregación de las informaciones de control!" />
+      <Control name="AfterEditSameScreenHasSameTempCtrlInfo" text="¡Fallo de agregación, ya existe una información de control de temperatura igual en la pantalla!" />
+      <Control name="AfterEditSameScreenHasSameSmokeAlarmCtrlInfo" text="¡Fallo de agregación, ya existe una información de control de humo igual en la pantalla¡" />
+      <Control name="AreYouSureToRemoveSelectedItem" text="¿Está seguro de eliminar lo marcado?" />
+      <Control name="MonitorCtrlListIsEmpty" text="La tabla de información de control está vacía, ¡Por favor,Agregar información!  " />
+      <Control name="AreYouSureDealWithAllError" text="¿Confirmar que se ha resuelto todos los fallos ?" />
+      <Control name="LoadLogFailed" text="¡Fallo de cargar las informaciones de registro!" />
+      <Control name="CurHasNoFuncCard" text="Actualmente no se ha configurado tarjeta de multifunciones, ¡No hay fuete de alimentación !" />
+      <Control name="IsConfigEmailInfo" text="Actualmente no se ha configurado ningun anuncio de correo eléctrico, ¿quiere configurar uno?" />
+      <Control name="Time" text="Tiempo" />
+      <Control name="DisplayName" text="Nombre de pantalla" />
+      <Control name="ControlInfo" text="Información de control" />
+      <Control name="CtrlResult" text="Resultado" />
+      <Control name="Frm_ComplexScreenDisplayText" text="Revisar los datos de control de pantalla compleja" />
+      <Control name="ColsHeaderTextInfo" text="Información" />
+      <Control name="ColsHeaderTextSenderIndex" text="Tarjeta de envío" />
+      <Control name="ColsHeaderTextPortIndex" text="puerto de red" />
+      <Control name="ColsHeaderTextSBIndex" text="Tarjeta de recepción" />
+      <Control name="ColsHeaderTextStartX" text="Inicio de X" />
+      <Control name="ColsHeaderTextStartY" text="Inicio de Y" />
+      <Control name="ColsHeaderTextWidth" text="Ancho" />
+      <Control name="ColsHeaderTextHeight" text="Altura" />
+      <Control name="DisplayTypePowerValue" text="Valor de tensión" />
+      <Control name="Normal" text="Normal" />
+      <Control name="Error" text="Fallo" />
+      <Control name="Alarm" text="Alarma" />
+      <Control name="Unknown" text="Desconocido" />
+      <Control name="Invalid" text="Inválido" />
+      <Control name="VoltageAlarm" text="Anomalía de tensión" />
+      <Control name="RowColNameStr" text="Fila, columna" />
+      <Control name="SBCount" text="Número total de las tarjetas de recepción" />
+      <Control name="FaultSBCount" text="Número de las tarjetas de recepción de fallo" />
+      <Control name="AlarmSBCount" text="Número de las tarjetas de recepción bajo tensión anormal" />
+      <Control name="FanCount" text="Número total de los ventiladores" />
+      <Control name="AlarmFanCount" text="Número total de los ventiladores de alarma" />
+      <Control name="PowerCount" text="Número de las fuente de alimentación" />
+      <Control name="AlarmPowerCount" text="Número de las fuente de alimentación de alarga" />
+      <Control name="LowestTemp" text="Temperatura mínima" />
+      <Control name="HighestTemp" text="Temperatura máxima" />
+      <Control name="AverageTemp" text="Temperatura media" />
+      <Control name="OverAverageTempCnt" text="No. de las tarjetas de recepción que excede la temperatura media" />
+      <Control name="TempAlarmCount" text="No. de las tarjetas de recepción de alarma de temperatura" />
+      <Control name="SmokeAlarmSBCount" text="No. de las tarjetas de recepción de alarma de humo" />
+      <Control name="LowestHumi" text="Temperatura mínima" />
+      <Control name="HighestHumi" text="Temperatura máxima" />
+      <Control name="AverageHumi" text="Temperatura media" />
+      <Control name="OverAverageHumiCnt" text="No. de las tarjetas de recepción que excede la temperatura media" />
+      <Control name="HumidityAlarmCount" text="No. de las tarjetas de recepción de alarma de temperatura" />
+      <Control name="CabinetCount" text="Número total de las cajas" />
+      <Control name="CabinetFaultCount" text="Número de las cajas de fallo" />
+      <Control name="MCCount" text="Número total de las tarjetas de control" />
+      <Control name="FaultMCCount" text="Número total de las tarjetas de fallo de control  " />
+      <Control name="AlarmMCCount" text="监控卡总个数" />
+      <Control name="CabinetCntOfOpenDoor" text="Número de las cajas con puertas abiertas" />
+      <Control name="SwitchSignSBVoltage" text="Tensión de la placa de la tarjeta de recepción" />
+      <Control name="SwitchSignMCSelefVoltage" text="Tensión de la placa de la tarjeta de monitoreo" />
+      <Control name="SwitchSignMCVoltage" text="Tensión de la tarjeta de monitoreo" />
+      <Control name="SupplyVoltage" text="Tensión de suministro de energía" />
+      <Control name="DoorOpen" text="Abrir" />
+      <Control name="DoorClose" text="Apagar" />
+      <Control name="SwitchName" text="Número de líneas" />
+      <Control name="CommPortScreen" text="Pantalla" />
+      <Control name="DoubleClickToViewInfo" text="Informaciones detalladas: ¡Haga doble clic para ver!" />
+      <Control name="ScreenNotExist" text="¡No existe¡" />
+      <Control name="FaultInformation" text="Información de fallo" />
+      <Control name="NotConnectMC" text="No se ha conectado con la tarjeta de monitoreo" />
+      <Control name="SoketName" text="Toma de corriente" />
+      <Control name="GroupName" text="Número de grupos de datos" />
+      <Control name="ScanSignalName" text="Escanear" />
+      <Control name="SignalName" text="Señal" />
+      <Control name="RGBSignalStrR" text="Señal rojo" />
+      <Control name="RGBSignalStrG" text="Señal verde" />
+      <Control name="RGBSignalStrB" text="Señal azul" />
+      <Control name="RGBSignalStrVR" text="Señal rojo virtual" />
+      <Control name="CelsiusUnit" text="℃" />
+      <Control name="FahrenheitUnit" text="℉" />
+      <Control name="SenderDVI" text="Tarjeta de envío" />
+      <Control name="ScreenName" text="Nombre de pantalla" />
+      <Control name="Count" text="Cantidad" />
+      <Control name="FaultInfo" text="Información de fallo" />
+      <Control name="AlarmInfo" text="Información de alarma" />
+      <Control name="CommPortName" text="Puerto de comunicación" />
+      <Control name="ClickViewSBStatusFaultAlarmInfo" text="¡Haga clic para ver el fallo del estado de la tarjeta de recepción (alarma)¡" />
+      <Control name="ClickViewTempFaultAlarmInfo" text="¡Haga clic para ver el fallo de temperatura  (alarma)¡" />
+      <Control name="ClickViewHumiFaultAlarmInfo" text="¡Haga clic para ver el fallo de humedad (alarma)¡" />
+      <Control name="ClickViewSmokeFaultAlarmInfo" text="¡Haga clic para ver el fallo de humo(alarma)¡" />
+      <Control name="ClickViewFanFaultAlarmInfo" text="¡Haga clic para ver el fallo de ventilador (alarma)¡" />
+      <Control name="ClickViewPowerFaultAlarmInfo" text="¡Haga clic para ver el fallo de fuente de alimentación (alarma)¡" />
+      <Control name="ClickViewMCStatusFaultAlarmInfo" text="¡Haga clic para ver el fallo de fuente de alimentación (alarma)¡" />
+      <Control name="ClickViewRowLineFaultAlarmInfo" text="¡Haga clic para ver el fallo del estado del cuerpo la caja (alarma)¡" />
+      <Control name="ClickViewGeneralStatusFaultAlarmInfo" text="¡Haga clic para ver el fallo del estado de la puerta de la tarjeta (alarma)¡" />
+      <Control name="ClickViewSenderDVIFaultAlarmInfo" text="¡Haga clic para ver el fallo del estado de la tarjeta de envío¡" />
+      <Control name="label_OK" text="Normal" />
+      <Control name="label_SecderError" text="Fallo de tarjeta de envío" />
+      <Control name="label_DVIException" text="Anormalía de información de DVI" />
+      <Control name="label_Unknown" text="" />
+      <Control name="DVISignalOK" text="información de DVI: normal" />
+      <Control name="DVISignalException" text="información de DVI: anormal" />
+      <Control name="DVISignalUnkonwn" text="información de DVI: anormal" />
+      <Control name="RefreshRate" text="Frecuencia de actualización:" />
+      <Control name="AllDisplayMonitorConfigSameStr" text="Configuración de actualización uniforme para todas las pantallas " />
+      <Control name="AllDisplayMonitorConfigDifferentStr" text="Configuración de actualización de cada pantalla" />
+      <Control name="EmailAddrError" text="¡Está incorrecta la dirección del correo !" />
+      <Control name="EmailAddrNotNull" text="¡ No debe estar vacía la contraseña de la caja de correo eléctrica!" />
+      <Control name="SMTPServerNotNull" text="¡ No debe estar vacíaLa contraseña de la caja de correo eléctrica!" />
+      <Control name="EmailPortError" text="¡Incorrecta forma del interfaz" />
+      <Control name="ReceiverNameNotNull" text="¡No debe estar vacío el nombre y apellido del destinatario!" />
+      <Control name="AddReceivers" text="Agregar" />
+      <Control name="ModifyReceivers" text="Modificar" />
+      <Control name="SelectEditReceiver" text="¡Por favor, elegir el destinatario por editar!" />
+      <Control name="SelectDeleteReceiver" text="¡Por favor, elegir el destinatario por borrar!" />
+      <Control name="SureDeleteReceiver" text="¿Está seguro de eliminar el destinario?" />
+      <Control name="ReceiverName" text="Nombre y apellido" />
+      <Control name="EmailAddr" text="Dirección de correo " />
+      <Control name="dateLogNotExist" text="¡No existe el registro para selección de fecha!" />
+      <Control name="SureToDeleteLog" text="¿Está seguro de eliminar el registro para selección de fecha?" />
+      <Control name="DeleteLogSuccessful" text="¡Éxito de borrar el registro!" />
+      <Control name="DeleteLogFailed" text="Fallo de tarjeta de envío" />
+      <Control name="NotifyDate" text="Fecha de anuncio" />
+      <Control name="ErrorScreen" text="Pantalla de fallo" />
+      <Control name="EmailReceiver" text="Destinario" />
+      <Control name="MsgTitle" text="Título" />
+      <Control name="MsgContent" text="Contenido de anuncio" />
+      <Control name="MsgStatus" text="Estado de correo" />
+      <Control name="EmailSended" text="Se ha enviado" />
+      <Control name="EmailFailed" text="Fallo" />
+      <Control name="EmailSucceed" text="Éxito" />
+      <Control name="MonitorErrorNotification" text="Anuncio de fallo de monitoreo" />
+      <Control name="NotificationModel" text="¡Por favor, elegir el modo de envío!" />
+      <Control name="MonitorSytstemRecoverNotification" text="Anuncio de recuperación del sistema de monitoreo" />
+      <Control name="SystemRefreshRecord" text="¡Se ha recuperado el sistema de función !" />
+      <Control name="MonitorMessageNotification" text="¡El sistema ha vuelto a la normalidad!" />
+      <Control name="ApplyEmailCfgFailed" text="¡Fallo de aplicación de configuración, por favor, volver a tratar!" />
+      <Control name="EmailErrorInfo" text="Información de fallo:" />
+      <Control name="EmailSenderDviError" text="Anomalía de DVI de la tarjeta de envío" />
+      <Control name="SenderCardUnkonwn" text="Tarjeta de envío: fallo de la tarjeta de recepción" />
+      <Control name="EmailScannerError" text="Fallo de la tarjeta de recepción：" />
+      <Control name="EmailTemperatureError" text="Fallo de temperatura:" />
+      <Control name="EmailHumidityError" text="Fallo de humedad:" />
+      <Control name="EmailSmokeError" text="Fallo de humo:" />
+      <Control name="EmailFanError" text="Fallo de ventilador:" />
+      <Control name="EmailPowerError" text="Fallo de fuente de alimentación" />
+      <Control name="EmailMCCardError" text="Fallo de la tarjeta de monitoreo" />
+      <Control name="EmailFlatCableError" text="Fallo del estado del cuerpo de caja" />
+      <Control name="EmailCableDoorError" text="Fallo de la puerta de caja" />
+      <Control name="EmailAlarmInfo" text="Información de alarma" />
+      <Control name="EmailScannerAlarm" text="Alarma de la tarjeta de recepción:" />
+      <Control name="EmailTemperatureAlarm" text="Alarma temperatura:" />
+      <Control name="EmailHumidityAlarm" text="Alarma de humedad :" />
+      <Control name="EmailSmokeAlarm" text="Alarma humo :" />
+      <Control name="EmailFanAlarm" text="Alarma de ventilador:" />
+      <Control name="EmailPowerAlarm" text="Alarma de fuente de alimentación:" />
+      <Control name="EmailMCCardAlarm" text="Fallo de la tarjeta de monitoreo" />
+      <Control name="EmailFlatCableAlarm" text="Fallo del estado del cuerpo de caja" />
+      <Control name="EmailCableDoorAlarm" text="Puerta abierta de caja" />
+      <Control name="EmailGreetings" text="Hola:" />
+      <Control name="EmailAlarmDealWith" text="¡Porfavor, resolver el fallo o alarma existente!" />
+      <Control name="CurNotifyTimes" text="No. de anuncio de fallos:" />
+      <Control name="MaxNotifyTimes" text="No.de anuncio máximo:" />
+      <Control name="DataName" text="Nombre" />
+      <Control name="DataTime" text="Frecuencia" />
+      <Control name="SystemRefeshIndex" text="Actualización del sistema:" />
+      <Control name="SenderErrCount" text="Fallo de la tarjeta de envío" />
+      <Control name="HighTempType" text="Temperatura máxima" />
+      <Control name="AverageTempType" text="Temperatura media" />
+      <Control name="PortNormal" text="Puerto de red: normal" />
+      <Control name="PortRedundant" text="Puerto de red: redundancia" />
+      <Control name="PortUnknown" text="Puerto de red: desconocido" />
+      <Control name="RedundantStateCount" text="No. total de redundancia" />
+      <Control name="SenderCard" text="Tarjeta de envío" />
+      <Control name="Port" text="Puerto de red" />
+      <Control name="RedundantState" text=": redundancia" />
+      <Control name="RedundantStateMsg" text="Información de redundancia" />
+      <Control name="MasterSenderPort" text="Puerto de red  principal: tarjeta de envío" />
+      <Control name="DectCtrlInfoOverLappingOne" text=" Fallo de agregación,  le temperatura actual y el de la fila" />
+      <Control name="DectCtrlInfoOverLappingTwo" text="No se permite repetición del rango de temperatura de fila!" />
+      <Control name="DectCtrlInfoOverOne" text="Fallo de modificación, valor de temperatura definido actualmente y" />
+      <Control name="DectCtrlInfoOverTwo" text="la diferencia de temperatua de la fila no debe ser inferior a 5!" />
+      <Control name="DectModificationCtrlInfoOverLappingOne" text="Fallo de modificación, valor de temperatura actualmente y" />
+      <Control name="DectModificationCtrlInfoOverOne" text="Fallo de modificación, valor de temperatura definido actualmente y" />
+      <Control name="CtrlThresholdInputError" text="¡El primer valor de temperatura debe ser inferior que el segundo valor de temperatura dentro del “alcance de temperatura”¡" />
+      <Control name="ColScreenTip" text="Nombre de pantalla" />
+      <Control name="ColSenderTip" text="Tarjeta de envío" />
+      <Control name="ColSBStatusTip" text="Estado de tarjeta de recepción" />
+      <Control name="ColTemperatureTip" text="Temperatura" />
+      <Control name="ColMControlTip" text="Estado de tarjeta de monitoreo" />
+      <Control name="ColHumidityTip" text="Humedad" />
+      <Control name="ColSmokeWarnTip" text="Humo" />
+      <Control name="ColFanSpeedTip" text="Ventilador" />
+      <Control name="ColValtageTip" text="Fuente de alimentación eléctrica" />
+      <Control name="ColRowLineStatusTip" text="Estado de " />
+      <Control name="ColGeneralStatusTip" text="Estado de la puerta de caja" />
+      <Control name="ColCareStatusTip" text="Estado de Care" />
+      <Control name="Frm_MonitorDisplayMainText" text="Terminal de monitoreo" />
+      <Control name="Frm_MonitorDisplayMainTextNoData" text="(Está obteniendo los datos de pantalla...)" />
+      <Control name="RefreshDataFailed" text="¡Fallo de actualización de los datos, por favor, volver a intentar¡" />
+      <Control name="ManualRefreshTitle" text="Volver a obtener los datos de control, por favor, espere..." />
+      <Control name="ColConTextTip" text="Haga clic aquí para más detalles" />
+    </Controls>
+  </Form>
+  <Form>
+    <Name>Frm_SmartBrightness</Name>
+    <Controls>
+      <Control name="Frm_SmartBrightness" text="Ajuste de brillo inteligente" />
+      <Control name="crystalButton_Cancel" text="Cancelar" />
+      <Control name="label_ScreenSelected" text="Elegir configuración de pantalla:" />
+    </Controls>
+  </Form>
+  <Form>
+    <Name>Frm_SmartBrightness_String</Name>
+    <Controls>
+      <Control name="GetSNValue" text="Está obteniendo las informaciones de SN de pantalla" />
+      <Control name="GetSNFailed" text="Fallo de obtención de información de SN: no existe información de esta pantalla" />
+    </Controls>
+  </Form>
+  <Form>
+    <Name>UC_CycleConfig</Name>
+    <Controls>
+      <Control name="seperatePanel_AutoRefresh" text="Actualización regular" />
+      <Control name="seperatePanel_CountSetting" text="Configuración de número de repetición de lectura" />
+      <Control name="checkBox_AutoRefresh" text="Actualización automática" />
+      <Control name="label_RefreshPeriod" text="Ciclo de actualización" />
+      <Control name="label_RetryTimes" text="Número de repetición de lectura cuando sucede fallo de lectura" />
+      <Control name="label_Count" text="vez" />
+      <Control name="crystalButton_RecommendTime" text="ciclo recomendado" />
+      <Control name="crystalButton_OK" text="Guardar" />
+    </Controls>
+  </Form>
+  <Form>
+    <Name>UC_CycleConfig_String</Name>
+    <Controls>
+      <Control name="SaveCycleConfig" text="Está guardar la configuración de ciclo, espere..." />
+      <Control name="CycleConfigSuccess" text="¡Éxito de grabación de ciclo!" />
+      <Control name="CycleConfigFailed" text="¡Fallo de grabación de ciclo!" />
+      <Control name="CycleRefreshTime" text="Está obteniendo configuración de ciclo recomendado, espere..." />
+      <Control name="CycleRefreshTimeTitle" text="Para asegurar la precisión de obtención de tiempo, por favor, suspender la aplicación automática y guardar las informaciones, luego volver a intentar..." />
+    </Controls>
+  </Form>
+  <Form>
+    <Name>UC_CareServerConfig</Name>
+    <Controls>
+      <Control name="label_CareUser" text="Usuario:" />
+      <Control name="crystalButton_RefreshUser" text="Actualizar:" />
+      <Control name="crystalButton_OK" text="Registrarse" />
+      <Control name="label_Disclaimer" text="Cuando existe un fallo entre el usuario nuevo y usuario existente, el nuevo usuario entra en vigor a tiempo y no se avisa." />
+    </Controls>
+  </Form>
+  <Form>
+    <Name>UC_CareServerConfig_String</Name>
+    <Controls>
+      <Control name="ScreenAlreadyExists" text="¡Se ha registrado en pantalla¡" />
+      <Control name="AccountNotExist" text="¡No existe la cuenta¡" />
+      <Control name="ScreenRegisteredSuccessfully" text="¡Éxito de registrarse¡" />
+      <Control name="ScreenReregister" text="Descargo de responsabilidad: ¿Quiere modificar el registro de usuario?" />
+      <Control name="SnEmpty" text="¡No se permite vacío el alias de pantalla¡" />
+      <Control name="CareRegFailed" text="¡Fallo de registrarse¡" />
+      <Control name="CareReadData" text="Está obteniendo los datos de registrarse, espera..." />
+      <Control name="SaveCareServerConfig" text="Está registrando, espera..." />
+      <Control name="ScreenSN" text="ID de pantalla" />
+      <Control name="SnAlia" text="Alias de pantalla" />
+      <Control name="Longitude" text="Longitud" />
+      <Control name="Latitude" text="Latitud" />
+      <Control name="MapName" text="Mapa" />
+      <Control name="Width" text="Ancho" />
+      <Control name="Height" text="Altura" />
+      <Control name="CareStatus" text="Estado de registrarse" />
+      <Control name="ScreenMsg" text="Información de pantalla" />
+      <Control name="PowerControlTipDuplicate" text="No se permite repetir el nombre" />
+      <Control name="PowerControlTipEmpty" text="NO se permite estar vacío el nombre" />
+      <Control name="SendCard" text="Tarjeta de envío" />
+      <Control name="ReceiverCard" text="Tarjeta de recepción" />
+      <Control name="MonitoringCard" text="Tarjeta de monitoreo" />
+      <Control name="PowerControlTipLength" text="No permita que el nombre de la longitud en bytes de más de 20" />
+      <Control name="PowerControlTipNoVertical" text="No permita que el nombre contiene una barra vertical" />
+    </Controls>
+  </Form>
+  <Form>
+    <Name>UC_DataAlarmConfig</Name>
+    <Controls>
+      <Control name="label_WhenTemp" text="Cuando la temperatura " />
+      <Control name="label_TempWarn" text="es , se muestra información de alarma." />
+      <Control name="label_WhenHumidity" text="Cuando la humedad " />
+      <Control name="label_HumidityWarn" text="es %, se muestra información de alarma." />
+      <Control name="label_WhenFan" text="Cuando la velocidad " />
+      <Control name="label_FanWarn" text="es revoluciones/minuto, se muestra información de alarma" />
+      <Control name="label_WhenPower" text="Cuando la tensión " />
+      <Control name="label_PowerWarn" text="es V, se muestra información de alarma." />
+      <Control name="label_WhenPowerError" text="Cuando la tensión " />
+      <Control name="label_PowerWarnError" text="es V, se muestra información de fallo." />
+      <Control name="crystalbutton_ok" text="Guardar" />
+      <Control name="label_AlarmDescription" text="Delcaración: la predeterminada de configuración de todas las pantallas es de la primera configuración, la modificación de pantalla individual no afectará las informaciones de todas las pantallas. " />
+    </Controls>
+  </Form>
+  <Form>
+    <Name>UC_DataAlarmConfig_String</Name>
+    <Controls>
+      <Control name="CelsiusTemp" text="Centígrados" />
+      <Control name="FahrenheitTemp" text="Fahrenheit" />
+      <Control name="AlarmSaveSuccess" text="¡Éxito de guardar la configuración de alarma¡" />
+      <Control name="AlarmSaveFailed" text="¡Fallo de guardar la configuración de alarma¡" />
+      <Control name="SaveDataAlarmConfig" text="Está guardando la configuración de alarma, espere..." />
+    </Controls>
+  </Form>
+  <Form>
+    <Name>UC_PowerControlConfig</Name>
+    <Controls>
+      <Control name="label_PowerDescription" text="Declaración: el alias de la fuente de alimentación es para la estrategia de selección, no se permite dejar vacío, tampoco repetido. " />
+      <Control name="crystalButton_RefreshPower" text="Renovación de la tarjeta de multifunciones" />
+      <Control name="crystalbutton_ok" text="Guardar" />
+    </Controls>
+  </Form>
+  <Form>
+    <Name>UC_PowerControlConfig_String</Name>
+    <Controls>
+      <Control name="FuncAliaName" text="Alias de equipo" />
+      <Control name="FuncLocation" text="Ubicación de equipo" />
+      <Control name="RefreshFuncCardPower" text="Esatá obteniendo las informaciones de la tarjeta de multifunciones, espere..." />
+      <Control name="PowerControlSaveSuccess" text="¡Éxito de guardar la configuración de la fuente de alimentación exterior¡ es para la estratégia de selección. " />
+      <Control name="PowerControlSaveFailed" text="¡Fallo de guardar la configuración de la  la fuente de alimentación exterior¡" />
+      <Control name="PowerControlConfigSave" text="Está guardando la configuración de  la fuente de alimentación exterior, espere..." />
+      <Control name="PowerControlTipDuplicate" text="No se permite repetir el nombre." />
+      <Control name="PowerControlTipEmpty" text="No se permite dejar vacío el nombre." />
+    </Controls>
+  </Form>
+  <Form>
+    <Name>UC_HWConfig</Name>
+    <Controls>
+      <Control name="checkBox_IsConnectMC" text="Conectar con la tarjeta de monitoreo" />
+      <Control name="checkBox_Humidity" text="Actualización de humedad" />
+      <Control name="checkBox_Smoke" text="Actualización de humo" />
+      <Control name="checkBox_RowLine" text="Actualización del estado del cuerpo de caja" />
+      <Control name="checkBox_IsUpdateGeneralStatus" text="Actualización de la puerta de caja" />
+      <Control name="checkBox_Fan" text="Actualización de ventilador" />
+      <Control name="label_FanPulse" text="Pulso de ventilador:" />
+      <Control name="label_FanPulseUnit" text="Unidad/circulación" />
+      <Control name="radioButton_SameFanCount" text="La configuración de número de ventilación de cada caja debe ser igual." />
+      <Control name="radioButton_DifferentFanCount" text="Configuración de número de ventilador para cada caja" />
+      <Control name="crystalButton_FanCountSetting" text="Configuración" />
+      <Control name="checkBox_MCPower" text="Actualización de la fuente de energía de la tarjeta de monitoreo" />
+      <Control name="radioButton_SamePowerCount" text="La configuración de número de fuente de alimentación de cada tarjeta de monitoreo debe ser igual." />
+      <Control name="radioButton_DifferentPowerCount" text="Configuración de número de fuente de alimentación para cada tarjeta de monitoreo" />
+      <Control name="crystalButton_PowerCountSetting" text="Configuración" />
+      <Control name="label_HWDescription" text="Delcaración: la predeterminada de configuración de todas las pantallas es de la primera configuración, la modificación de pantalla individual no afectará las informaciones de todas las pantallas. " />
+      <Control name="crystalbutton_ok" text="Guardar" />
+    </Controls>
+  </Form>
+  <Form>
+    <Name>UC_HWConfig_String</Name>
+    <Controls>
+      <Control name="HwConfigSuccess" text="¡Éxisto de guardar el hardware¡" />
+      <Control name="HwConfigFailed" text="¡Fallo de guardar el hardware¡" />
+      <Control name="SaveHWConfig" text="Está guardando la configuración de hardware, espere..." />
+      <Control name="HwFanName" text="Ventilador" />
+      <Control name="HwPowerName" text="Fuente de alimentación eléctrica" />
+    </Controls>
+  </Form>
+  <Form>
+    <Name>Frm_MonitorSetting</Name>
+    <Controls>
+      <Control name="frm_monitorsetting" text="Configuración de monitoreo" />
+      <Control name="seperatePanel_AutoRefresh" text="Actualización automática" />
+      <Control name="checkBox_AutoRefresh" text="Actualización automática" />
+      <Control name="label_RefreshPeriod" text="Ciclo de actualización:" />
+      <Control name="seperatePanel_CountSetting" text="Configuración de número de repetición de lectura" />
+      <Control name="label_RetryTimes" text="Número de repetición de lectura cuando sucede fallo de lectura" />
+      <Control name="label_Count" text="Vez" />
+      <Control name="groupBox_TypeSetting" text="Actualización de configuración de " />
+      <Control name="seperatePanel_RefreshInfo" text="Configuración de actualización y alarma" />
+      <Control name="checkBox_Status" text="Actualización de estado" />
+      <Control name="checkBox_Temperature" text="Actualización de temperatura " />
+      <Control name="checkBox_IsConnectMC" text="Conectar con la tarjeta de monitoreo" />
+      <Control name="checkBox_Humidity" text="Actualización de humedad" />
+      <Control name="checkBox_Smoke" text="Actualización de humo" />
+      <Control name="checkBox_RowLine" text="Actualización del estado del cuerpo de caja " />
+      <Control name="checkBox_IsUpdateGeneralStatus" text="Puerta de caja de actualización" />
+      <Control name="checkBox_Fan" text="Actualización de ventilador" />
+      <Control name="checkBox_SBCardPower" text="Actualización de la fuente de alimentación de la tarjeta de recepción " />
+      <Control name="checkBox_MCPower" text="Actualización dela fuente de alimentación de la tarjeta de monitoreo" />
+      <Control name="radioButton_SameFanCount" text="El número de ventiladores de cada caja es igual." />
+      <Control name="radioButton_DifferentFanCount" text="El número de ventiladores de cada caja no es igual." />
+      <Control name="crystalButton_FanCountSetting" text="Configuración" />
+      <Control name="radioButton_SamePowerCount" text="El número de fuente de alimentación de cada caja es igual." />
+      <Control name="radioButton_DifferentPowerCount" text="El número de fuente de alimentación de cada caja no es igual." />
+      <Control name="crystalButton_PowerCountSetting" text="Configuración" />
+      <Control name="groupBox_AlarmSetting" text="Configuración  de alarma" />
+      <Control name="label_WhenTemp" text="Cuando la temperatura " />
+      <Control name="label_TempWarn" text="es , se muestra información de alarma." />
+      <Control name="label_WhenHumidity" text="Cuando la humedad " />
+      <Control name="label_HumidityWarn" text="es %, se muestra información de alarma." />
+      <Control name="label_WhenFan" text="Cuando la velocidad" />
+      <Control name="label_FanWarn" text=" es revoluciones/minuto, se muestra información de alarma" />
+      <Control name="label_WhenPower" text="Cuando la tensión " />
+      <Control name="label_PowerWarn" text="es V, se muestra información de alarma." />
+      <Control name="crystalButton_Cancel" text="Cancelar" />
+      <Control name="crystalbutton_ok" text="Confirmar" />
+      <Control name="linkLabel_CelsiusTemp" text="Centígrados" />
+      <Control name="linkLabel_FahrenheitTemp" text="Fahrenheit" />
+    </Controls>
+  </Form>
+  <Form>
+    <Name>Frm_FanPowerAdvanceSetting</Name>
+    <Controls>
+      <Control name="Frm_FanPowerAdvanceSetting" text="Configuración de nivel superior de monitoreo" />
+      <Control name="tabPage_Screen1" text="Pantalla 1" />
+      <Control name="crystalButton_OK" text="Confirmar" />
+      <Control name="crystalButton_Cancel" text="Cancelar" />
+      <Control name="groupBox_ScalingRate" text="Reducir y ampliar" />
+      <Control name="crystalButton_SetSelect" text="Configuración" />
+      <Control name="crystalButton_Resume" text="Restaurar valores predeterminados" />
+      <Control name="ToolStripMenuItem_Set" text="Configurar" />
+      <Control name="label_Notice" text="¡No existe pantalla¡" />
+    </Controls>
+  </Form>
+  <Form>
+    <Name>Frm_AdvanceSettingInfo</Name>
+    <Controls>
+      <Control name="ScreenName" text="Pantalla" />
+      <Control name="PleaseSelectScanBoard" text="¡Por favor, elegir la tarjeta de recepción por configurar¡" />
+      <Control name="WhetherSetDefaultValue" text="¿Está seguro de restaurar valores predeterminados?" />
+      <Control name="ConnectStr" text="Conectar" />
+      <Control name="CommPortName" text="Pantalla" />
+      <Control name="SenderName" text="Tarjeta de envío" />
+      <Control name="PortName" text="puerto de red" />
+      <Control name="ScanBoardName" text="Tarjeta de recepción" />
+      <Control name="Count" text="Cantidad" />
+    </Controls>
+  </Form>
+  <Form>
+    <Name>Frm_SetInfo</Name>
+    <Controls>
+      <Control name="Frm_SetInfo" text="Configuración" />
+      <Control name="checkBox_IsConnect" text="Conectar" />
+      <Control name="label_Count" text="Número de unidad:" />
+      <Control name="crystalButton_OK" text="Confirmar" />
+      <Control name="crystalButton_Cancel" text="Cancelar" />
+    </Controls>
+  </Form>
+  <Form>
+    <Name>Form_ErrorNotice</Name>
+    <Controls>
+      <Control name="Form_ErrorNotice" text="Indicación de fallo" />
+      <Control name="label_AlertExplanation" text="¡Disculpa, se ha producido un error¡ Por favor, asegurar de que el programa de operación es correcto. Se puede reiniciar el programa para resolver el problema ." />
+      <Control name="label_SendErrorReport" text="Esperamos que pueda resolver el problema, puede elegir la opción de “Enviar informe de error”o enviar los datos de errores al fabricante de desarrollo, o entregar el informe de error de de software al fabricante, gracias!" />
+      <Control name="crystalButton_ReviewErrorReport" text="Ver los datos de error" />
+      <Control name="crystalButton_SendErrorReport" text="Enviar el informe de errores." />
+      <Control name="crystalButton_KeepRunning" text="Seguir funcionando." />
+      <Control name="crystalButton_ExitApplication" text="Salir" />
+    </Controls>
+  </Form>
+  <Form>
+    <Name>CustomMessageBox</Name>
+    <Controls>
+      <Control name="button_Yes" text="Sí" />
+      <Control name="button_No" text="No" />
+      <Control name="button_Abort" text="Finalizar" />
+      <Control name="button_Retry" text="Volver a intentar" />
+      <Control name="button_Ignore" text="Ignorar" />
+      <Control name="button_Cancel" text="Cancelar" />
+      <Control name="button_OK" text="Confirmar" />
+    </Controls>
+  </Form>
+  <Form>
+    <Name>Form_ProcessingEx</Name>
+    <Controls>
+      <Control name="crystalButton_Cancel" text="Cancelar" />
+    </Controls>
+  </Form>
+  <Form>
+    <Name>Frm_PeriodicReport</Name>
+    <Controls>
+      <Control name="Frm_PeriodicReport" text="Configurar el tiempo de envío de correo" />
+      <Control name="checkBox_EveryDay" text="Diaria" />
+      <Control name="checkBox_Weekly" text="Semanal" />
+      <Control name="checkBox_Monthly" text="Mensual " />
+      <Control name="checkBox_Monday" text="Lunes" />
+      <Control name="checkBox_Tuesday" text="Martes" />
+      <Control name="checkBox_Wednesday" text="Miercoles" />
+      <Control name="checkBox_Thursday" text="Jueves" />
+      <Control name="checkBox_Friday" text="Viernes" />
+      <Control name="checkBox_Saturday" text="Sábado" />
+      <Control name="checkBox_Sunday" text="Domingo" />
+      <Control name="label_Date" text="Fecha de envío:" />
+      <Control name="label_hour" text="Tiempo de envío:" />
+      <Control name="crystalButton_Ok" text="Confirmar" />
+      <Control name="crystalButton_Cancel" text="Cancelar" />
+    </Controls>
+  </Form>
+  <Form>
+    <Name>Frm_ReceiverChanged</Name>
+    <Controls>
+      <Control name="Frm_ReceiverChanged" text="Destinatario" />
+      <Control name="crystalButton_close" text="Cerrar" />
+      <Control name="crystalButton_apply" text="Modificar" />
+      <Control name="label_receverName" text="Nombre:" />
+      <Control name="label_userAddr" text="Dirección de correo:" />
+    </Controls>
+  </Form>
+  <Form>
+    <Name>Frm_SenderChanged</Name>
+    <Controls>
+      <Control name="Frm_SenderChanged" text="Modificar el editor" />
+      <Control name="crystalButton_close" text="Cerrar" />
+      <Control name="crystalButton_apply" text="Modificar" />
+      <Control name="label_smtpPort" text="Puerto:" />
+      <Control name="label_smtpServer" text="Servidor SMTP:" />
+      <Control name="label_emailPw" text="Contraseña de correo:" />
+      <Control name="label_userAddr" text="Dirección de correo:" />
+      <Control name="label_SSl" text="Cifrado SSL:" />
+      <Control name="checkBox_SSLOpen" text="Habilitar" />
+    </Controls>
+  </Form>
+  <Form>
+    <Name>UC_EMailNotify</Name>
+    <Controls>
+      <Control name="Frm_EMailNotify" text="Configuración del correo  de notificación de avería de control" />
+      <Control name="groupBox_notifyLog" text="Configuración de registro" />
+      <Control name="label_day" text="Día" />
+      <Control name="label_logSaveDays" text="Tiempo de retención del registro" />
+      <Control name="checkBox_enableJournal" text="Habilitar registro de notificaciones" />
+      <Control name="groupBox_notifySetting" text="Cofiguración de notificadción " />
+      <Control name="groupBox_senderSetting" text="Editor de correo" />
+      <Control name="crystalButton_useDefault" text="Utilizar la opción predeterminada" />
+      <Control name="label_senderPort" text="25" />
+      <Control name="label_portInfo" text="Puerto:" />
+      <Control name="label_smtpServer" text="smtp.126.com" />
+      <Control name="label_senderPW" text="*********" />
+      <Control name="label_senderAddr" text="NovaStarTech@126.com" />
+      <Control name="label_smtpServerInfo" text="Servidor SMTP:" />
+      <Control name="label_emailPWInfo" text="Contraseña de correo:" />
+      <Control name="label_userAddr" text="Dirección de correo:" />
+      <Control name="linkLabel_modifySender" text="Modificar el editor" />
+      <Control name="groupBox_receiver" text="Destinatario" />
+      <Control name="checkBox_enableNotify" text="Habilitar la notificación de correo" />
+      <Control name="groupBox_emailInfo" text="Información de correo" />
+      <Control name="checkBox_SystemRecover" text="Habilitar la notificación de recuperación del sistema" />
+      <Control name="checkBox_SystemRefresh" text="Habilitar el correo de informe del sistema de envío" />
+      <Control name="linkLabel_PeriodicReport" text="Configurar el envío regular del correo de informe de funcionamiento del sistema" />
+      <Control name="label_example" text="(Por ejemplo, A residencia de" />
+      <Control name="label_errorNotifyAddr" text="Se envía el correo desde:" />
+      <Control name="label_SSl" text="Cifrado SSL:" />
+      <Control name="checkBox_SSLOpen" text="Habilitar" />
+      <Control name="crystalButton_OK" text="Guardar" />
+      <Control name="label_NotifyTip" text="Atención: en caso se ha registrado NovaiCare para el monitor, por favor, deshabilite la notificación de correo local para no recibir correo repetido." />
+    </Controls>
+  </Form>
+  <Form>
+    <Name>UC_EMailNotify_String</Name>
+    <Controls>
+      <Control name="EmailAddrError" text="¡El formato de dirección del correo es incorrecto!" />
+      <Control name="EmailAddrNotNull" text="¡No puede ser vacío el formato de dirección del correo!" />
+      <Control name="SMTPServerNotNull" text="" />
+      <Control name="EmailPortError" text="¡El formato del puerto es incorrecto!" />
+      <Control name="ReceiverNameNotNull" text="¡No puede ser vacío el nombre del destinario!" />
+      <Control name="AddReceivers" text="Agregar" />
+      <Control name="ModifyReceivers" text="Modificar" />
+      <Control name="SelectEditReceiver" text="¡Por favor, seleccione el destinario por eliminar!" />
+      <Control name="SelectDeleteReceiver" text="¡Por favor, seleccione el destinario por editar!" />
+      <Control name="SureDeleteReceiver" text="¿ Está seguro de eliminar el destinario?" />
+      <Control name="ReceiverName" text="Nombre y apellido" />
+      <Control name="EmailAddr" text="Dirección de correo" />
+      <Control name="dateLogNotExist" text="¡No existe regisgo de la fecha seleccionada!" />
+      <Control name="SureToDeleteLog" text="¿ Está seguro de eliminar el registro de la fecha seleccionada?" />
+      <Control name="DeleteLogSuccessful" text="¡Éxito de eliminar el registro!" />
+      <Control name="DeleteLogFailed" text="¡Fallo de eliminar el registro, por favor, vuelva a intentar!" />
+      <Control name="NotifyDate" text="Fecha de notificación" />
+      <Control name="ErrorScreen" text="Monitor de avería" />
+      <Control name="SaveEMailConfig" text="Está guardando la configuración del correo, espere....." />
+      <Control name="SaveEMailConfigSuccess" text="¡Éexito de guardar la configuración del correo!" />
+      <Control name="SaveEMailConfigFailed" text="¡Fallo de guardar la configuración del correo!" />
+    </Controls>
+  </Form>
+  <Form>
+    <Name>EMailNotify_String</Name>
+    <Controls>
+      <Control name="ScreenName" text="Nombre del monitor:" />
+      <Control name="ErrName" text="Nombre de avería:" />
+      <Control name="AlarmName" text="Nombre de alarma:" />
+      <Control name="EmailGreetings" text="Hola:" />
+      <Control name="EmailAlarmDealWith" text="¡Por favor, acudase a la escena para solucionar la avería o alarma!" />
+      <Control name="CurNotifyTimes" text="Número de notificación de la avería actual:" />
+      <Control name="MaxNotifyTimes" text="Número máximo de notificación:" />
+      <Control name="TotalErr" text="Número total:" />
+      <Control name="DVIFault" text="Fallo de DVI" />
+      <Control name="CabinetDoorAlarm" text="Apertura de la puerta de la caja" />
+      <Control name="FanAlarm" text="Alarma del ventilador" />
+      <Control name="HumidityAlarm" text="Alarma de humedad" />
+      <Control name="MonitorCardFault" text="Avería de la tarjeta de control" />
+      <Control name="PowerFault" text="Avería de la fuente de alimentación" />
+      <Control name="PowerAlarm" text="Alarma de la fuente de alimentación" />
+      <Control name="RedundancyAlarm" text="Alarma  redundante" />
+      <Control name="SBStatusFault" text="Avería de la tarjeta de recepción" />
+      <Control name="SmokeAlarm" text="Alarma de humo" />
+      <Control name="SenderCardFault" text="Avería de la tarjeta de envío" />
+      <Control name="SoketFault" text="Avería del cable" />
+      <Control name="TemperatureAlarm" text="Alarma de temperatura" />
+      <Control name="SenderIndex" text="Tarjeta de envío" />
+      <Control name="portIndex" text="Puerto de Ethernet" />
+      <Control name="connectIndex" text="Tarjeta de recepción" />
+      <Control name="rowIndex" text="Número de línea" />
+      <Control name="colIndex" text="Número de fila" />
+      <Control name="MonitorErrorNotification" text="Notificación de avería de monitoreo" />
+      <Control name="MonitorSytstemRecoverNotification" text="Notificación de recuperación del sistema de control" />
+      <Control name="MonitorMessageNotification" text="¡El sistema se ha vuelto a la normalidad!" />
+      <Control name="DataName" text="Nombre" />
+      <Control name="DataTime" text="Frecuecia" />
+      <Control name="SystemRefeshIndex" text="Actualización del sistema" />
+      <Control name="SenderErrCount" text="Avería de la tarjeta de envío" />
+      <Control name="SystemRefreshRecord" text="Dato de funcionamiento del sistema" />
+      <Control name="RedundantState" text="Redundancia" />
+      <Control name="MasterSenderPort" text="Puerto de Ethernet principal: Tarjeta de envío" />
+      <Control name="EmailScannerError" text="Avería de la tarjeta de recepcción" />
+      <Control name="EmailMCCardError" text="Avería de la tarjeta de monitoreo" />
+      <Control name="EmailTemperatureError" text="Alarma de temperatura" />
+      <Control name="EmailSmokeError" text="Alarma de humo" />
+      <Control name="EmailHumidityError" text="Alarma de humedad" />
+      <Control name="EmailFlatCableError" text="Alarma de la caja" />
+      <Control name="EmailPowerError" text="Alarma de la fuente de alimentación" />
+      <Control name="EmailCableDoorError" text="Alarma de la puerta de la caja" />
+      <Control name="EmailFanError" text="Alarma del ventilador" />
+    </Controls>
+  </Form>
+  <Form>
+    <Name>UC_EMailNotifyLog</Name>
+    <Controls>
+      <Control name="tabPage_emailLog" text="Registro de notificación de correo" />
+      <Control name="crystalButton_refresh" text="Actualización" />
+      <Control name="crystalButton_reduceDate" text="" />
+      <Control name="crystalButton_deleLog" text="Eliminar" />
+      <Control name="crystalButton_addDate" text="" />
+      <Control name="label_logTime" text="Tiempo del registro:" />
+      <Control name="label_NotifyTip" text="Atención: Después de habilitar la notificación de correo local, se puede revisar el registro." />
+    </Controls>
+  </Form>
+  <Form>
+    <Name>UC_EMailNotifyLog_String</Name>
+    <Controls>
+      <Control name="StatusFailed" text="Fallo" />
+      <Control name="StatusSended" text="Se ha enviado." />
+      <Control name="StatusSucceed" text="Éxito" />
+      <Control name="ColumnReceiveName" text="Destinatario" />
+      <Control name="ColumnNotifyTime" text="Tiempo de notificación" />
+      <Control name="ColumnTitle" text="Título" />
+      <Control name="ColumnMsgContent" text="Contenido de notificaci´n" />
+      <Control name="ColumnNotifyState" text="Estado de envío" />
+      <Control name="DeleteEMailLogSuccess" text="¡Éxito de eliminar el registro!" />
+      <Control name="DeleteEMailLogFailed" text="¡Fallo de eliminar el registro!" />
+      <Control name="DeleteEMailLog" text="Está elimiinando el registro, espere......" />
+    </Controls>
+  </Form>
+</Resource>

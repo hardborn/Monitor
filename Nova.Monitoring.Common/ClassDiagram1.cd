@@ -1,0 +1,214 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Nova.Monitoring.Common.StateAlarmConfig" Collapsed="true">
+    <Position X="11.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACBIAA=</HashCode>
+      <FileName>AlarmConfig.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Nova.Monitoring.Common.ParameterAlarmConfig">
+    <Position X="7.25" Y="0.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAABIAA=</HashCode>
+      <FileName>ParameterAlarmConfig.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Nova.Monitoring.Common.Command" Collapsed="true">
+    <Position X="9.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAgAgAAQAAAAgACAAAAAAAAAAAAAAAAAAABA=</HashCode>
+      <FileName>Command.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Nova.Monitoring.Common.ComponentBase">
+    <Position X="3" Y="0.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAAAAAAAAQAIAAAAAAAAYAAAAAAAAA=</HashCode>
+      <FileName>ComponentBase.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Nova.Monitoring.Common.DataPoint" Collapsed="true">
+    <Position X="11.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAgAAAAAAA=</HashCode>
+      <FileName>DataPoint.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Nova.Monitoring.Common.Device" Collapsed="true">
+    <Position X="13" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAAAAAAAASAAAAAAAAAAQAAAAAAAAA=</HashCode>
+      <FileName>Device.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Nova.Monitoring.Common.ExtentComponent" Collapsed="true">
+    <Position X="0.75" Y="3" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ExtentComponent.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Nova.Monitoring.Common.Led">
+    <Position X="3" Y="5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AIAAAAAAhBAgAIAAAAACAEACAAEAAAAAAAAAAAEEAAA=</HashCode>
+      <FileName>Led.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Nova.Monitoring.Common.LedBasicInfo" Collapsed="true">
+    <Position X="9.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAAAAAABACAAAAAAAEAAEAAABEAAAAAAAAAAAAACBA=</HashCode>
+      <FileName>LedBasicInfo.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Nova.Monitoring.Common.PartInfo" Collapsed="true">
+    <Position X="7.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAQAAAAAAACAAAAAAAAAAQBAAAAAABA=</HashCode>
+      <FileName>LedBasicInfo.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Nova.Monitoring.Common.LedInfo" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="11.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAIEAABFCgAAAEIIAIAEQQgBEAAAGAAAAAAACAAAA=</HashCode>
+      <FileName>LedInfo.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Nova.Monitoring.Common.LedAcquisitionConfig">
+    <Position X="5.5" Y="5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>wAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>LedAcquisitionConfig.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Nova.Monitoring.Common.LedRegistationInfo" Collapsed="true">
+    <Position X="7.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEAAEAAAAEAAAAAAAAAMAAgAAAACgAAAAAQAAAAAABg=</HashCode>
+      <FileName>LedRegistationInfo.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Nova.Monitoring.Common.LedSystem" Collapsed="true">
+    <Position X="9.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>LedSystem.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Nova.Monitoring.Common.MonitoringComponent" Collapsed="true">
+    <Position X="3" Y="3" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>MonitoringComponent.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Nova.Monitoring.Common.MonitoringComponentConfig" Collapsed="true">
+    <Position X="11.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>MonitoringHardwareConfig.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Nova.Monitoring.Common.MonitoringParameter" Collapsed="true">
+    <Position X="0.5" Y="7.25" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAQAAAAABIAA=</HashCode>
+      <FileName>MonitoringParameter.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Nova.Monitoring.Common.OperationsLog" Collapsed="true">
+    <Position X="13" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAgAAAAAAAAACAAAAIAEAAAAAAABAAAAAAAA=</HashCode>
+      <FileName>OperationsLog.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Nova.Monitoring.Common.PowerSupply" Collapsed="true">
+    <Position X="9.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>PowerSupply.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Nova.Monitoring.Common.StateObject">
+    <Position X="0.75" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAgAAAAABA=</HashCode>
+      <FileName>StateObject.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Nova.Monitoring.Common.SystemComponent" Collapsed="true">
+    <Position X="5.25" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>SystemComponent.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Nova.Monitoring.Common.策略类型" Collapsed="true">
+    <Position X="13" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>策略类型.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Interface Name="Nova.Monitoring.Common.IAlarm" Collapsed="true">
+    <Position X="7.75" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAABIAA=</HashCode>
+      <FileName>IAlarmConfig.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Nova.Monitoring.Common.IDevice" Collapsed="true">
+    <Position X="9.5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAAAAAAAAQAAAAAAAAAAQAAAAAAAAA=</HashCode>
+      <FileName>IDevice.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Nova.Monitoring.Common.IMonitoringConfig">
+    <Position X="14.75" Y="0.5" Width="3.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAA=</HashCode>
+      <FileName>IParameterMonitoringConfig.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Nova.Monitoring.Common.IParameterMonitoringCofig">
+    <Position X="15" Y="2.25" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>IParameterMonitoringCofig.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Enum Name="Nova.Monitoring.Common.DeviceType" Collapsed="true">
+    <Position X="9.5" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAFQAgAAAAAAAAAAgAAgEAAAIIBAACAAAAAAAACA=</HashCode>
+      <FileName>DeviceType.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="Nova.Monitoring.Common.LogType" Collapsed="true">
+    <Position X="11.5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>LogType.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="Nova.Monitoring.Common.StateQuantityType" Collapsed="true">
+    <Position X="7.75" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAgAADAAAQAAAEAAAAAAAACgQEAIA=</HashCode>
+      <FileName>StateQuantityType.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Microsoft YaHei UI" Size="9" />
+</ClassDiagram>

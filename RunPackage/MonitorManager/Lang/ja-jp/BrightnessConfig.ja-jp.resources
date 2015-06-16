@@ -1,0 +1,159 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Resource>
+  <Form>
+    <Name>UC_Brightness</Name>
+    <Controls>
+      <Control name="groupBox_BrightnessTable" text="光度の調節" />
+      <Control name="seperatePanel_Computer" text="コンピューター制御" />
+      <Control name="checkBox_ScreenDisplay" text="消した後スクリーンが切る" />
+      <Control name="checkBox_Hareware" text="消した後ハードウェアが自動的に受付して管理する" />
+      <Control name="linkLabel_Software" text="ソフトウェア光度表" />
+      <Control name="linkLabel_Software_Light" text="光学プローブ配置" />
+      <Control name="seperatePanel_Hareware" text="ハードウェアの調節" />
+      <Control name="linkLabel_Hardware" text="ハードウェア光度表" />
+      <Control name="linkLabel_Hardware_Light" text="光学プローブ配置" />
+      <Control name="crystalButton_OK" text="確認" />
+      <Control name="openOpticalProbeConfigButton" text="保存" />
+      <Control name="seperatePanel_AutoBrightInfo" text="自動輝度調節情報" />
+      <Control name="label_AutoBrightPeriod" text="環境輝度を検出する周期" />
+      <Control name="label_ReadLuxCnt" text="環境輝度を読み取る次数" />
+      <Control name="label_Notice" text="提示：自動輝度調節モデルで、毎回、ディスプレー・スクリーン・スクリーン・スクリーン輝度を調節する前に必ず読んだN次の光プローブ値の最大値と最小値を減って平均値を求めて、その後環境輝度とディスプレー・スクリーン・スクリーン・スクリーン輝度で構成した曲線によってディスプレー・スクリーン・スクリーン・スクリーン輝度を調節する！" />
+      <Control name="tabPage_BrightnessTable" text="明るさの設定" />
+      <Control name="tabPage_AutoBrightConfig" text="グローバルパラメータ" /> 
+      <Control name="checkBox_IsSmartEnable" text="スマート明るさを有効にする" /> 
+      <Control name="checkBox_IsGradualEnable" text="輝度勾配を有効にする" /> 
+    </Controls>
+  </Form>
+  <Form>
+    <Name>UC_Brightness_String</Name>
+    <Controls>
+      <Control name="ConfigHardwareBrightness" text="ハードウェアが自動的にハードウェア光度表の配置が必要することを受け付け、管理するハードウェア光度表を配置してください。" />
+      <Control name="SaveFailed" text="保存失敗" />
+      <Control name="SaveSuccess" text="保存成功" />
+      <Control name="everyday" text="毎日" />
+      <Control name="Workday" text="月曜日から金曜日" />
+      <Control name="userDefined" text="カスタム" />
+      <Control name="Monday" text="月曜日" />
+      <Control name="Tuesday" text="火曜日" />
+      <Control name="Wednesday" text="水曜日" />
+      <Control name="Thursday" text="木曜日" />
+      <Control name="Friday" text="金曜日" />
+      <Control name="Saturday" text="土曜日" />
+      <Control name="Sunday" text="日曜日" />
+      <Control name="AutoBright" text="自動光度" />
+      <Control name="FixBright" text="タイミング明るさ" />
+      <Control name="SaveBrightConfig" text="明るさの設定を保存しています。しばらくお待ちください..." />
+      <Control name="savesuccessNoConfig" text="輝度情報が設定されていません" />
+      <Control name="label_tip" text="ヒント：複数の画面があります：環境強度の設定は、選択'{0}'に設定されている！" />
+    </Controls>
+  </Form>
+  <Form>
+    <Name>UC_BrightnessConfig</Name>
+    <Controls>
+      <Control name="button_add" text="添加" />
+      <Control name="ToolStripMenuItem_add" text="添加" />
+      <Control name="button_edit" text="編集" />
+      <Control name="ToolStripMenuItem_edit" text="編集" />
+      <Control name="button_delete" text="削除" />
+      <Control name="ToolStripMenuItem_delete" text="削除" />
+      <Control name="button_deleteAll" text="図表を消す" />
+      <Control name="ToolStripMenuItem_deleteAll" text="図表を消す" />
+      <Control name="crystalButton_OK" text="確認" />
+      <Control name="openLightSensoreConfigButton" text="光学プローブ配置" />
+      <Control name="brightnessConfigGroupBox" text="明るさ調節配置" />
+      <Control name="currentBrightnessLabel" text="現在の明るさ:" />
+      <Control name="everyday" text="毎日" />
+      <Control name="Workday" text="月曜日から金曜日" />
+      <Control name="userDefined" text="自己規定" />
+      <Control name="Monday" text="月曜日" />
+      <Control name="Tuesday" text="火曜日" />
+      <Control name="Wednesday" text="水曜日" />
+      <Control name="Thursday" text="木曜日" />
+      <Control name="Friday" text="金曜日" />
+      <Control name="Saturday" text="土曜日" />
+      <Control name="Sunday" text="日曜日" />
+      <Control name="AutoBright" text="自動明るさ" />
+      <Control name="FixBright" text="定時明るさ" />
+      <Control name="SaveBrightConfig" text="明るさの配置を保存しています。少々お待ちください…" />
+      <Control name="savesuccessNoConfig" text="明るさデータを配置しなかった" />
+      <Control name="label_tip" text="提示:マルチスクリーンが存在する時:環境の明るさは、'{0}'を選択して配置してください!" />
+      <Control name="IsConfigEnable" text="使用" />
+      <Control name="Time" text="時間" />
+      <Control name="TypeStr" text="コントロールタイプ" />
+      <Control name="DayListStr" text="執行周期" />
+      <Control name="BrightnessDisplay" text="明るさ（%）" />
+      <Control name="Msg_DeleteBrightnessConfig" text="選択を削除しますか？" />
+      <Control name="Msg_ConfigLightprobe" text="このスクリーンに光学プローブを配置してください(自動の明るさは、光学プローブの調節図表によってスクリーン明るさを調節することができる)!" />
+      <Control name="Msg_ConfigLightprobe_LightList" text="光学プローブ調節図表を調節してください(自動の明るさは、光学プローブの調節図表によってスクリーン明るさを調節することができる)!" />
+      <Control name="Msg_BrightnessConfig_Empty" text="明るさの配置図をクリアしますか？" />
+      <Control name="nolightsensorconfig" text="必要となる光学プローブを選択しなかった。すべての自動調節配置は失効します!" />
+      <Control name="nolightsensormappingconfig" text="光学プローブが配置されていない明るさの文字表はすべての自動調節配置が失効します!" />
+      <Control name="partlightsensorfail" text="自動明るさを配置した。選択した部分光学プローブは、ソフトウェアがない時使うことができない!" />
+      <Control name="editname" text="編集" />
+      <Control name="deletename" text="削除" />
+      <Control name="SaveFailed" text="保存失敗" />
+      <Control name="SaveSuccess" text="保存成功" />
+    </Controls>
+  </Form>
+  <Form>
+    <Name>UC_BrightnessConfig_String</Name>
+    <Controls>
+      <Control name="IsConfigEnable" text="確認" />
+      <Control name="Time" text="時間" />
+      <Control name="TypeStr" text="制御のタイプ" />
+      <Control name="DayListStr" text="執行周期" />
+      <Control name="BrightnessDisplay" text="光度（%）" />
+      <Control name="Msg_DeleteBrightnessConfig" text="選択項目を削除しますか？" />
+      <Control name="Msg_ConfigLightprobe" text="スクリーンに光学プローブを配置してください(自動光度は、光学プローブ調節図表に根拠してスクリーン輝度を調節する)!" />
+      <Control name="Msg_ConfigLightprobe_LightList" text="光学プローブ調節図表を配置してください(自動光度は、光学プローブ調節図表に根拠してスクリーン輝度を調節する)!" />
+      <Control name="Msg_BrightnessConfig_Empty" text="光度配置図を消しますか？" />
+      <Control name="nolightsensorconfig" text="必要な光学プローブを選択しなかった。すべての自動調節配置は失効します!" />
+      <Control name="nolightsensormappingconfig" text="光学プローブ明るさの文字表を配置しなかった。すべての自動調節配置は失効します!" />
+      <Control name="partlightsensorfail" text="自動明るさを配置した。選択した部分光学プローブは、ソフトウェアがない時使うことができない!" />
+      <Control name="editname" text="編集" />
+      <Control name="deletename" text="削除" />
+      <Control name="SaveFailed" text="保存失敗" />
+      <Control name="SaveSuccess" text="保存成功" />
+    </Controls>
+  </Form>
+  <Form>
+    <Name>frm_BrightnessConfig</Name>
+    <Controls>
+      <Control name="frm_BrightnessConfig" text="光度を設置" />
+      <Control name="tabPage_Fasten" text="タイミング明るさ" />
+      <Control name="tabPage_Auto" text="自動光度" />
+      <Control name="button_OK" text="確認" />
+      <Control name="button_cancel" text="キャンセル" />
+    </Controls>
+  </Form>
+  <Form>
+    <Name>frm_BrightnessConfig_String</Name>
+    <Controls>
+      <Control name="Text_Brightness" text="光度" />
+      <Control name="ExecuteCycle" text="執行周期" />
+      <Control name="Text_Time" text="時間" />
+      <Control name="Msg_TimesEmpty" text="調節時間帯を選択してください" />
+      <Control name="Msg_BrightnessConfig_Repeat" text="光度の構成図表の時間が重複だった。再度編集してください!" />
+    </Controls>
+  </Form>
+  <Form>
+    <Name>Frm_BrightnessAdjustmentSetting</Name>
+    <Controls>
+      <Control name="Frm_BrightnessAdjustmentSetting" text="時間調節設置" />
+      <Control name="fixedBrightnessRadioButton" text="定時明るさ" />
+      <Control name="autoBrightnessRadioButton" text="自動明るさ" />
+      <Control name="lable_AdjustCycle" text="調節周期" />
+      <Control name="mondayCheckBox" text="月曜日" />
+      <Control name="tuesdayCheckBox" text="火曜日" />
+      <Control name="wednesdayCheckBox" text="水曜日" />
+      <Control name="thursdayCheckBox" text="木曜日" />
+      <Control name="fridayCheckBox" text="金曜日" />
+      <Control name="saturdayCheckBox" text="土曜日" />
+      <Control name="sundayCheckBox" text="日曜日" />
+      <Control name="label_AdjustTime" text="時間調節" />
+      <Control name="label_brightnessValue" text="明るさ調節" />
+      <Control name="confirmButton" text="確認" />
+      <Control name="cancelButton" text="キャンセル" />
+    </Controls>
+  </Form>
+</Resource>

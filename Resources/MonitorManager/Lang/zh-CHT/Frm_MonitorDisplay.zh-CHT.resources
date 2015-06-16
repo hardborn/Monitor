@@ -1,0 +1,804 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Resource>
+  <Form>
+    <Name>Frm_MonitorDisplayMain</Name>
+    <Controls>
+      <Control name="Frm_MonitorDisplayMain" text="MonitorSite" />
+      <Control name="crystalButton_MonitorRefresh" text="監控刷新" />
+      <Control name="crystalButton_Regist" text="註冊" />
+      <Control name="crystalButton_Config" text="配置" />
+      <Control name="groupbox_scalingrate" text="縮放" />
+      <Control name="seperatePanel_StatisticsInfo" text="統計資訊" />
+      <Control name="seperatePanel_FaultAlarmInfo" text="故障(告警)資訊" />
+      <Control name="label_PeriodS" text="秒" />
+      <Control name="label_TimeS" text="秒" />
+      <Control name="label_LastUpdateTime" text="當前監控資料獲取時間:" />
+      <Control name="FrmText" text="控制系統監控" />
+      <Control name="NotConnectSystem" text="當前未連接控制系統!" />
+      <Control name="tabStripButton_FaultInfo" text="故障(告警)資訊" />
+      <Control name="tabStripButton_OperateInfo" text="交互資訊" />
+      <Control name="toolStripStatusLabel_Status" text="Care狀態:獲取中" />
+    </Controls>
+  </Form>
+  <Form>
+    <Name>Frm_MonitorMain</Name>
+    <Controls>
+      <Control name="toolStripMenuItem_OpenMain" text="打開使用者介面(&amp;O)" />
+      <Control name="ToolStripMenuItem_Exit" text="退出(&amp;Q)" />
+      <Control name="toolStripMenuItem_ClosedTitle" text="關閉監控將會影響智慧亮度調節,是否關閉監控?" />
+      <Control name="toolStripMenuItem_OpenBrightAllConfig" text="亮度高級配置" />
+      <Control name="notifyIcon" text="監控終端平臺" />
+      <Control name="Screen" text="屏" />
+      <Control name="toolStripMenuItem_ReReadScreen" text="重讀屏體" />
+    </Controls>
+  </Form>
+  <Form>
+    <Name>Frm_MonitorConfigManager</Name>
+    <Controls>
+      <Control name="Frm_MonitorConfigManager" text="監控終端--配置" />
+      <Control name="label_ScreenSelected" text="選擇配屏:" />
+      <Control name="crystalButton_RefreshConfig" text="刷新週期" />
+      <Control name="crystalButton_HWConfig" text="硬體設定" />
+      <Control name="crystalButton_MonitorCardPowerConfig" text="外設電源配置" />
+      <Control name="crystalButton_DataAltarmConfig" text="資料告警配置" />
+      <Control name="crystalButton_ControlConfig" text="控制配置" />
+      <Control name="crystalButton_CareRegisterConfig" text="Care服務管理" />
+      <Control name="crystalButton_BrightnessConfig" text="亮度調節" />
+      <Control name="crystalButton_ControlLog" text="控制日誌" />
+      <Control name="crystalButton_NotifySetting" text="郵件配置" />
+      <Control name="crystalButton_EMailLog" text="郵件日誌" />
+    </Controls>
+  </Form>
+  <Form>
+    <Name>Frm_MonitorStatusDisplayInfo_Status</Name>
+    <Controls>
+      <Control name="StartReadMonitorData" text="開始讀取監控資料..." />
+      <Control name="StartReadDVIData" text="開始讀取DVI資料..." />
+      <Control name="StartRetryReadSenderData" text="開始重試讀取發送卡資料..." />
+      <Control name="GetDVIDataFinish" text="讀取DVI資料完成，開始解析..." />
+      <Control name="ParsingDVIDataFinish" text="DVI資料處理完成." />
+      <Control name="StartReadScannerData" text="開始讀取接收卡的資料..." />
+      <Control name="GetScannerDataFinish" text="接收卡資料讀取完成，開始解析..." />
+      <Control name="ParsingScannerData" text="解析接收卡資料..." />
+      <Control name="ParsingMonitorData" text="解析監控卡資料..." />
+      <Control name="ParsingScannerDataFinish" text="讀取接收卡常規資料完成..." />
+      <Control name="ReadMonitoringSuccess" text="監控資料獲取完成" />
+      <Control name="ReadMonitoringFailed" text="監控資料獲取完成" />
+      <Control name="OnInitialize" text="資料來源開始初始化..." />
+      <Control name="HWOnInitialize" text="開始初始化硬體..." />
+      <Control name="OnInitializeSuccess" text="資料來源初始化成功..." />
+      <Control name="HWOnInitializeFailed" text="初始化硬體失敗..." />
+      <Control name="BusyWorking" text="讀取失敗：硬體正忙..." />
+      <Control name="NoScreenInfo" text="讀取失敗：沒有屏體資訊..." />
+      <Control name="CareLineStatusOK" text="Care狀態:線上" />
+      <Control name="CareLineStatusNG" text="Care狀態:離線" />
+      <Control name="BeginReadSBData" text="開始讀監控接收卡資訊：" />
+      <Control name="CompleteReadSBData" text="讀監控接收卡資訊結束:" />
+      <Control name="NoMonitorConfig" text="讀取失敗：無硬件配置" />
+    </Controls>
+  </Form>
+  <Form>
+    <Name>Frm_MonitorStatusDisplayInfo</Name>
+    <Controls>
+      <Control name="AllScreen" text="所有屏" />
+      <Control name="Frm_MonitorDisplayMain" text="監控終端" />
+      <Control name="groupbox_scalingrate" text="縮放" />
+      <Control name="seperatePanel_StatisticsInfo" text="統計資訊" />
+      <Control name="seperatePanel_FaultAlarmInfo" text="故障(告警)資訊" />
+      <Control name="label_PeriodS" text="秒" />
+      <Control name="label_TimeS" text="秒" />
+      <Control name="label_LastUpdateTime" text="當前監控資料獲取時間:" />
+      <Control name="FrmText" text="控制系統監控" />
+      <Control name="NotConnectSystem" text="當前未連接控制系統!" />
+      <Control name="tabStripButton_FaultInfo" text="故障(告警)資訊" />
+      <Control name="tabStripButton_OperateInfo" text="交互資訊" />
+      <Control name="ReadResIs" text="讀監控資訊結束" />
+      <Control name="RefreshThreadIsPause" text="刷新接收卡狀態被暫停!" />
+      <Control name="Successed" text="成功!" />
+      <Control name="Failed" text="失敗!" />
+      <Control name="IsBeginReadMonitorInfo" text="開始讀監控資訊......" />
+      <Control name="Screen" text="屏" />
+      <Control name="SBStatus" text="接收卡狀態" />
+      <Control name="MCStatus" text="監控卡狀態" />
+      <Control name="Temperature" text="溫度" />
+      <Control name="Humidity" text="濕度" />
+      <Control name="Smoke" text="煙霧" />
+      <Control name="Fan" text="風扇" />
+      <Control name="Power" text="電源" />
+      <Control name="RowLine" text="箱體" />
+      <Control name="GeneralStatus" text="箱門狀態" />
+      <Control name="AllInfo" text="全部" />
+      <Control name="SenderStatus" text="發送卡狀態" />
+      <Control name="None" text="無" />
+      <Control name="SenderName" text="發送卡" />
+      <Control name="PortName" text="網口" />
+      <Control name="ScanBoard" text="接收卡" />
+      <Control name="beginReadInfoStr" text=":開始讀監控資訊......" />
+      <Control name="beginReadDVIStr" text=":開始讀DVI資訊......" />
+      <Control name="ReadDVIInfoResIs" text="讀DVI資訊結束" />
+      <Control name="IsBeginReadDVIInfo" text="開始讀DVI資訊......" />
+      <Control name="DisplayPowerOffNotification" text="顯示幕斷電通知" />
+      <Control name="FuncCardName" text="多功能卡" />
+      <Control name="PowerSwitch1" text="第" />
+      <Control name="PowerSwitch2" text="路" />
+      <Control name="YesStr" text="是" />
+      <Control name="NoStr" text="否" />
+      <Control name="SmokeCtrlStr" text="有煙箱體" />
+      <Control name="BrightDecreaseStr" text="亮度降低" />
+      <Control name="RestoreBrightStr" text="恢復亮度" />
+      <Control name="ShutOffForScreen" text="顯示幕斷電" />
+      <Control name="OpenCoolingDevice" text="打開散熱設備" />
+      <Control name="CloseCoolingDevice" text="關閉散熱設備" />
+      <Control name="ViewPowerDetaiInfoStr" text="查看" />
+      <Control name="SendNotifyEmail" text="斷電後發送郵件通知" />
+      <Control name="TemperatureControl" text="溫度控制" />
+      <Control name="SmokeControl" text="煙霧控制" />
+      <Control name="AllScreenInfo" text="全部" />
+      <Control name="CabinetCntUnit" text="個" />
+      <Control name="EmailNotifyInfoException" text="郵件配置資訊異常" />
+      <Control name="AddButtonText1" text="添加" />
+      <Control name="AddButtonText2" text="確定" />
+      <Control name="ExitButtonText1" text="退出" />
+      <Control name="ExitButtonText2" text="取消" />
+      <Control name="AddConfigInfoFrmText1" text="添加一個控制資訊" />
+      <Control name="AddConfigInfoFrmText2" text="編輯控制資訊" />
+      <Control name="PleaseSelectPowerToCtrl" text="請添加需要控制的電源!" />
+      <Control name="TempIntervalLessThanMin" text="控制時的溫度閾值比恢復控制的溫度閾值至少大" />
+      <Control name="ControlContent" text="內容" />
+      <Control name="EmailNotify" text="通知" />
+      <Control name="DisplayNumber" text="顯示幕序號" />
+      <Control name="ModifyInformation" text="修改" />
+      <Control name="RemoveInformation" text="刪除" />
+      <Control name="PowerListDetailInfo" text="詳細資訊" />
+      <Control name="CanNotAddSameScreenSameTempCtrlInfo" text="添加失敗,該顯示幕已存在一個相同的溫度控制資訊!" />
+      <Control name="CanNotAddSameScreenSameSmokeAlarmCtrlInfo" text="添加失敗,該顯示幕已存在一個相同的煙霧控制資訊!" />
+      <Control name="AddCtrlInfoSucceed" text="添加控制資訊成功!" />
+      <Control name="AfterEditSameScreenHasSameTempCtrlInfo" text="修改失敗,該顯示幕已存在一個相同的溫度控制資訊!" />
+      <Control name="AfterEditSameScreenHasSameSmokeAlarmCtrlInfo" text="修改失敗,該顯示幕已存在一個相同的煙霧控制資訊!" />
+      <Control name="AreYouSureToRemoveSelectedItem" text="確定需要刪除選中項嗎?" />
+      <Control name="MonitorCtrlListIsEmpty" text="控制資訊清單為空,請添加!" />
+      <Control name="AreYouSureDealWithAllError" text="確認已將所有的故障處理?" />
+      <Control name="LoadLogFailed" text="載入日誌資訊失敗!" />
+      <Control name="CurHasNoFuncCard" text="當前未配置多功能卡,無電源!" />
+      <Control name="IsConfigEmailInfo" text="當前未配置任何郵件通知資訊,是否配置?" />
+      <Control name="Time" text="時間" />
+      <Control name="DisplayName" text="顯示幕名稱" />
+      <Control name="ControlInfo" text="控制資訊" />
+      <Control name="CtrlResult" text="結果" />
+      <Control name="Frm_ComplexScreenDisplayText" text="查看複雜屏監控資料" />
+      <Control name="ColsHeaderTextInfo" text="信息" />
+      <Control name="ColsHeaderTextSenderIndex" text="發送卡" />
+      <Control name="ColsHeaderTextPortIndex" text="網口" />
+      <Control name="ColsHeaderTextSBIndex" text="接收卡" />
+      <Control name="ColsHeaderTextStartX" text="起始X" />
+      <Control name="ColsHeaderTextStartY" text="起始Y" />
+      <Control name="ColsHeaderTextWidth" text="寬度" />
+      <Control name="ColsHeaderTextHeight" text="高度" />
+      <Control name="DisplayTypePowerValue" text="電壓值" />
+      <Control name="Normal" text="正常" />
+      <Control name="Error" text="故障" />
+      <Control name="Alarm" text="告警" />
+      <Control name="Unknown" text="未知" />
+      <Control name="Invalid" text="無效" />
+      <Control name="VoltageAlarm" text="電壓異常" />
+      <Control name="RowColNameStr" text="行,列" />
+      <Control name="SBCount" text="接收卡總個數" />
+      <Control name="FaultSBCount" text="故障的接收卡個數" />
+      <Control name="AlarmSBCount" text="電壓異常的接收卡個數" />
+      <Control name="FanCount" text="風扇總個數" />
+      <Control name="AlarmFanCount" text="告警的風扇個數" />
+      <Control name="PowerCount" text="電源個數" />
+      <Control name="AlarmPowerCount" text="告警的電源個數" />
+      <Control name="LowestTemp" text="最低溫度" />
+      <Control name="HighestTemp" text="最高溫度" />
+      <Control name="AverageTemp" text="平均溫度" />
+      <Control name="OverAverageTempCnt" text="過平均溫度的接收卡數量" />
+      <Control name="TempAlarmCount" text="溫度告警的接收卡數量" />
+      <Control name="SmokeAlarmSBCount" text="煙霧告警的接收卡個數" />
+      <Control name="LowestHumi" text="最低濕度" />
+      <Control name="HighestHumi" text="最高濕度" />
+      <Control name="AverageHumi" text="平均濕度" />
+      <Control name="OverAverageHumiCnt" text="過平均濕度的接收卡數量" />
+      <Control name="HumidityAlarmCount" text="濕度告警的接收卡數量" />
+      <Control name="CabinetCount" text="箱體總個數" />
+      <Control name="CabinetFaultCount" text="故障的箱體數量" />
+      <Control name="MCCount" text="監控卡總個數" />
+      <Control name="FaultMCCount" text="故障的監控卡數量" />
+      <Control name="AlarmMCCount" text="電壓異常的監控卡個數" />
+      <Control name="CabinetCntOfOpenDoor" text="箱門開啟的箱體個數" />
+      <Control name="SwitchSignSBVoltage" text="接收卡板載電壓" />
+      <Control name="SwitchSignMCSelefVoltage" text="監控卡板載電壓" />
+      <Control name="SwitchSignMCVoltage" text="監控卡電壓" />
+      <Control name="SupplyVoltage" text="供電電壓" />
+      <Control name="DoorOpen" text="開啟" />
+      <Control name="DoorClose" text="關閉" />
+      <Control name="SwitchName" text="路數" />
+      <Control name="CommPortScreen" text="屏" />
+      <Control name="DoubleClickToViewInfo" text="詳細資訊:請按兩下查看!" />
+      <Control name="ScreenNotExist" text="不存在!" />
+      <Control name="FaultInformation" text="故障資訊" />
+      <Control name="NotConnectMC" text="未連接監控卡" />
+      <Control name="SoketName" text="插座" />
+      <Control name="GroupName" text="數據組數" />
+      <Control name="ScanSignalName" text="掃描" />
+      <Control name="SignalName" text="信號" />
+      <Control name="RGBSignalStrR" text="紅信號" />
+      <Control name="RGBSignalStrG" text="綠信號" />
+      <Control name="RGBSignalStrB" text="藍信號" />
+      <Control name="RGBSignalStrVR" text="虛擬紅信號" />
+      <Control name="CelsiusUnit" text="℃" />
+      <Control name="FahrenheitUnit" text="℉" />
+      <Control name="SenderDVI" text="發送卡" />
+      <Control name="ScreenName" text="屏名稱" />
+      <Control name="Count" text="數量" />
+      <Control name="FaultInfo" text="故障資訊" />
+      <Control name="AlarmInfo" text="告警信息" />
+      <Control name="CommPortName" text="通信口" />
+      <Control name="ClickViewSBStatusFaultAlarmInfo" text="按一下查看接收卡狀態故障(告警)資訊!" />
+      <Control name="ClickViewTempFaultAlarmInfo" text="按一下查看溫度故障(告警)資訊!" />
+      <Control name="ClickViewHumiFaultAlarmInfo" text="按一下查看濕度故障(告警)資訊!" />
+      <Control name="ClickViewSmokeFaultAlarmInfo" text="按一下查看煙霧故障(告警)資訊!" />
+      <Control name="ClickViewFanFaultAlarmInfo" text="按一下查看風扇故障(告警)資訊!" />
+      <Control name="ClickViewPowerFaultAlarmInfo" text="按一下查看電源故障(告警)資訊!" />
+      <Control name="ClickViewMCStatusFaultAlarmInfo" text="按一下查看監控卡狀態故障(告警)資訊!" />
+      <Control name="ClickViewRowLineFaultAlarmInfo" text="按一下查看箱體狀態故障(告警)資訊!" />
+      <Control name="ClickViewGeneralStatusFaultAlarmInfo" text="按一下查看箱門狀態故障(告警)資訊!" />
+      <Control name="ClickViewSenderDVIFaultAlarmInfo" text="按一下查看發送卡異常資訊!" />
+      <Control name="label_OK" text="正常" />
+      <Control name="label_SecderError" text="發送卡故障" />
+      <Control name="label_DVIException" text="DVI信號異常" />
+      <Control name="label_Unknown" text="未知" />
+      <Control name="DVISignalOK" text="DVI信號:正常" />
+      <Control name="DVISignalException" text="DVI信號:異常" />
+      <Control name="DVISignalUnkonwn" text="DVI信號:未知" />
+      <Control name="RefreshRate" text="刷新率:" />
+      <Control name="AllDisplayMonitorConfigSameStr" text="所有屏統一進行刷新設置" />
+      <Control name="AllDisplayMonitorConfigDifferentStr" text="每個屏分別進行刷新設置" />
+      <Control name="EmailAddrError" text="郵箱位址格式不正確！" />
+      <Control name="EmailAddrNotNull" text="郵箱密碼不能為空！" />
+      <Control name="SMTPServerNotNull" text="SMTP伺服器不能為空！" />
+      <Control name="EmailPortError" text="埠格式不正確！" />
+      <Control name="ReceiverNameNotNull" text="收件人姓名不能為空！" />
+      <Control name="AddReceivers" text="添加" />
+      <Control name="ModifyReceivers" text="修改" />
+      <Control name="SelectEditReceiver" text="請選擇要編輯的收件人！" />
+      <Control name="SelectDeleteReceiver" text="請選擇要刪除的收件人！" />
+      <Control name="SureDeleteReceiver" text="確認要刪除選擇的收件人？" />
+      <Control name="ReceiverName" text="姓名" />
+      <Control name="EmailAddr" text="郵箱地址" />
+      <Control name="dateLogNotExist" text="選擇日期的日誌不存在！" />
+      <Control name="SureToDeleteLog" text="確認刪除選擇日期的日誌？" />
+      <Control name="DeleteLogSuccessful" text="刪除日誌成功！" />
+      <Control name="DeleteLogFailed" text="刪除日誌失敗，請重試！" />
+      <Control name="NotifyDate" text="通知日期" />
+      <Control name="ErrorScreen" text="故障顯示幕" />
+      <Control name="EmailReceiver" text="收信人" />
+      <Control name="MsgTitle" text="標題" />
+      <Control name="MsgContent" text="通知內容" />
+      <Control name="MsgStatus" text="郵件狀態" />
+      <Control name="EmailSended" text="已發送" />
+      <Control name="EmailFailed" text="失敗" />
+      <Control name="EmailSucceed" text="成功" />
+      <Control name="MonitorErrorNotification" text="監控故障通知" />
+      <Control name="NotificationModel" text="請選擇發件模式！" />
+      <Control name="MonitorSytstemRecoverNotification" text="監控系統恢復通知" />
+      <Control name="SystemRefreshRecord" text="系統運行資料" />
+      <Control name="MonitorMessageNotification" text="系統已恢復正常！" />
+      <Control name="ApplyEmailCfgFailed" text="應用設置失敗，請重試！" />
+      <Control name="EmailErrorInfo" text="故障資訊:" />
+      <Control name="EmailSenderDviError" text="發送卡DVI異常:" />
+      <Control name="SenderCardUnkonwn" text="發送卡:發送卡故障" />
+      <Control name="EmailScannerError" text="接收卡故障：" />
+      <Control name="EmailTemperatureError" text="溫度故障：" />
+      <Control name="EmailHumidityError" text="濕度故障：" />
+      <Control name="EmailSmokeError" text="煙霧故障：" />
+      <Control name="EmailFanError" text="風扇故障：" />
+      <Control name="EmailPowerError" text="電源故障：" />
+      <Control name="EmailMCCardError" text="監控卡故障：" />
+      <Control name="EmailFlatCableError" text="箱體狀態故障：" />
+      <Control name="EmailCableDoorError" text="箱門故障：" />
+      <Control name="EmailAlarmInfo" text="告警信息:" />
+      <Control name="EmailScannerAlarm" text="接收卡告警：" />
+      <Control name="EmailTemperatureAlarm" text="溫度告警：" />
+      <Control name="EmailHumidityAlarm" text="濕度告警：" />
+      <Control name="EmailSmokeAlarm" text="煙霧告警：" />
+      <Control name="EmailFanAlarm" text="風扇告警：" />
+      <Control name="EmailPowerAlarm" text="電源告警：" />
+      <Control name="EmailMCCardAlarm" text="監控卡告警：" />
+      <Control name="EmailFlatCableAlarm" text="箱體狀態告警：" />
+      <Control name="EmailCableDoorAlarm" text="開啟的箱門：" />
+      <Control name="EmailGreetings" text="您好：" />
+      <Control name="EmailAlarmDealWith" text="請及時到現場處理故障或告警！" />
+      <Control name="CurNotifyTimes" text="當前故障通知次數:" />
+      <Control name="MaxNotifyTimes" text="最多通知次數:" />
+      <Control name="DataName" text="名稱" />
+      <Control name="DataTime" text="次數" />
+      <Control name="SystemRefeshIndex" text="系統刷新:" />
+      <Control name="SenderErrCount" text="發送卡故障:" />
+      <Control name="HighTempType" text="最高溫度" />
+      <Control name="AverageTempType" text="平均溫度" />
+      <Control name="PortNormal" text="網口：正常" />
+      <Control name="PortRedundant" text="網口：冗餘" />
+      <Control name="PortUnknown" text="網口：未知" />
+      <Control name="RedundantStateCount" text="冗餘總數：" />
+      <Control name="SenderCard" text="發送卡" />
+      <Control name="Port" text="網口" />
+      <Control name="RedundantState" text="：冗餘" />
+      <Control name="RedundantStateMsg" text="冗餘信息" />
+      <Control name="MasterSenderPort" text="主網口:發送卡" />
+      <Control name="DectCtrlInfoOverLappingOne" text="添加失敗，當前溫度範圍和第" />
+      <Control name="DectCtrlInfoOverLappingTwo" text="行的溫度範圍不能重疊!" />
+      <Control name="DectCtrlInfoOverOne" text="添加失敗，當前定義的溫度值和第" />
+      <Control name="DectCtrlInfoOverTwo" text="行定義的溫度值間隔不能小於5!" />
+      <Control name="DectModificationCtrlInfoOverLappingOne" text="修改失敗，當前溫度範圍和第" />
+      <Control name="DectModificationCtrlInfoOverOne" text="修改失敗，當前定義的溫度值和第" />
+      <Control name="CtrlThresholdInputError" text="“溫度範圍”處的第一個溫度值要小於第二個溫度值！" />
+      <Control name="ColScreenTip" text="屏名稱" />
+      <Control name="ColSenderTip" text="發送卡" />
+      <Control name="ColSBStatusTip" text="接收卡狀態" />
+      <Control name="ColTemperatureTip" text="溫度" />
+      <Control name="ColMControlTip" text="監控卡狀態" />
+      <Control name="ColHumidityTip" text="濕度" />
+      <Control name="ColSmokeWarnTip" text="煙霧" />
+      <Control name="ColFanSpeedTip" text="風扇" />
+      <Control name="ColValtageTip" text="電源" />
+      <Control name="ColRowLineStatusTip" text="排線狀態" />
+      <Control name="ColGeneralStatusTip" text="箱門狀態" />
+      <Control name="ColCareStatusTip" text="Care狀態" />
+      <Control name="Frm_MonitorDisplayMainText" text="監控終端" />
+      <Control name="Frm_MonitorDisplayMainTextNoData" text="(獲取屏體資料中...)" />
+      <Control name="RefreshDataFailed" text="刷新資料失敗,請重試!" />
+      <Control name="ManualRefreshTitle" text="重新獲取監控資料,請稍候..." />
+      <Control name="ColConTextTip" text="單擊查看詳情" />
+    </Controls>
+  </Form>
+  <Form>
+    <Name>Frm_SmartBrightness</Name>
+    <Controls>
+      <Control name="Frm_SmartBrightness" text="智能亮度調節" />
+      <Control name="crystalButton_Cancel" text="取消" />
+      <Control name="label_ScreenSelected" text="選擇配屏:" />
+    </Controls>
+  </Form>
+  <Form>
+    <Name>Frm_SmartBrightness_String</Name>
+    <Controls>
+      <Control name="GetSNValue" text="正在獲取屏體的SN資訊..." />
+      <Control name="GetSNFailed" text="獲取屏體的SN資訊失敗:監控中不存在此屏資訊" />
+    </Controls>
+  </Form>
+  <Form>
+    <Name>UC_CycleConfig</Name>
+    <Controls>
+      <Control name="seperatePanel_AutoRefresh" text="週期刷新" />
+      <Control name="seperatePanel_CountSetting" text="重讀次數設置" />
+      <Control name="checkBox_AutoRefresh" text="自動刷新" />
+      <Control name="label_RefreshPeriod" text="刷新週期:" />
+      <Control name="label_RetryTimes" text="讀狀態失敗時的重讀次數:" />
+      <Control name="label_Count" text="次" />
+      <Control name="crystalButton_RecommendTime" text="推薦週期" />
+      <Control name="crystalButton_OK" text="保存" />
+    </Controls>
+  </Form>
+  <Form>
+    <Name>UC_CycleConfig_String</Name>
+    <Controls>
+      <Control name="SaveCycleConfig" text="正在保存週期配置,請稍候..." />
+      <Control name="CycleConfigSuccess" text="週期保存成功!" />
+      <Control name="CycleConfigFailed" text="週期保存失敗!" />
+      <Control name="CycleRefreshTime" text="正在獲取推薦週期配置,請稍候..." />
+      <Control name="CycleRefreshTimeTitle" text="為了獲取時間準確性，請停止自動執行,並保存後，再試..." />
+    </Controls>
+  </Form>
+  <Form>
+    <Name>UC_CareServerConfig</Name>
+    <Controls>
+      <Control name="label_CareUser" text="用戶:" />
+      <Control name="crystalButton_RefreshUser" text="刷新" />
+      <Control name="crystalButton_OK" text="註冊" />
+      <Control name="label_Disclaimer" text="新用戶與已註冊用戶衝突時,新用戶及時生效,並且不會通知." />
+    </Controls>
+  </Form>
+  <Form>
+    <Name>UC_CareServerConfig_String</Name>
+    <Controls>
+      <Control name="ScreenAlreadyExists" text="屏體已註冊!" />
+      <Control name="AccountNotExist" text="帳戶不存在!" />
+      <Control name="ScreenRegisteredSuccessfully" text="註冊成功!" />
+      <Control name="ScreenReregister" text="免則聲明：註冊用戶變更，是否繼續?" />
+      <Control name="SnEmpty" text="不允許存在屏體別名為空!" />
+      <Control name="CareRegFailed" text="註冊失敗!" />
+      <Control name="CareReadData" text="註冊資料正在獲取中，請稍候..." />
+      <Control name="SaveCareServerConfig" text="正在進行註冊,請稍候..." />
+      <Control name="ScreenSN" text="屏ID" />
+      <Control name="SnAlia" text="屏別名" />
+      <Control name="Longitude" text="經度" />
+      <Control name="Latitude" text="緯度" />
+      <Control name="MapName" text="地圖" />
+      <Control name="Width" text="寬度" />
+      <Control name="Height" text="高度" />
+      <Control name="CareStatus" text="註冊狀態" />
+      <Control name="ScreenMsg" text="屏信息" />
+      <Control name="PowerControlTipDuplicate" text="不允許名字重複" />
+      <Control name="PowerControlTipEmpty" text="不允許名字為空" />
+      <Control name="SendCard" text="發送卡" />
+      <Control name="ReceiverCard" text="接收卡" />
+      <Control name="MonitoringCard" text="監控卡" />
+      <Control name="PowerControlTipLength" text="不允許名字字節長度超過20" />
+      <Control name="PowerControlTipNoVertical" text="不允許名字中含有豎線" />
+    </Controls>
+  </Form>
+  <Form>
+    <Name>UC_DataAlarmConfig</Name>
+    <Controls>
+      <Control name="label_WhenTemp" text="當溫度" />
+      <Control name="label_TempWarn" text="時,顯示告警資訊." />
+      <Control name="label_WhenHumidity" text="當濕度" />
+      <Control name="label_HumidityWarn" text="%時,顯示告警資訊." />
+      <Control name="label_WhenFan" text="當轉速" />
+      <Control name="label_FanWarn" text="轉/分鐘時,顯示告警資訊." />
+      <Control name="label_WhenPower" text="當電壓" />
+      <Control name="label_PowerWarn" text="V時,顯示告警資訊." />
+      <Control name="label_WhenPowerError" text="當電壓" />
+      <Control name="label_PowerWarnError" text="V時,顯示故障資訊." />
+      <Control name="crystalbutton_ok" text="保存" />
+      <Control name="label_AlarmDescription" text="說明：全屏配置的預設來源於第一個配置，後期更改單屏不影響全屏資訊。" />
+    </Controls>
+  </Form>
+  <Form>
+    <Name>UC_DataAlarmConfig_String</Name>
+    <Controls>
+      <Control name="CelsiusTemp" text="攝氏溫度" />
+      <Control name="FahrenheitTemp" text="華氏溫度" />
+      <Control name="AlarmSaveSuccess" text="告警配置保存成功!" />
+      <Control name="AlarmSaveFailed" text="告警配置保存失敗!" />
+      <Control name="SaveDataAlarmConfig" text="正在保存告警的配置,請稍候..." />
+    </Controls>
+  </Form>
+  <Form>
+    <Name>UC_PowerControlConfig</Name>
+    <Controls>
+      <Control name="label_PowerDescription" text="說明:電源別名用於策略選擇時使用，不允許為空，不允許重複。" />
+      <Control name="crystalButton_RefreshPower" text="更新多功能卡" />
+      <Control name="crystalbutton_ok" text="保存" />
+    </Controls>
+  </Form>
+  <Form>
+    <Name>UC_PowerControlConfig_String</Name>
+    <Controls>
+      <Control name="FuncAliaName" text="設備別名" />
+      <Control name="FuncLocation" text="設備位置" />
+      <Control name="RefreshFuncCardPower" text="正在獲取多功能卡資訊,請稍候..." />
+      <Control name="PowerControlSaveSuccess" text="外設電源配置保存成功，用於策略選擇!" />
+      <Control name="PowerControlSaveFailed" text="外設電源配置保存失敗!" />
+      <Control name="PowerControlConfigSave" text="正在保存外設電源配置,請稍候..." />
+      <Control name="PowerControlTipDuplicate" text="不允許名字重複" />
+      <Control name="PowerControlTipEmpty" text="不允許名字為空" />
+    </Controls>
+  </Form>
+  <Form>
+    <Name>UC_HWConfig</Name>
+    <Controls>
+      <Control name="checkBox_IsConnectMC" text="連接監控卡" />
+      <Control name="checkBox_Humidity" text="刷新濕度" />
+      <Control name="checkBox_Smoke" text="刷新煙霧" />
+      <Control name="checkBox_RowLine" text="刷新箱體狀態" />
+      <Control name="checkBox_IsUpdateGeneralStatus" text="刷新箱門狀態" />
+      <Control name="checkBox_Fan" text="刷新風扇" />
+      <Control name="label_FanPulse" text="風扇脈衝:" />
+      <Control name="label_FanPulseUnit" text="個/轉" />
+      <Control name="radioButton_SameFanCount" text="每個箱體風扇個數設置相同" />
+      <Control name="radioButton_DifferentFanCount" text="每個箱體單獨設置風扇個數" />
+      <Control name="crystalButton_FanCountSetting" text="設置" />
+      <Control name="checkBox_MCPower" text="刷新監控卡電源" />
+      <Control name="radioButton_SamePowerCount" text="每塊監控卡上電源個數設置相同" />
+      <Control name="radioButton_DifferentPowerCount" text="每塊監控卡上單獨設置電源個數" />
+      <Control name="crystalButton_PowerCountSetting" text="設置" />
+      <Control name="label_HWDescription" text="說明：全屏配置的預設來源於第一個配置，後期更改單屏不影響全屏資訊。" />
+      <Control name="crystalbutton_ok" text="保存" />
+    </Controls>
+  </Form>
+  <Form>
+    <Name>UC_HWConfig_String</Name>
+    <Controls>
+      <Control name="HwConfigSuccess" text="硬體保存成功!" />
+      <Control name="HwConfigFailed" text="硬體保存失敗!" />
+      <Control name="SaveHWConfig" text="正在保存硬體的配置,請稍候..." />
+      <Control name="HwFanName" text="風扇" />
+      <Control name="HwPowerName" text="電源" />
+    </Controls>
+  </Form>
+  <Form>
+    <Name>Frm_MonitorSetting</Name>
+    <Controls>
+      <Control name="frm_monitorsetting" text="監控設置" />
+      <Control name="seperatePanel_AutoRefresh" text="自動刷新" />
+      <Control name="checkBox_AutoRefresh" text="自動刷新" />
+      <Control name="label_RefreshPeriod" text="刷新週期:" />
+      <Control name="seperatePanel_CountSetting" text="重讀次數設置" />
+      <Control name="label_RetryTimes" text="讀狀態失敗時的重讀次數:" />
+      <Control name="label_Count" text="次" />
+      <Control name="groupBox_TypeSetting" text="刷新設置" />
+      <Control name="seperatePanel_RefreshInfo" text="刷新和告警設置" />
+      <Control name="checkBox_Status" text="刷新狀態" />
+      <Control name="checkBox_Temperature" text="刷新溫度" />
+      <Control name="checkBox_IsConnectMC" text="連接監控卡" />
+      <Control name="checkBox_Humidity" text="刷新濕度" />
+      <Control name="checkBox_Smoke" text="刷新煙霧" />
+      <Control name="checkBox_RowLine" text="刷新箱體狀態" />
+      <Control name="checkBox_IsUpdateGeneralStatus" text="刷新箱門狀態" />
+      <Control name="checkBox_Fan" text="刷新風扇" />
+      <Control name="checkBox_SBCardPower" text="刷新接收卡電源" />
+      <Control name="checkBox_MCPower" text="刷新監控卡電源" />
+      <Control name="radioButton_SameFanCount" text="每個箱體風扇個數相同" />
+      <Control name="radioButton_DifferentFanCount" text="每個箱體風扇個數不同" />
+      <Control name="crystalButton_FanCountSetting" text="設置" />
+      <Control name="radioButton_SamePowerCount" text="每個箱體電源個數相同" />
+      <Control name="radioButton_DifferentPowerCount" text="每個箱體電源個數不同" />
+      <Control name="crystalButton_PowerCountSetting" text="設置" />
+      <Control name="groupBox_AlarmSetting" text="告警設置" />
+      <Control name="label_WhenTemp" text="當溫度" />
+      <Control name="label_TempWarn" text="時,顯示告警資訊." />
+      <Control name="label_WhenHumidity" text="當濕度" />
+      <Control name="label_HumidityWarn" text="%時,顯示告警資訊." />
+      <Control name="label_WhenFan" text="當轉速" />
+      <Control name="label_FanWarn" text="轉/分鐘時,顯示告警資訊." />
+      <Control name="label_WhenPower" text="當電壓" />
+      <Control name="label_PowerWarn" text="V時,顯示告警資訊." />
+      <Control name="crystalButton_Cancel" text="取消" />
+      <Control name="crystalbutton_ok" text="確定" />
+      <Control name="linkLabel_CelsiusTemp" text="攝氏溫度" />
+      <Control name="linkLabel_FahrenheitTemp" text="華氏溫度" />
+    </Controls>
+  </Form>
+  <Form>
+    <Name>Frm_FanPowerAdvanceSetting</Name>
+    <Controls>
+      <Control name="Frm_FanPowerAdvanceSetting" text="監控高級設置" />
+      <Control name="tabPage_Screen1" text="屏1" />
+      <Control name="crystalButton_OK" text="確定" />
+      <Control name="crystalButton_Cancel" text="取消" />
+      <Control name="groupBox_ScalingRate" text="縮放" />
+      <Control name="crystalButton_SetSelect" text="設置" />
+      <Control name="crystalButton_Resume" text="恢復預設值" />
+      <Control name="ToolStripMenuItem_Set" text="設置" />
+      <Control name="label_Notice" text="無顯示幕!" />
+    </Controls>
+  </Form>
+  <Form>
+    <Name>Frm_AdvanceSettingInfo</Name>
+    <Controls>
+      <Control name="ScreenName" text="屏" />
+      <Control name="PleaseSelectScanBoard" text="請選中需要設置的接收卡!" />
+      <Control name="WhetherSetDefaultValue" text="確認恢復預設值?" />
+      <Control name="ConnectStr" text="連接" />
+      <Control name="CommPortName" text="屏" />
+      <Control name="SenderName" text="發送卡" />
+      <Control name="PortName" text="網口" />
+      <Control name="ScanBoardName" text="接收卡" />
+      <Control name="Count" text="數量" />
+    </Controls>
+  </Form>
+  <Form>
+    <Name>Frm_SetInfo</Name>
+    <Controls>
+      <Control name="Frm_SetInfo" text="設置" />
+      <Control name="checkBox_IsConnect" text="連接" />
+      <Control name="label_Count" text="個數:" />
+      <Control name="crystalButton_OK" text="確定" />
+      <Control name="crystalButton_Cancel" text="取消" />
+    </Controls>
+  </Form>
+  <Form>
+    <Name>Form_ErrorNotice</Name>
+    <Controls>
+      <Control name="Form_ErrorNotice" text="故障提示" />
+      <Control name="label_AlertExplanation" text="很抱歉，當前引發一個錯誤!請您確保正確的軟體操作。可通過重新開機軟體來解決該問題。" />
+      <Control name="label_SendErrorReport" text="希望您能配合該問題的解決，您可選擇“發送錯誤報告”將錯誤資料發送到開發廠商，或者提交軟體路徑下的錯誤報告給開發廠商，謝謝！" />
+      <Control name="crystalButton_ReviewErrorReport" text="查看錯誤資料" />
+      <Control name="crystalButton_SendErrorReport" text="發送錯誤報告" />
+      <Control name="crystalButton_KeepRunning" text="繼續運行" />
+      <Control name="crystalButton_ExitApplication" text="退出" />
+    </Controls>
+  </Form>
+  <Form>
+    <Name>CustomMessageBox</Name>
+    <Controls>
+      <Control name="button_Yes" text="是" />
+      <Control name="button_No" text="否" />
+      <Control name="button_Abort" text="終止" />
+      <Control name="button_Retry" text="重試" />
+      <Control name="button_Ignore" text="忽略" />
+      <Control name="button_Cancel" text="取消" />
+      <Control name="button_OK" text="確定" />
+    </Controls>
+  </Form>
+  <Form>
+    <Name>Form_ProcessingEx</Name>
+    <Controls>
+      <Control name="crystalButton_Cancel" text="取消" />
+    </Controls>
+  </Form>
+  <Form>
+    <Name>Frm_PeriodicReport</Name>
+    <Controls>
+      <Control name="Frm_PeriodicReport" text="設置郵件發送時間" />
+      <Control name="checkBox_EveryDay" text="每天" />
+      <Control name="checkBox_Weekly" text="每週" />
+      <Control name="checkBox_Monthly" text="每月" />
+      <Control name="checkBox_Monday" text="星期一" />
+      <Control name="checkBox_Tuesday" text="星期二" />
+      <Control name="checkBox_Wednesday" text="星期三" />
+      <Control name="checkBox_Thursday" text="星期四" />
+      <Control name="checkBox_Friday" text="星期五" />
+      <Control name="checkBox_Saturday" text="星期六" />
+      <Control name="checkBox_Sunday" text="星期日" />
+      <Control name="label_Date" text="發送日期：" />
+      <Control name="label_hour" text="發送時間：" />
+      <Control name="crystalButton_Ok" text="確定" />
+      <Control name="crystalButton_Cancel" text="取消" />
+    </Controls>
+  </Form>
+  <Form>
+    <Name>Frm_ReceiverChanged</Name>
+    <Controls>
+      <Control name="Frm_ReceiverChanged" text="收件人" />
+      <Control name="crystalButton_close" text="關閉" />
+      <Control name="crystalButton_apply" text="修改" />
+      <Control name="label_receverName" text="姓名：" />
+      <Control name="label_userAddr" text="郵箱地址：" />
+    </Controls>
+  </Form>
+  <Form>
+    <Name>Frm_SenderChanged</Name>
+    <Controls>
+      <Control name="Frm_SenderChanged" text="修改發佈者" />
+      <Control name="crystalButton_close" text="關閉" />
+      <Control name="crystalButton_apply" text="修改" />
+      <Control name="label_smtpPort" text="埠：" />
+      <Control name="label_smtpServer" text="SMTP伺服器：" />
+      <Control name="label_emailPw" text="郵箱密碼：" />
+      <Control name="label_userAddr" text="郵箱地址：" />
+      <Control name="label_SSl" text="SSL加密：" />
+      <Control name="checkBox_SSLOpen" text="啟用" />
+    </Controls>
+  </Form>
+  <Form>
+    <Name>UC_EMailNotify</Name>
+    <Controls>
+      <Control name="Frm_EMailNotify" text="監控故障郵件通知設置" />
+      <Control name="groupBox_notifyLog" text="日誌設置" />
+      <Control name="label_day" text="天" />
+      <Control name="label_logSaveDays" text="日誌保留時間：" />
+      <Control name="checkBox_enableJournal" text="啟用通知日誌" />
+      <Control name="groupBox_notifySetting" text="通知設置" />
+      <Control name="groupBox_senderSetting" text="郵件發佈者" />
+      <Control name="crystalButton_useDefault" text="使用默認" />
+      <Control name="label_senderPort" text="25" />
+      <Control name="label_portInfo" text="埠：" />
+      <Control name="label_smtpServer" text="smtp.126.com" />
+      <Control name="label_senderPW" text="*********" />
+      <Control name="label_senderAddr" text="NovaStarTech@126.com" />
+      <Control name="label_smtpServerInfo" text="SMTP伺服器：" />
+      <Control name="label_emailPWInfo" text="郵箱密碼：" />
+      <Control name="label_userAddr" text="郵箱地址：" />
+      <Control name="linkLabel_modifySender" text="修改發佈者" />
+      <Control name="groupBox_receiver" text="收件人" />
+      <Control name="checkBox_enableNotify" text="啟用郵件通知" />
+      <Control name="groupBox_emailInfo" text="郵件資訊" />
+      <Control name="checkBox_SystemRecover" text="啟用系統恢復通知" />
+      <Control name="checkBox_SystemRefresh" text="啟用發送系統報告郵件" />
+      <Control name="linkLabel_PeriodicReport" text="設置定期發送系統運行報告郵件" />
+      <Control name="label_example" text="（如：A社區，B廣場等）" />
+      <Control name="label_errorNotifyAddr" text="郵件發出地：" />
+      <Control name="label_SSl" text="SSL加密：" />
+      <Control name="checkBox_SSLOpen" text="啟用" />
+      <Control name="crystalButton_OK" text="保存" />
+      <Control name="label_NotifyTip" text="提示：如果顯示幕已註冊NovaiCare，請禁用本地郵件通知，以免收到重複郵件。" />
+    </Controls>
+  </Form>
+  <Form>
+    <Name>UC_EMailNotify_String</Name>
+    <Controls>
+      <Control name="EmailAddrError" text="郵箱位址格式不正確！" />
+      <Control name="EmailAddrNotNull" text="郵箱密碼不能為空！" />
+      <Control name="SMTPServerNotNull" text="SMTP伺服器不能為空！¡El servidor SMTP no puede ser vacío!" />
+      <Control name="EmailPortError" text="埠格式不正確！" />
+      <Control name="ReceiverNameNotNull" text="收件人姓名不能為空！" />
+      <Control name="AddReceivers" text="添加" />
+      <Control name="ModifyReceivers" text="修改" />
+      <Control name="SelectEditReceiver" text="請選擇要編輯的收件人！" />
+      <Control name="SelectDeleteReceiver" text="請選擇要刪除的收件人！" />
+      <Control name="SureDeleteReceiver" text="確認要刪除選擇的收件人？" />
+      <Control name="ReceiverName" text="姓名" />
+      <Control name="EmailAddr" text="郵箱地址" />
+      <Control name="dateLogNotExist" text="選擇日期的日誌不存在！" />
+      <Control name="SureToDeleteLog" text="確認刪除選擇日期的日誌？" />
+      <Control name="DeleteLogSuccessful" text="刪除日誌成功！" />
+      <Control name="DeleteLogFailed" text="刪除日誌失敗，請重試！" />
+      <Control name="NotifyDate" text="通知日期" />
+      <Control name="ErrorScreen" text="故障顯示幕" />
+      <Control name="SaveEMailConfig" text="正在保存郵件配置,請稍候..." />
+      <Control name="SaveEMailConfigSuccess" text="保存郵件配置成功！¡Éexito de guardar la configuración del correo!" />
+      <Control name="SaveEMailConfigFailed" text="保存郵件配置失敗!" />
+    </Controls>
+  </Form>
+  <Form>
+    <Name>EMailNotify_String</Name>
+    <Controls>
+      <Control name="ScreenName" text="屏名稱：" />
+      <Control name="ErrName" text="故障名稱：" />
+      <Control name="AlarmName" text="告警名稱：" />
+      <Control name="EmailGreetings" text="您好：" />
+      <Control name="EmailAlarmDealWith" text="請及時到現場處理故障或告警!" />
+      <Control name="CurNotifyTimes" text="當前故障通知次數:" />
+      <Control name="MaxNotifyTimes" text="最多通知次數:" />
+      <Control name="TotalErr" text="總數:" />
+      <Control name="DVIFault" text="DVI故障" />
+      <Control name="CabinetDoorAlarm" text="箱門開啟" />
+      <Control name="FanAlarm" text="風扇告警" />
+      <Control name="HumidityAlarm" text="濕度告警" />
+      <Control name="MonitorCardFault" text="監控卡故障" />
+      <Control name="PowerFault" text="電源故障" />
+      <Control name="PowerAlarm" text="電源告警" />
+      <Control name="RedundancyAlarm" text="冗餘告警" />
+      <Control name="SBStatusFault" text="接收卡故障" />
+      <Control name="SmokeAlarm" text="煙霧告警" />
+      <Control name="SenderCardFault" text="發送卡故障" />
+      <Control name="SoketFault" text="排線故障" />
+      <Control name="TemperatureAlarm" text="溫度告警" />
+      <Control name="SenderIndex" text="發送卡" />
+      <Control name="portIndex" text="網口" />
+      <Control name="connectIndex" text="接收卡" />
+      <Control name="rowIndex" text="行號" />
+      <Control name="colIndex" text="列號" />
+      <Control name="MonitorErrorNotification" text="監控故障通知" />
+      <Control name="MonitorSytstemRecoverNotification" text="監控系統恢復通知" />
+      <Control name="MonitorMessageNotification" text="系統已恢復正常！" />
+      <Control name="DataName" text="名稱" />
+      <Control name="DataTime" text="次數" />
+      <Control name="SystemRefeshIndex" text="系統刷新" />
+      <Control name="SenderErrCount" text="發送卡故障" />
+      <Control name="SystemRefreshRecord" text="系統運行資料" />
+      <Control name="RedundantState" text="冗餘" />
+      <Control name="MasterSenderPort" text="主網口:發送卡" />
+      <Control name="EmailScannerError" text="接收卡故障" />
+      <Control name="EmailMCCardError" text="監控卡故障" />
+      <Control name="EmailTemperatureError" text="溫度告警" />
+      <Control name="EmailSmokeError" text="煙霧告警" />
+      <Control name="EmailHumidityError" text="濕度告警" />
+      <Control name="EmailFlatCableError" text="箱體告警" />
+      <Control name="EmailPowerError" text="電源告警" />
+      <Control name="EmailCableDoorError" text="箱門告警" />
+      <Control name="EmailFanError" text="風扇告警" />
+    </Controls>
+  </Form>
+  <Form>
+    <Name>UC_EMailNotifyLog</Name>
+    <Controls>
+      <Control name="tabPage_emailLog" text="郵件通知歷史" />
+      <Control name="crystalButton_refresh" text="刷新" />
+      <Control name="crystalButton_reduceDate" text="-" />
+      <Control name="crystalButton_deleLog" text="刪除日誌" />
+      <Control name="crystalButton_addDate" text="+" />
+      <Control name="label_logTime" text="日誌時間：" />
+      <Control name="label_NotifyTip" text="提示：啟用本地郵件通知後，可查看日誌。" />
+    </Controls>
+  </Form>
+  <Form>
+    <Name>UC_EMailNotifyLog_String</Name>
+    <Controls>
+      <Control name="StatusFailed" text="失敗" />
+      <Control name="StatusSended" text="已發送" />
+      <Control name="StatusSucceed" text="成功" />
+      <Control name="ColumnReceiveName" text="收信人" />
+      <Control name="ColumnNotifyTime" text="通知時間" />
+      <Control name="ColumnTitle" text="標題" />
+      <Control name="ColumnMsgContent" text="通知內容" />
+      <Control name="ColumnNotifyState" text="發送狀態" />
+      <Control name="DeleteEMailLogSuccess" text="日誌刪除成功!" />
+      <Control name="DeleteEMailLogFailed" text="日誌刪除失敗!" />
+      <Control name="DeleteEMailLog" text="正在刪除郵件日誌,請稍候..." />
+    </Controls>
+  </Form>
+</Resource>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Resource>
+  <Form>
+    <Name>frm_OpticalProbeConfig</Name>
+    <Controls>
+      <Control name="frm_OpticalProbeConfig" text="Configuração de sonda óptica" />
+      <Control name="mappingGroupBox" text="Lista de representação dos brilhos (brilho de ambiente / brilho de monitor)" />
+      <Control name="LedBrightnessColumn" text="Brilho de monitor (%)" />
+      <Control name="EnvironmentBrightnessColumn" text="Brilho de ambiente (Lux)" />
+      <Control name="DeleteButtonColumn_Text" text="Deletar" />
+      <Control name="DeleteButtonColumn" text="Operação" />
+      <Control name="opticalProbeGroupBox" text="Lista de configuração de sonda óptica" />
+      <Control name="EnableColumn" text="Começa de usar?" />
+      <Control name="PositionColumn" text="Localização" />
+      <Control name="CurrentBrightnessColumn" text="Valor de brilho actual" />
+      <Control name="autoSectionButton" text="Segmentação rápida" />
+      <Control name="confirmButton" text="OK" />
+      <Control name="cancelButton" text="Cancelar" />
+      <Control name="Getting_Opticalprobe_information" text="Está obtendo as informações da sonda óptica, espere por favor..." />
+      <Control name="AddMappingItemButton" text="Adicionar configuração" />
+      <Control name="DisableGroupBox" text="" />
+      <Control name="enableCheckBox" text="Se não ler a luminosidade do ambiente,Ajuste de brilho para:" />
+      <Control name="refreshOpticalProbeCrystalButton" text="Atualizar" />
+      <Control name="label_CurrentLight" text="Brilho atual" />
+      <Control name="RemarkColumn" text="Observação" />
+      <Control name="NoSoftWareFail" text="Sem software falha" />
+      <Control name="inputbrightvalue" text="Por favor, indique o valor do brilho" />
+      <Control name="brightvalueDigital" text="Valor de brilho deve ser numérico" />
+      <Control name="exitssamelightconfig" text="Existe mesma configuraça de brilho" />
+      <Control name="nolightsensorconfig" text="Nenhuma informação do sensor de luz não pode ser testada！" />
+      <Control name="crystalButton_BrightTestStart" text="As sondas ópticas" />
+      <Control name="crystalButton_BrightTestStop" text="Pare o teste" />
+  </Controls>
+  </Form>  
+  <Form>
+    <Name>frm_AutoSection</Name>
+    <Controls>
+      <Control name="frm_AutoSection" text="As configurações de segmentação" />
+      <Control name="sectionNumberlabel" text="Número de segmentos" />
+      <Control name="sectionConditionGroupBox" text="Condição de segmentos" />
+      <Control name="maxLabel" text="O limite superior" />
+      <Control name="minLabel" text="O Limite inferior" />
+      <Control name="environmentLabel" text="Brilho de ambiente" />
+      <Control name="ledLabel" text="Brilho de monitor" />
+      <Control name="confirmButton" text="OK" />
+      <Control name="cancelButton" text="Cancelar" />
+      <Control name="errorTitle" text="Erro" />
+      <Control name="ledBrightness_error01" text="O valor máximo de brilho de monitor não pode ser menor do brilho mínimo" />
+      <Control name="environmentBrightness_error01" text="O valor máximo de brilho de monitor não pode ser menor do brilho mínimo" />
+      <Control name="sectionRemarkLabel" text="Os valores entre, ajuste seccionalmente de linear de acordo com o máximo e mínimo " />
+    </Controls>
+  </Form>
+  <Form>
+    <Name>Frm_AddMappingItem</Name>
+    <Controls>
+      <Control name="Frm_AddMappingItem" text="Adicionar o item de representação" />
+      <Control name="environmentLabel" text="Brilho de ambiente" />
+      <Control name="ledLabel" text="Brilho de Led" />
+      <Control name="confirmButton" text="OK" />
+      <Control name="cancelButton" text="Cancelar" />
+      <Control name="errorTitle" text="Erro" />
+      <Control name="error01" text="Existe  a mesma configuração de brilho de ambiente, por favor motificar a configuração" />
+    </Controls>
+  </Form>
+</Resource>

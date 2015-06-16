@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Resource>
+  <Form>
+    <Name>UC_WHControlConfig</Name>
+    <Controls>
+      <Control name="label_tip" text="Please select a single screen to operate!" />
+      <Control name="seperatePanel_ControlConfigInfoList" text="Control information list" />
+      <Control name="button_add" text="Add" />
+      <Control name="ToolStripMenuItem_add" text="Add" />
+      <Control name="button_edit" text="Edit" />
+      <Control name="ToolStripMenuItem_edit" text="Edit" />
+      <Control name="button_delete" text="Delete" />
+      <Control name="ToolStripMenuItem_delete" text="Delete" />
+      <Control name="button_deleteAll" text="Empty list" />
+      <Control name="ToolStripMenuItem_deleteAll" text="Empty list" />
+      <Control name="crystalButton_OK" text="OK" />
+    </Controls>
+  </Form>
+  <Form>
+    <Name>UC_WHControlConfig_String</Name>
+    <Controls>
+      <Control name="StrategyTypeStr" text="Control type" />
+      <Control name="Condition" text="Condition" />
+      <Control name="TemperatureStrategy" text="Temperature" />
+      <Control name="SmokeStrategy" text="Smoke" />
+      <Control name="AverageAlgorithm" text="Average temperature" />
+      <Control name="MaxValueAlgorithm" text="Maximum temperature" />
+      <Control name="MSG_Delete" text="Are you sure to delete the selected configuration?" />
+      <Control name="MSG_DeleteAll" text="Are you sure to dispose all configuration?" />
+      <Control name="MSG_DeleteSuccess" text="Delete successfully" />
+      <Control name="MSG_DeleteFailed" text="Delete failed" />
+      <Control name="SaveFailed" text="Save failed" />
+      <Control name="SaveSuccess" text="Save successfully" />
+    </Controls>
+  </Form>
+  <Form>
+    <Name>frm_WHControlConfig_Editor</Name>
+    <Controls>
+      <Control name="frm_WHControlConfig_Editor" text="Control configuration" />
+      <Control name="label_ControlType" text="Control type" />
+      <Control name="label_Tip" text="Tips: Temperature difference between different strategies shall not be less than 5 ℃." />
+      <Control name="button_OK" text="OK" />
+      <Control name="button_cancel" text="Cancel" />
+    </Controls>
+  </Form>
+  <Form>
+    <Name>frm_WHControlConfig_Editor_String</Name>
+    <Controls>
+      <Control name="MSG_Tem_MinValueBiggerThanMax" text="The minimum temperature shall not be higher than the maximum temperature" />
+      <Control name="MSG_Tem_ValueTooSimilar" text="The maximum temperature and the minimum temperature cannot differ more than 5℃" />
+      <Control name="MSG_Action_Illegal" text="Please set valid performing action" />
+      <Control name="MSG_Power_NotChoose" text="Please select the power supply which needs to be turned off" />
+      <Control name="MSG_ControlConfig_Repeat" text="Strategy repeated, add failed" />
+      <Control name="MSG_ControlConfig_Null" text="Strategy object is empty" />
+    </Controls>
+  </Form>
+  <Form>
+    <Name>UC_WHControlConfig_Tem</Name>
+    <Controls>
+      <Control name="label_And" text="And" />
+      <Control name="seperatePanel_tem_action" text="Action" />
+      <Control name="groupBox_Brightness" text="Brightness adjustment" />
+      <Control name="checkBox_Brightness" text="Brightness adjustment" />
+      <Control name="label_BrightTo" text="Adjust brightness to" />
+      <Control name="groupBox_PwoerManager" text="Power supply management" />
+    </Controls>
+  </Form>
+  <Form>
+    <Name>UC_WHControlConfig_Smoke</Name>
+    <Controls>
+      <Control name="label_smokeCount" text="Count of smoke alarm cabinet" />
+      <Control name="seperatePanel_smoke_action" text="Action" />
+    </Controls>
+  </Form>
+  <Form>
+    <Name>UC_PowerManager</Name>
+    <Controls>
+      <Control name="label_Open" text="On" />
+      <Control name="label_Close" text="Off" />
+      <Control name="label_Still" text="Keep" />
+    </Controls>
+  </Form>
+  <Form>
+    <Name>UC_SmokeControlConfig</Name>
+    <Controls>
+      <Control name="groupBox_Power" text="Power supply management" />
+      <Control name="label_Close" text="Off" />
+      <Control name="label_Still" text="Keep" />
+    </Controls>
+  </Form>
+</Resource>

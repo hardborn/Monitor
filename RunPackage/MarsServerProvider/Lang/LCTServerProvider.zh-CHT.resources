@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Resource>
+  <Form>
+    <Name>Form_ErrorNotice</Name>
+    <Controls>
+      <Control name="Form_ErrorNotice" text="異常捕獲窗口" />
+      <Control name="label_AlertExplanation" text="很抱歉，當前引發一個錯誤!請您確保正確的軟體操作。可通過重新開機軟體來解決該問題。" />
+      <Control name="label_SendErrorReport" text="NovaMonitor-希望您能配合該問題的解決，您可選擇“發送錯誤報告”將錯誤資料發送到開發廠商，或者提交軟體路徑下的錯誤報告給開發廠商，謝謝！" />
+      <Control name="crystalButton_ReviewErrorReport" text="查看錯誤資料" />
+      <Control name="crystalButton_SendErrorReport" text="發送錯誤報告" />
+      <Control name="crystalButton_KeepRunning" text="繼續運行" />
+      <Control name="crystalButton_ExitApplication" text="退出" />
+      <Control name="MailSending" text="正在發送錯誤報告......" />
+      <Control name="MailSendOK" text="發送錯誤報告完畢!" />
+      <Control name="MailSendFailed" text="無法發送郵件到開發廠商，請查看網路連接！您可選擇將軟體目前的目錄下的錯誤報告Error.txt提交給開發廠商！" />
+      <Control name="Form_ErrorDetails" text="異常描述窗口" />
+      <Control name="groupBox_Info" text="請填寫(可選)" />
+      <Control name="label_DiscoverPerson" text="問題發現人:" />
+      <Control name="label_Name" text="姓名(公司)" />
+      <Control name="label_ConnectEmail" text="聯繫郵箱:" />
+      <Control name="label_Service" text="問題解決後我們會在第一時間給您發送該軟體的最新版本" />
+      <Control name="label_Description" text="問題描述:" />
+      <Control name="label_Recommend" text="推薦:" />
+      <Control name="label_FurtherDetails" text="問題出現時的背景,如所使用的作業系統、操作該軟體的步驟等,這將對問題的解決有很大幫助" />
+      <Control name="crystalButton_SendEmail" text="發送" />
+      <Control name="crystalButton_SaveErrorAsTxt" text="將錯誤資料保存為文檔" />
+      <Control name="crystalButton_Cancel" text="取消" />
+    </Controls>
+  </Form>
+</Resource>

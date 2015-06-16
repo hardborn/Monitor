@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Resource>
+  <Form>
+    <Name>UC_WHControlConfig</Name>
+    <Controls>
+      <Control name="label_tip" text="請選擇單個顯示幕進行配置！" />
+      <Control name="seperatePanel_ControlConfigInfoList" text="控制資訊清單" />
+      <Control name="button_add" text="添加" />
+      <Control name="ToolStripMenuItem_add" text="添加" />
+      <Control name="button_edit" text="編輯" />
+      <Control name="ToolStripMenuItem_edit" text="編輯" />
+      <Control name="button_delete" text="刪除" />
+      <Control name="ToolStripMenuItem_delete" text="刪除" />
+      <Control name="button_deleteAll" text="清空列表" />
+      <Control name="ToolStripMenuItem_deleteAll" text="清空列表" />
+      <Control name="crystalButton_OK" text="確定" />
+    </Controls>
+  </Form>
+  <Form>
+    <Name>UC_WHControlConfig_String</Name>
+    <Controls>
+      <Control name="StrategyTypeStr" text="控制類型" />
+      <Control name="Condition" text="條件" />
+      <Control name="TemperatureStrategy" text="溫度" />
+      <Control name="SmokeStrategy" text="煙霧" />
+      <Control name="AverageAlgorithm" text="平均溫度" />
+      <Control name="MaxValueAlgorithm" text="最高溫度" />
+      <Control name="MSG_Delete" text="確定刪除所選配置？" />
+      <Control name="MSG_DeleteAll" text="確定清理所有配置？" />
+      <Control name="MSG_DeleteSuccess" text="刪除成功" />
+      <Control name="MSG_DeleteFailed" text="刪除失敗" />
+      <Control name="SaveFailed" text="保存失敗" />
+      <Control name="SaveSuccess" text="保存成功" />
+    </Controls>
+  </Form>
+  <Form>
+    <Name>frm_WHControlConfig_Editor</Name>
+    <Controls>
+      <Control name="frm_WHControlConfig_Editor" text="控制配置" />
+      <Control name="label_ControlType" text="控制類型" />
+      <Control name="label_Tip" text="提示：不同策略之間的溫度差不能小於5℃！" />
+      <Control name="button_OK" text="確定" />
+      <Control name="button_cancel" text="取消" />
+    </Controls>
+  </Form>
+  <Form>
+    <Name>frm_WHControlConfig_Editor_String</Name>
+    <Controls>
+      <Control name="MSG_Tem_MinValueBiggerThanMax" text="最低溫度不能大於最高溫度" />
+      <Control name="MSG_Tem_ValueTooSimilar" text="最高溫度與最低溫度值相差不能小於5℃" />
+      <Control name="MSG_Action_Illegal" text="請設置有效的執行動作" />
+      <Control name="MSG_Power_NotChoose" text="請選擇需要關閉的電源" />
+      <Control name="MSG_ControlConfig_Repeat" text="策略重複，添加失敗" />
+      <Control name="MSG_ControlConfig_Null" text="策略對象為空" />
+    </Controls>
+  </Form>
+  <Form>
+    <Name>UC_WHControlConfig_Tem</Name>
+    <Controls>
+      <Control name="label_And" text="且" />
+      <Control name="seperatePanel_tem_action" text="動作" />
+      <Control name="groupBox_Brightness" text="亮度調節" />
+      <Control name="checkBox_Brightness" text="亮度調節" />
+      <Control name="label_BrightTo" text="亮度調整到" />
+      <Control name="groupBox_PwoerManager" text="電源管理" />
+    </Controls>
+  </Form>
+  <Form>
+    <Name>UC_WHControlConfig_Smoke</Name>
+    <Controls>
+      <Control name="label_smokeCount" text="煙霧告警箱體個數" />
+      <Control name="seperatePanel_smoke_action" text="動作" />
+    </Controls>
+  </Form>
+  <Form>
+    <Name>UC_PowerManager</Name>
+    <Controls>
+      <Control name="label_Open" text="開" />
+      <Control name="label_Close" text="關" />
+      <Control name="label_Still" text="保持" />
+    </Controls>
+  </Form>
+  <Form>
+    <Name>UC_SmokeControlConfig</Name>
+    <Controls>
+      <Control name="groupBox_Power" text="電源管理" />
+      <Control name="label_Close" text="關" />
+      <Control name="label_Still" text="保持" />
+    </Controls>
+  </Form>
+</Resource>

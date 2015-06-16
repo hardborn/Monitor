@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Resource>
+
+<Form>
+  <Name>Form_ErrorNotice</Name>
+<Controls>
+  <Control name="Form_ErrorNotice" text="Ventana de captura especial"/>
+  <Control name="label_AlertExplanation" text="!Lo sentimos, actualmente ha producido un error! Por favor, compruebe la correcta operación de software. Puede reiniciar el software para resolver el problema."/>
+  <Control name="label_SendErrorReport" text="NovaMonitor-Esperamos su cooperación para resolver el problema, usted puede elegir“enviar el informe de error”para enviar los datos de error al fabricante de desarrollo, o entregar el informe de error en el camino de software al fabricante de !desarrollo, mucha gracias¡"/>
+  <Control name="crystalButton_ReviewErrorReport" text="Revisar los datos de error"/>
+  <Control name="crystalButton_SendErrorReport" text="Enviar los datos de error"/>
+  <Control name="crystalButton_KeepRunning" text="Continuar el funcionamiento"/>
+  <Control name="crystalButton_ExitApplication" text="Salir"/>
+
+  <Control name="MailSending" text="Está enviando el informe de error......"/>
+  <Control name="MailSendOK" text="!Se ha enviado el informe de error!"/>
+  <Control name="MailSendFailed" text="No se puede enviar correo eléctrico al fabricante de desarrollo, por favor, !Revise el internet! Puede entregar el informe de error del directorio actual de software Error.txt al fabricante de desarrollo."/>
+
+  <Control name="Form_ErrorDetails" text="Vantana de descripción especial"/>
+  <Control name="groupBox_Info" text="Por favor, rellene el siguiente ( opcional)"/>
+  <Control name="label_DiscoverPerson" text="Descubridor del problema:"/>
+  <Control name="label_Name" text="Nombre (Empresa)"/>
+  <Control name="label_ConnectEmail" text="correo eléctrico de coctacto:"/>
+  <Control name="label_Service" text="Después de resolver el problema, le enviaremos la última versión del software tan pronto como sea posible"/>
+  <Control name="label_Description" text="Descripción del problema:"/>
+  <Control name="label_Recommend" text="Recomendar:"/>
+  <Control name="label_FurtherDetails" text="El fondo al momento de suceder problema, pj, el sistema de operación, procedimiento de aplicación de software, esto va a ayudar a resolver el problema."/>
+  <Control name="crystalButton_SendEmail" text="enviar"/>
+  <Control name="crystalButton_SaveErrorAsTxt" text="archivar los datos de error"/>
+  <Control name="crystalButton_Cancel" text="cancelar"/>
+</Controls>
+</Form>
+
+</Resource>

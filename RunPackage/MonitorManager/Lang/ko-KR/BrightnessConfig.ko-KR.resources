@@ -1,0 +1,159 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Resource>
+  <Form>
+    <Name>UC_Brightness</Name>
+    <Controls>
+      <Control name="groupBox_BrightnessTable" text="광도조절" />
+      <Control name="seperatePanel_Computer" text="컴퓨터제어" />
+      <Control name="checkBox_ScreenDisplay" text="끊후 스크린이 꺼지다" />
+      <Control name="checkBox_Hareware" text="끊후 하드웨어가 자동적으로 접수하여 관리하다" />
+      <Control name="linkLabel_Software" text="소프트웨어광도표" />
+      <Control name="linkLabel_Software_Light" text="광학프로브배치" />
+      <Control name="seperatePanel_Hareware" text="하드웨어조절" />
+      <Control name="linkLabel_Hardware" text="하드웨어광도표" />
+      <Control name="linkLabel_Hardware_Light" text="광학프로브배치" />
+      <Control name="crystalButton_OK" text="확인" />
+      <Control name="openOpticalProbeConfigButton" text="보존" />
+      <Control name="seperatePanel_AutoBrightInfo" text="자동 밝기조절 신호" />
+      <Control name="label_AutoBrightPeriod" text="환경 밝기검측 주기" />
+      <Control name="label_ReadLuxCnt" text="환경 밝기의 차수 읽기" />
+      <Control name="label_Notice" text="제시:자동 밝기조절 모드에서 매번 화면 밝기를 조절하기전에 모두 N번째 까지 읽은 광센서 수치의 최대치와 최소치의 평균수치를 없애야 하고,다음 환경 밝기와 화면 밝기로 조성된 곡선에 의해 화면밝기를 조절!" />
+      <Control name="tabPage_BrightnessTable" text="밝기 설정" />
+      <Control name="tabPage_AutoBrightConfig" text="전역 매개 변수" /> 
+      <Control name="checkBox_IsSmartEnable" text="스마트 밝기를 사용" /> 
+      <Control name="checkBox_IsGradualEnable" text="밝기 그라데이션 사용" /> 
+    </Controls>
+  </Form>
+  <Form>
+    <Name>UC_Brightness_String</Name>
+    <Controls>
+      <Control name="ConfigHardwareBrightness" text="하드웨어가 자동적으로 하드웨어광도표의 배치가 필요하는것을 접수하여 관리하다.하드웨어광도표를 배치하세요." />
+      <Control name="SaveFailed" text="보존실패" />
+      <Control name="SaveSuccess" text="보존성공" />
+      <Control name="everyday" text="매일" />
+      <Control name="Workday" text="월요일부터금요일" />
+      <Control name="userDefined" text="자체정의" />
+      <Control name="Monday" text="월요일" />
+      <Control name="Tuesday" text="화요일" />
+      <Control name="Wednesday" text="수요일" />
+      <Control name="Thursday" text="목요일" />
+      <Control name="Friday" text="금요일" />
+      <Control name="Saturday" text="토요일" />
+      <Control name="Sunday" text="일요일" />
+      <Control name="AutoBright" text="자동광도" />
+      <Control name="FixBright" text="타이밍 밝기" />
+      <Control name="SaveBrightConfig" text="저장 밝기 구성, 잠시 기다려주십시오 ..." />
+      <Control name="savesuccessNoConfig" text="휘도 정보가 구성되어 있지 않습니다" />
+      <Control name="label_tip" text="팁 : 여러 개의 화면이있는 경우 : 환경 강도 설정, 선택은 '{0}'구성되어 있습니다!" />
+    </Controls>
+  </Form>
+  <Form>
+    <Name>UC_BrightnessConfig</Name>
+    <Controls>
+      <Control name="button_add" text="첨가" />
+      <Control name="ToolStripMenuItem_add" text="첨가" />
+      <Control name="button_edit" text="편집" />
+      <Control name="ToolStripMenuItem_edit" text="편집" />
+      <Control name="button_delete" text="삭제" />
+      <Control name="ToolStripMenuItem_delete" text="삭제" />
+      <Control name="button_deleteAll" text="도표 지우기 " />
+      <Control name="ToolStripMenuItem_deleteAll" text="도표 지우기" />
+      <Control name="crystalButton_OK" text="확인" />
+      <Control name="openLightSensoreConfigButton" text="광학프로브배치" />
+      <Control name="brightnessConfigGroupBox" text="밝기조절배치" />
+      <Control name="currentBrightnessLabel" text="현재밝기:" />
+      <Control name="everyday" text="매일" />
+      <Control name="Workday" text="월요일부터금요일" />
+      <Control name="userDefined" text="자체정의" />
+      <Control name="Monday" text="월요일" />
+      <Control name="Tuesday" text="화요일" />
+      <Control name="Wednesday" text="수요일" />
+      <Control name="Thursday" text="옥요일" />
+      <Control name="Friday" text="금요일" />
+      <Control name="Saturday" text="토요일" />
+      <Control name="Sunday" text="일요일" />
+      <Control name="AutoBright" text="자동밝기" />
+      <Control name="FixBright" text="정시밝기" />
+      <Control name="SaveBrightConfig" text="밝기배치를 보존하고 있습니다.기다리세요…" />
+      <Control name="savesuccessNoConfig" text="밝기데이터를 배치하지 못하였다" />
+      <Control name="label_tip" text="제시:멀티스크린이 존재할때:환경밝기는 '{0}'를 선택하여 배치하십시요!" />
+      <Control name="IsConfigEnable" text="사용" />
+      <Control name="Time" text="시간" />
+      <Control name="TypeStr" text="콘트롤유형" />
+      <Control name="DayListStr" text="집행주기" />
+      <Control name="BrightnessDisplay" text="밝기（%）" />
+      <Control name="Msg_DeleteBrightnessConfig" text="선택항을 삭제할가요?" />
+      <Control name="Msg_ConfigLightprobe" text="이 스크린에  광학프로브를 배치하세요(자동밝기는 광학프로브의 조절도표에 의해 스크린밝기를 조절할수 있다)!" />
+      <Control name="Msg_ConfigLightprobe_LightList" text="광학프로브조절도표를 조절하세요(자동밝기는 광학프로브의 조절도표에 의해 스크린밝기를 조절할수 있다)!" />
+      <Control name="Msg_BrightnessConfig_Empty" text="밝기배치도표를 클리어할가요?" />
+      <Control name="nolightsensorconfig" text="필요되는 광학프로브를 선택하지 못하였다.모든 자동조절배치는 실효합니다!" />
+      <Control name="nolightsensormappingconfig" text="광학프로브가 배치되지 않은 밝기 문자표는 모든 자동조절배치가 실효합니다!" />
+      <Control name="partlightsensorfail" text="자동밝기를 배치하였다.선택한 부분광학프로브는 소프트웨어가 없을때 쓸수 없다!" />
+      <Control name="editname" text="편집" />
+      <Control name="deletename" text="삭제" />
+      <Control name="SaveFailed" text="보존실패" />
+      <Control name="SaveSuccess" text="보존성공" />
+    </Controls>
+  </Form>
+  <Form>
+    <Name>UC_BrightnessConfig_String</Name>
+    <Controls>
+      <Control name="IsConfigEnable" text="확인" />
+      <Control name="Time" text="시간" />
+      <Control name="TypeStr" text="제어유형" />
+      <Control name="DayListStr" text="집행주기" />
+      <Control name="BrightnessDisplay" text="광도（%）" />
+      <Control name="Msg_DeleteBrightnessConfig" text="선택항을 삭제할가요?" />
+      <Control name="Msg_ConfigLightprobe" text="스크린에 광학 프로브를 배치하세요(자동광도는 광학 프로브 조절도표에 근거하여 스크린광도를 조절한다)!" />
+      <Control name="Msg_ConfigLightprobe_LightList" text="광학 프로브조절도표를 배치하세요(자동광도는 광학 프로브 조절도표에 근거하여 스크린광도를 조절한다)!" />
+      <Control name="Msg_BrightnessConfig_Empty" text="광도배치도표를 지울가요？" />
+      <Control name="nolightsensorconfig" text="필요할 광학프로브를 선택하지 않았다.모든 자동조절배치는 실효합니다!" />
+      <Control name="nolightsensormappingconfig" text="광학프로브밝기문자표를 배치하지 않았다.모든 자동조절배치는 실효합니다!" />
+      <Control name="partlightsensorfail" text="자동밝기를 배치하였다.선택한 부분광학프로브는 소프트웨어가 없을때 쓸수 없다!" />
+      <Control name="editname" text="편집" />
+      <Control name="deletename" text="삭제" />
+      <Control name="SaveFailed" text="보존실패" />
+      <Control name="SaveSuccess" text="보존성공" />
+    </Controls>
+  </Form>
+  <Form>
+    <Name>frm_BrightnessConfig</Name>
+    <Controls>
+      <Control name="frm_BrightnessConfig" text="광도를 설치" />
+      <Control name="tabPage_Fasten" text="타이밍 밝기" />
+      <Control name="tabPage_Auto" text="자동광도" />
+      <Control name="button_OK" text="확인" />
+      <Control name="button_cancel" text="취소" />
+    </Controls>
+  </Form>
+  <Form>
+    <Name>frm_BrightnessConfig_String</Name>
+    <Controls>
+      <Control name="Text_Brightness" text="광도" />
+      <Control name="ExecuteCycle" text="집행주기" />
+      <Control name="Text_Time" text="시간" />
+      <Control name="Msg_TimesEmpty" text="조절시간대를 선택하세요" />
+      <Control name="Msg_BrightnessConfig_Repeat" text="광도구성도표의 시간이 중복되였다.다시 편집하십시오！" />
+    </Controls>
+  </Form>
+  <Form>
+    <Name>Frm_BrightnessAdjustmentSetting</Name>
+    <Controls>
+      <Control name="Frm_BrightnessAdjustmentSetting" text="시간조절설치" />
+      <Control name="fixedBrightnessRadioButton" text="정시밝기" />
+      <Control name="autoBrightnessRadioButton" text="자동밝기" />
+      <Control name="lable_AdjustCycle" text="조절주기" />
+      <Control name="mondayCheckBox" text="월요일" />
+      <Control name="tuesdayCheckBox" text="화요일" />
+      <Control name="wednesdayCheckBox" text="수요일" />
+      <Control name="thursdayCheckBox" text="옥요일" />
+      <Control name="fridayCheckBox" text="금요일" />
+      <Control name="saturdayCheckBox" text="토요일" />
+      <Control name="sundayCheckBox" text="일요일" />
+      <Control name="label_AdjustTime" text="시간조절" />
+      <Control name="label_brightnessValue" text="밝기조절" />
+      <Control name="confirmButton" text="확인" />
+      <Control name="cancelButton" text="취소" />
+    </Controls>
+  </Form>
+</Resource>

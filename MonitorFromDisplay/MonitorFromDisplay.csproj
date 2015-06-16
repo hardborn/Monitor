@@ -1,0 +1,596 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{65841A71-4241-47E7-AF40-CE3CCBB92006}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Nova.Monitoring.UI.MonitorFromDisplay</RootNamespace>
+    <AssemblyName>Nova.Monitoring.UI.MonitorFromDisplay</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>TRACE;DEBUG</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CheckBoxComboBox">
+      <HintPath>..\Lib\Third-Party Lib\CheckBoxComboBox.dll</HintPath>
+    </Reference>
+    <Reference Include="GalaSoft.MvvmLight.WPF4, Version=3.0.0.19994, Culture=neutral, PublicKeyToken=63eb5c012e0b3c1c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Lib\Third-Party Lib\GalaSoft.MvvmLight.WPF4.dll</HintPath>
+    </Reference>
+    <Reference Include="Nova.Control.CrystalButton">
+      <HintPath>..\Lib\Nova.Control.CrystalButton.dll</HintPath>
+    </Reference>
+    <Reference Include="Nova.Control.CustomToolTip, Version=1.0.1401.2001, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Lib\Nova.Control.CustomToolTip.dll</HintPath>
+    </Reference>
+    <Reference Include="Nova.Control.DataGridViewBaseEx">
+      <HintPath>..\Lib\Nova.Control.DataGridViewBaseEx.dll</HintPath>
+    </Reference>
+    <Reference Include="Nova.Control.DoubleBufferControl, Version=11.0.1107.3001, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Lib\Nova.Control.DoubleBufferControl.dll</HintPath>
+    </Reference>
+    <Reference Include="Nova.Control.GradualColorPanel">
+      <HintPath>..\Lib\Nova.Control.GradualColorPanel.dll</HintPath>
+    </Reference>
+    <Reference Include="Nova.Control.PopButton">
+      <HintPath>..\Lib\Nova.Control.PopButton.dll</HintPath>
+    </Reference>
+    <Reference Include="Nova.Control.NumberTextBox">
+      <HintPath>..\Lib\Nova.Control.NumberTextBox.dll</HintPath>
+    </Reference>
+    <Reference Include="Nova.Control.SeperatePanel">
+      <HintPath>..\Lib\Nova.Control.SeperatePanel.dll</HintPath>
+    </Reference>
+    <Reference Include="Nova.Drawing.FontAdjuster, Version=1.0.1302.2101, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Lib\Nova.Drawing.FontAdjuster.dll</HintPath>
+    </Reference>
+    <Reference Include="Nova.LCT.GigabitSystem.CommunicationMessageForm">
+      <HintPath>..\Lib\Nova.LCT.GigabitSystem.CommunicationMessageForm.dll</HintPath>
+    </Reference>
+    <Reference Include="Nova.LCT.GigabitSystem.DataClass">
+      <HintPath>..\Lib\Nova.LCT.GigabitSystem.DataClass.dll</HintPath>
+    </Reference>
+    <Reference Include="Nova.LCT.GigabitSystem.LEDConfigAccessor">
+      <HintPath>..\Lib\Nova.LCT.GigabitSystem.LEDConfigAccessor.dll</HintPath>
+    </Reference>
+    <Reference Include="Nova.LCT.GigabitSystem.ProtocolEnum, Version=1.0.1405.2801, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Lib\Nova.LCT.GigabitSystem.ProtocolEnum.dll</HintPath>
+    </Reference>
+    <Reference Include="Nova.NovaCare.TileMap">
+      <HintPath>..\Lib\Nova.NovaCare.TileMap.dll</HintPath>
+    </Reference>
+    <Reference Include="Nova.Resource.Language.MultiLanguageUtils, Version=1.0.1003.901, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Lib\Nova.Resource.Language.MultiLanguageUtils.dll</HintPath>
+    </Reference>
+    <Reference Include="Nova.Windows.Forms.CustomMessageBox">
+      <HintPath>..\Lib\Nova.Windows.Forms.CustomMessageBox.dll</HintPath>
+    </Reference>
+    <Reference Include="Nova.Xml.Serialization.XmlSerializableObject, Version=1.3.1404.1001, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Lib\Nova.Xml.Serialization.XmlSerializableObject.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CommonData.cs" />
+    <Compile Include="Frm_CommonBase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_CommonBase.Designer.cs">
+      <DependentUpon>Frm_CommonBase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UC_Config\UC_BrightnessConfig\UC_BrightnessAllConfig.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC_Config\UC_BrightnessConfig\UC_BrightnessAllConfig.Designer.cs">
+      <DependentUpon>UC_BrightnessAllConfig.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UC_Config\UC_EMailNotify\Frm_PeriodicReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UC_Config\UC_EMailNotify\Frm_PeriodicReport.designer.cs">
+      <DependentUpon>Frm_PeriodicReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UC_Config\UC_EMailNotify\Frm_ReceiverChanged.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UC_Config\UC_EMailNotify\Frm_ReceiverChanged.designer.cs">
+      <DependentUpon>Frm_ReceiverChanged.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_RegisterScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_RegisterScreen.Designer.cs">
+      <DependentUpon>Frm_RegisterScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_RegistrationManager.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_RegistrationManager.Designer.cs">
+      <DependentUpon>Frm_RegistrationManager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UC_Config\UC_EMailNotify\Frm_SenderChanged.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UC_Config\UC_EMailNotify\Frm_SenderChanged.designer.cs">
+      <DependentUpon>Frm_SenderChanged.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_SmartBrightness.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_SmartBrightness.Designer.cs">
+      <DependentUpon>Frm_SmartBrightness.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UC_Config\UC_BrightnessConfig\Frm_AddMappingItem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UC_Config\UC_BrightnessConfig\Frm_AddMappingItem.Designer.cs">
+      <DependentUpon>Frm_AddMappingItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UC_Config\UC_BrightnessConfig\frm_AutoSection.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UC_Config\UC_BrightnessConfig\frm_AutoSection.Designer.cs">
+      <DependentUpon>frm_AutoSection.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UC_Config\UC_BrightnessConfig\Frm_BrightnessAdjustmentSetting.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UC_Config\UC_BrightnessConfig\Frm_BrightnessAdjustmentSetting.Designer.cs">
+      <DependentUpon>Frm_BrightnessAdjustmentSetting.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UC_Config\UC_BrightnessConfig\frm_BrightnessList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UC_Config\UC_BrightnessConfig\frm_BrightnessList.Designer.cs">
+      <DependentUpon>frm_BrightnessList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UC_Config\UC_BrightnessConfig\frm_OpticalProbeConfig.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UC_Config\UC_BrightnessConfig\frm_OpticalProbeConfig.Designer.cs">
+      <DependentUpon>frm_OpticalProbeConfig.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UC_Config\UC_BrightnessConfig\UC_Brightness.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC_Config\UC_BrightnessConfig\UC_Brightness.Designer.cs">
+      <DependentUpon>UC_Brightness.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UC_Config\UC_BrightnessConfig\frm_BrightnessConfig.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UC_Config\UC_BrightnessConfig\frm_BrightnessConfig.Designer.cs">
+      <DependentUpon>frm_BrightnessConfig.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_MonitorConfigManager.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_MonitorConfigManager.Designer.cs">
+      <DependentUpon>Frm_MonitorConfigManager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_MonitorDisplayMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_MonitorDisplayMain.Designer.cs">
+      <DependentUpon>Frm_MonitorDisplayMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="UC_Config\UC_BrightnessConfig\UC_BrightnessConfig.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC_Config\UC_BrightnessConfig\UC_BrightnessConfig.Designer.cs">
+      <DependentUpon>UC_BrightnessConfig.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UC_Config\UC_ConfigBase.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC_Config\UC_ConfigBase.designer.cs">
+      <DependentUpon>UC_ConfigBase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UC_Config\UC_CycleConfig.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC_Config\UC_CycleConfig.Designer.cs">
+      <DependentUpon>UC_CycleConfig.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UC_Config\UC_HWConfig.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC_Config\UC_HWConfig.Designer.cs">
+      <DependentUpon>UC_HWConfig.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UC_Config\UC_MonitorDisplayMain\UC_MonitorDataList.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC_Config\UC_MonitorDisplayMain\UC_MonitorDataList.Designer.cs">
+      <DependentUpon>UC_MonitorDataList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UC_Config\UC_PowerControlConfig.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC_Config\UC_PowerControlConfig.Designer.cs">
+      <DependentUpon>UC_PowerControlConfig.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UC_Config\UC_DataAlarmConfig.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC_Config\UC_DataAlarmConfig.Designer.cs">
+      <DependentUpon>UC_DataAlarmConfig.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UC_Config\UC_ScreenSummary.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC_Config\UC_ScreenSummary.Designer.cs">
+      <DependentUpon>UC_ScreenSummary.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UC_Config\UC_WHControlConfig\frm_WHControlConfig_Editor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UC_Config\UC_WHControlConfig\frm_WHControlConfig_Editor.Designer.cs">
+      <DependentUpon>frm_WHControlConfig_Editor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UC_Config\UC_WHControlConfig\UC_PowerManager.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC_Config\UC_WHControlConfig\UC_PowerManager.Designer.cs">
+      <DependentUpon>UC_PowerManager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UC_Config\UC_WHControlConfig\UC_SmokeControlConfig.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC_Config\UC_WHControlConfig\UC_SmokeControlConfig.Designer.cs">
+      <DependentUpon>UC_SmokeControlConfig.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UC_Config\UC_WHControlConfig\UC_WHControlConfig.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC_Config\UC_WHControlConfig\UC_WHControlConfig.Designer.cs">
+      <DependentUpon>UC_WHControlConfig.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UC_Config\UC_WHControlConfig\UC_WHControlConfig_Smoke.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC_Config\UC_WHControlConfig\UC_WHControlConfig_Smoke.Designer.cs">
+      <DependentUpon>UC_WHControlConfig_Smoke.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UC_Config\UC_WHControlConfig\UC_WHControlConfig_Tem.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC_Config\UC_WHControlConfig\UC_WHControlConfig_Tem.Designer.cs">
+      <DependentUpon>UC_WHControlConfig_Tem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UC_Config\UC_EMailNotify\UC_EMailNotify.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC_Config\UC_EMailNotify\UC_EMailNotify.Designer.cs">
+      <DependentUpon>UC_EMailNotify.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UC_Config\UC_EMailNotify\UC_EMailNotifyLog.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC_Config\UC_EMailNotify\UC_EMailNotifyLog.Designer.cs">
+      <DependentUpon>UC_EMailNotifyLog.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="UC_Config\UC_BrightnessConfig\UC_BrightnessAllConfig.resx">
+      <DependentUpon>UC_BrightnessAllConfig.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_CommonBase.resx">
+      <DependentUpon>Frm_CommonBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC_Config\UC_EMailNotify\Frm_PeriodicReport.resx">
+      <DependentUpon>Frm_PeriodicReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC_Config\UC_EMailNotify\Frm_ReceiverChanged.resx">
+      <DependentUpon>Frm_ReceiverChanged.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_RegisterScreen.resx">
+      <DependentUpon>Frm_RegisterScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_RegistrationManager.resx">
+      <DependentUpon>Frm_RegistrationManager.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC_Config\UC_EMailNotify\Frm_SenderChanged.resx">
+      <DependentUpon>Frm_SenderChanged.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_SmartBrightness.resx">
+      <DependentUpon>Frm_SmartBrightness.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC_Config\UC_BrightnessConfig\Frm_AddMappingItem.resx">
+      <DependentUpon>Frm_AddMappingItem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC_Config\UC_BrightnessConfig\frm_AutoSection.resx">
+      <DependentUpon>frm_AutoSection.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC_Config\UC_BrightnessConfig\Frm_BrightnessAdjustmentSetting.resx">
+      <DependentUpon>Frm_BrightnessAdjustmentSetting.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC_Config\UC_BrightnessConfig\frm_BrightnessList.resx">
+      <DependentUpon>frm_BrightnessList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC_Config\UC_BrightnessConfig\frm_OpticalProbeConfig.resx">
+      <DependentUpon>frm_OpticalProbeConfig.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC_Config\UC_BrightnessConfig\UC_Brightness.resx">
+      <DependentUpon>UC_Brightness.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC_Config\UC_BrightnessConfig\frm_BrightnessConfig.resx">
+      <DependentUpon>frm_BrightnessConfig.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_MonitorConfigManager.resx">
+      <DependentUpon>Frm_MonitorConfigManager.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_MonitorDisplayMain.resx">
+      <DependentUpon>Frm_MonitorDisplayMain.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC_Config\UC_BrightnessConfig\UC_BrightnessConfig.resx">
+      <DependentUpon>UC_BrightnessConfig.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC_Config\UC_ConfigBase.resx">
+      <DependentUpon>UC_ConfigBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC_Config\UC_CycleConfig.resx">
+      <DependentUpon>UC_CycleConfig.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC_Config\UC_DataAlarmConfig.resx">
+      <DependentUpon>UC_DataAlarmConfig.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC_Config\UC_EMailNotify\UC_EMailNotifyLog.resx">
+      <DependentUpon>UC_EMailNotifyLog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC_Config\UC_HWConfig.resx">
+      <DependentUpon>UC_HWConfig.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC_Config\UC_MonitorDisplayMain\UC_MonitorDataList.resx">
+      <DependentUpon>UC_MonitorDataList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC_Config\UC_PowerControlConfig.resx">
+      <DependentUpon>UC_PowerControlConfig.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC_Config\UC_ScreenSummary.resx">
+      <DependentUpon>UC_ScreenSummary.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC_Config\UC_WHControlConfig\frm_WHControlConfig_Editor.resx">
+      <DependentUpon>frm_WHControlConfig_Editor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC_Config\UC_WHControlConfig\UC_PowerManager.resx">
+      <DependentUpon>UC_PowerManager.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC_Config\UC_WHControlConfig\UC_SmokeControlConfig.resx">
+      <DependentUpon>UC_SmokeControlConfig.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC_Config\UC_WHControlConfig\UC_WHControlConfig.resx">
+      <DependentUpon>UC_WHControlConfig.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC_Config\UC_WHControlConfig\UC_WHControlConfig_Smoke.resx">
+      <DependentUpon>UC_WHControlConfig_Smoke.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC_Config\UC_WHControlConfig\UC_WHControlConfig_Tem.resx">
+      <DependentUpon>UC_WHControlConfig_Tem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC_Config\UC_EMailNotify\UC_EMailNotify.resx">
+      <DependentUpon>UC_EMailNotify.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\DataSources\Nova.Monitoring.MonitorDataManager.EMailNotifyConfig.datasource" />
+    <None Include="Properties\DataSources\Nova.Monitoring.MonitorDataManager.Frm_MonitorConfigManager_VM.datasource" />
+    <None Include="Properties\DataSources\Nova.Monitoring.MonitorDataManager.Frm_MonitorDisplayMain_VM.datasource" />
+    <None Include="Properties\DataSources\Nova.Monitoring.MonitorDataManager.UC_CareOneConfig_VM.datasource" />
+    <None Include="Properties\DataSources\Nova.Monitoring.MonitorDataManager.UC_CareServerConfig_VM.datasource" />
+    <None Include="Properties\DataSources\Nova.Monitoring.MonitorDataManager.UC_CycleConfig_VM.datasource" />
+    <None Include="Properties\DataSources\Nova.Monitoring.MonitorDataManager.UC_EMailNotifyLog_VM.datasource" />
+    <None Include="Properties\DataSources\Nova.Monitoring.MonitorDataManager.UC_EMailNotify_VM.datasource" />
+    <None Include="Properties\DataSources\Nova.Monitoring.MonitorDataManager.UC_HWConfig_CabinetFanInfo_VM.datasource" />
+    <None Include="Properties\DataSources\Nova.Monitoring.MonitorDataManager.UC_HWConfig_MonitorCardPower_VM.datasource" />
+    <None Include="Properties\DataSources\Nova.Monitoring.MonitorDataManager.UC_HWConfig_VM.datasource" />
+    <None Include="Properties\DataSources\Nova.Monitoring.MonitorDataManager.UC_PowerControlConfig_VM.datasource" />
+    <None Include="Properties\DataSources\Nova.Monitoring.MonitorDataManager.UC_WHControlConfig_Smoke_VM.datasource" />
+    <None Include="Properties\DataSources\Nova.Monitoring.MonitorDataManager.UC_WHControlConfig_Tem_VM.datasource" />
+    <None Include="Properties\DataSources\Nova.Monitoring.MonitorDataManager.UC_WHControlConfig_VM.datasource" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\MarsMonitorDataManager\HardwareMonitorInterface\HardwareMonitorInterface.csproj">
+      <Project>{951d3cc3-76c1-454b-80cd-b89d390065ec}</Project>
+      <Name>HardwareMonitorInterface</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MonitorDataManager\MonitorDataManager.csproj">
+      <Project>{85287d30-6268-493a-8980-5e676aeb5c53}</Project>
+      <Name>MonitorDataManager</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MonitorUI\MonitorAdvanceSetting\MonitorAdvanceSetting.csproj">
+      <Project>{f17e7c42-f9c1-4ac3-be73-f9bc02c61f7a}</Project>
+      <Name>MonitorAdvanceSetting</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MonitorUI\ScannerStatusDisplay\ScannerStatusDisplay.csproj">
+      <Project>{2e240070-aba7-45c2-aa64-d22ddaf33df6}</Project>
+      <Name>ScannerStatusDisplay</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MonitorUI\SenderStatusDisplay\SenderStatusDisplay.csproj">
+      <Project>{f5577e6e-538a-448d-b2f6-21f58dcaca1c}</Project>
+      <Name>SenderStatusDisplay</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Nova.Monitoring.Common\Nova.Monitoring.Common.csproj">
+      <Project>{69888dc3-a01b-408c-966f-9d996a75392c}</Project>
+      <Name>Nova.Monitoring.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Nova.Monitoring.Control\Nova.Monitoring.Control.csproj">
+      <Project>{baf9dc41-fe91-4729-a0a8-24c7221a9638}</Project>
+      <Name>Nova.Monitoring.Control</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mapMarker.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Fan.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Power_Setting.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\delete.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\editor.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cabinet.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cabinet_Door.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Humidity.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MonitorCard.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\NoRegister.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\OffLine.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\OnLine.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Power.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SBStatus.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SenderStatus.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Smoke.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Temperature.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Alarm.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\OK.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Unknown.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\save.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CareServer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\UnAvailable.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\Cloud.png" />
+    <Content Include="Resources\Cloud_Added.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Resource>
+
+<Form>
+  <Name>Form_ErrorNotice</Name>
+  <Controls>
+    <Control name="label_AlertExplanation" text="Sorry，a fatal problem has occured!Please make sure the correct operation。You can restart the software to solve this problem。" />
+  <Control name="label_SendErrorReport" text="I hope you can help us to solve this problem quickly:You can choose 'Send error report' to send the error data to the manufacturer or give the error report locating in the software folder to the manufacturer, thank you！"/>
+  <Control name="crystalButton_ReviewErrorReport" text="View error data" />
+  <Control name="crystalButton_SendErrorReport" text="Send error report" />
+  <Control name="crystalButton_KeepRunning" text="Go on" />
+  <Control name="crystalButton_ExitApplication" text="Exit" />
+
+  <Control name="MailSending" text="Sending error report......"/>
+  <Control name="MailSendOK" text="Send error report over!"/>
+  <Control name="MailSendFailed" text="Unable to send mail to the developers, please check network connection! 
+You can save the error as file then give it to developers."/>
+
+  <Control name="Form_ErrorDetails" text="Exception Description Window"/>
+  <Control name="groupBox_Info" text="Please Fill in(Optional)"/>
+  <Control name="label_DiscoverPerson" text="Person who finds it:"/>
+  <Control name="label_Name" text="Name(Company)"/>
+  <Control name="label_ConnectEmail" text="Email:"/>
+  <Control name="label_Service" text="We will send you the lastest version of the software when the error is resolved"/>
+  <Control name="label_Description" text="Error description:"/>
+  <Control name="label_Recommend" text="Recommend:"/>
+  <Control name="label_FurtherDetails" text="The background when this error occurs: such as the operating system,operating steps,this will be a great help for us to resolve the error."/>
+  <Control name="crystalButton_SendEmail" text="Send"/>
+  <Control name="crystalButton_SaveErrorAsTxt" text="Save As File"/>
+  <Control name="crystalButton_Cancel" text="Cancel"/>
+  </Controls>
+</Form>
+
+</Resource>

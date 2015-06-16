@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Resource>
+  <Form>
+    <Name>frm_OpticalProbeConfig</Name>
+    <Controls>
+      <Control name="frm_OpticalProbeConfig" text="Configuration of Light Sensor" />
+      <Control name="mappingGroupBox" text="Brightness mapping table (environment brightness | screen brightness)" />
+      <Control name="LedBrightnessColumn" text="Screen brightness (%)" />
+      <Control name="EnvironmentBrightnessColumn" text="Environment brightness (Lux)" />
+      <Control name="DeleteButtonColumn_Text" text="Delete" />
+      <Control name="DeleteButtonColumn" text="Operate" />
+      <Control name="opticalProbeGroupBox" text="Configuration table of Light Sensor" />
+      <Control name="EnableColumn" text="Enable" />
+      <Control name="PositionColumn" text="Location" />
+      <Control name="CurrentBrightnessColumn" text="Current brightness value" />
+      <Control name="autoSectionButton" text="Quick subsection" />
+      <Control name="confirmButton" text="OK" />
+      <Control name="cancelButton" text="Cancel" />
+      <Control name="Getting_Opticalprobe_information" text="Getting Light Sensor information, please wait ..." />
+       <Control name="AddMappingItemButton" text="Add Configuration" />
+      <Control name="DisableGroupBox" text="" />
+      <Control name="enableCheckBox" text="Failure to read the ambient brightness,adjust brightness to:" />
+      <Control name="refreshOpticalProbeCrystalButton" text="Refresh" />
+      <Control name="label_CurrentLight" text="Current Brightness" />
+      <Control name="RemarkColumn" text="Remark" />
+      <Control name="NoSoftWareFail" text="No software failure" />
+      <Control name="inputbrightvalue" text="Please input Brightness Value" />
+      <Control name="brightvalueDigital" text="Brightness value must be numeric" />
+      <Control name="exitssamelightconfig" text="Presence of the same intensity settings" />
+      <Control name="nolightsensorconfig" text="No light sensor information,can not be tested！" />
+      <Control name="crystalButton_BrightTestStart" text="Test Light Sensor" />
+      <Control name="crystalButton_BrightTestStop" text="Stop Test" />
+    </Controls>
+  </Form>
+  <Form>
+    <Name>frm_AutoSection</Name>
+    <Controls>
+      <Control name="frm_AutoSection" text="Quick subsection configuration" />
+      <Control name="sectionNumberlabel" text="Number of subsection" />
+      <Control name="sectionConditionGroupBox" text="Subsection condition" />
+      <Control name="maxLabel" text="Upper limit:" />
+      <Control name="minLabel" text="Lower limit:" />
+      <Control name="environmentLabel" text="Environment brightness" />
+      <Control name="ledLabel" text="Screen brightness" />
+      <Control name="confirmButton" text="OK" />
+      <Control name="cancelButton" text="Cancel" />
+      <Control name="errorTitle" text="Error" />
+      <Control name="ledBrightness_error01" text="Screen brightness can not be less than the minimum maximum brightness of screen" />
+      <Control name="environmentBrightness_error01" text="The maximum brightness of the environment can not be less than the minimum ambient brightness" />
+      <Control name="sectionRemarkLabel" text="Linear adjustment between mininum and maxinum" />
+    </Controls>
+  </Form>
+  <Form>
+    <Name>Frm_AddMappingItem</Name>
+    <Controls>
+      <Control name="Frm_AddMappingItem" text="Add Mapping Item" />
+      <Control name="environmentLabel" text="Environment Brightness" />
+      <Control name="ledLabel" text="Led Brightness" />
+      <Control name="ConfirmButton" text="OK" />
+      <Control name="CancelButton" text="Cancel" />
+      <Control name="errorTitle" text="Error" />
+      <Control name="error01" text="The existence of the same ambient brightness configurations." />
+    </Controls>
+  </Form>
+</Resource>
