@@ -18,6 +18,7 @@ namespace Nova.Care.Updater
         private static readonly string BACKUP_FOLDER_NAME = "Backup";
         private static readonly string CURRENT_PATH = Environment.CurrentDirectory;
         private static readonly string UPDATE_PACKAGE_PATH = Path.Combine(Environment.GetEnvironmentVariable("TEMP"), "Update_Package");
+        private static readonly string UPDATE_PACKAGE_FILE_PATH = Path.Combine(UPDATE_PACKAGE_PATH, "UpdatePackage.zip");
         private static readonly string UNZIP_UPDATE_PACKAGE_PATH = Path.Combine(Environment.GetEnvironmentVariable("TEMP"), Guid.NewGuid().ToString());
         private static readonly string UPATE_DETAILS_FILE_PATH = Path.Combine(UNZIP_UPDATE_PACKAGE_PATH, UPATE_DETAILS_FILE_NAME);
         private static readonly string BACKUP_SOFTWARE_PATH = Path.Combine(UPDATE_PACKAGE_PATH, BACKUP_FOLDER_NAME);
@@ -44,7 +45,7 @@ namespace Nova.Care.Updater
 
 
 
-            FetchUpdatePackage(_downloadLink, UPDATE_PACKAGE_PATH);
+            FetchUpdatePackage(_downloadLink, UPDATE_PACKAGE_FILE_PATH);
             List<Process> relatedProcesses;
             System.Console.WriteLine("Staring check is software running");
             do
