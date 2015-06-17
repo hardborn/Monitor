@@ -22,7 +22,7 @@ namespace Nova.Care.Updater
         private static readonly string UNZIP_UPDATE_PACKAGE_PATH = Path.Combine(Environment.GetEnvironmentVariable("TEMP"), Guid.NewGuid().ToString());
         private static readonly string UPATE_DETAILS_FILE_PATH = Path.Combine(UNZIP_UPDATE_PACKAGE_PATH, UPATE_DETAILS_FILE_NAME);
         private static readonly string BACKUP_SOFTWARE_PATH = Path.Combine(UPDATE_PACKAGE_PATH, BACKUP_FOLDER_NAME);
-
+        
 
         private static readonly string SQL_GET_UPDATE_DETAILS = "select dictype,sourcedic,targerdic from checklist";
 
@@ -34,6 +34,12 @@ namespace Nova.Care.Updater
 
         static void Main(string[] args)
         {
+           // args = new string[3];
+           // args[0] = "http://nova-update.b0.upaiyun.com/update/97654d980db10e5df731e608b7bdba6c.zip";
+           // args[1] = "807643A9052A1F450B7969A8EBB1C0C8";
+           //args[2] = Path.Combine(Directory.GetParent(AppDomain.CurrentDomain.BaseDirectory).Parent.FullName, "Test.exe");
+            //args[2] = Path.Combine(par, "Nova.Monitoring.UI.MonitorMangager.exe");
+
             if (args == null && args.Length != 3)
             {
                 return;
